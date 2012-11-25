@@ -1,19 +1,18 @@
 # Create your views here.
 from django.http import HttpResponse
+from django.template import Context, loader
 
 NOT_FOUND = r'/templates/not_found.html'
-
+WRAPPER_TEMPLATE = '/templates/wrapper.html'
 
 # def wrap_page(request, page, conf=None, conf_style=None):
 
 def wrap_page(request, **kwargs):
-    page = kwargs['page']
-
     """
     Wrap a static page in the template (headers, css, background, etc.)
     of a conference.
 
-    page = namge of the page to be wrapped
+    page = name of the page to be wrapped
     conf = conference directory where the page is located
     conf_style = conference wrapper file to use
 
@@ -23,14 +22,14 @@ def wrap_page(request, **kwargs):
     If no page is found with the name return wrapped 404 page
 
     """
-    if 'conf' not in kwargs.keys():
-        conf = 'base'
-    else:
-        conf = kwargs['conf']
-    if 'conf_style' not in kwargs.keys():
-        conf_style = conf
-    else:
-        conf_style = kwargs['conf_style']
+    output['page'] = kwargs['page']
+    output['conf'] = kwargs.get('conf', 'base')
+    output['conf_style'] = kwargs.get('conf_style', conf)
 
-    page_path = 'kwargs = {3}<br/>page={0}, conf={1}, conf_style={2}'.format(page, conf, conf_style, kwargs)
+    output['page_path'] = '{0}/pages/{1}'.format(output['page'], output['conf'])
+    wrapper_path = '{0}{1}'.format(output['conf_style'], WRAPPER_TEMPLATE)
+
+        
+    #'kwargs = {3}<br/>page={0}, conf={1}, conf_style={2}'.format(page, conf, conf_style, kwargs)
+
     return HttpResponse(page_path)
