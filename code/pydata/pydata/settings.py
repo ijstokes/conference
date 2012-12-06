@@ -108,8 +108,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/pydata/sites',
-    '/home/pydata/sites/base',
+    '/home/pydata/website/sites',
+    '/home/pydata/website/sites/base',
     '/Users/Trent/Documents/GitHub/conference/sites',
     '/Users/Trent/Documents/GitHub/conference/sites/base',
     '/Volumes/Development/continuum/pydata/conference.json/conference/sites',
