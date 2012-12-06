@@ -1,4 +1,4 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 # Uncomment the next two lines to enable the admin:
@@ -15,9 +15,10 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^pages/(?P<page>[^/]+)/$','pages.views.wrap_page'),
-    url(r'^pages/(?P<conf>[^/]+)/(?P<page>[^/]+)/$','pages.views.wrap_page'),
-    url(r'^pages/(?P<conf>[^/]+)/(?P<conf_style>[^/]+)/(?P<page>[^/]+)/$','pages.views.wrap_page'),
+    url(r'^(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
+    url(r'^(?P<conf>[^/]+)/(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
+    url(r'^(?P<conf>[^/]+)/(?P<conf_style>[^/]+)/(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
+    url(r'^$', 'pages.views.wrap_page', {'conf': 'sv2013', 'page': 'home'}),
 )
 
 urlpatterns += staticfiles_urlpatterns()

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>PyData 2013 | Santa Clara, CA | March 18 &ndash; 20 {{ title }}</title>
+
+	<link href="/static/{{ conf_style_id }}/includes/css/pydata.css" />
+	<link href="/static/{{ conf_style_id }}/includes/images/favicon.ico" rel="shortcut icon" />
+</head>
+<body>
+	<header class="main">
+		<div class="logo">
+			<img src="/static/{{ conf_style_id }}/includes/images/logo.jpg">
+		</div>
+		<div class="account-bar">
+		</div>
+		{% include navmenu %}
+	</header>
+	<div class="content">
+		{% include page_path %}
+	</div>
+	<footer class="main">
+		<div class="sponsors">
+			{% include sponsors %}
+		</div>
+	</footer>
+</body>
+</html>

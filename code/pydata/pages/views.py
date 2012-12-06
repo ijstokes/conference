@@ -1,11 +1,13 @@
 # Create your views here.
+from re import sub
 from django.http import HttpResponse
-from django.template import Context, Template, loader
+from django.template import Context, loader
 
 NOT_FOUND = r'/templates/not_found.html'
 WRAPPER_TEMPLATE = '/templates/wrapper.html'
 
 # def wrap_page(request, page, conf=None, conf_style=None):
+
 
 def wrap_page(request, **kwargs):
     """
@@ -24,20 +26,17 @@ def wrap_page(request, **kwargs):
     """
 
     output = Context({})
-    output['page'] = kwargs['page']
-    output['conf'] = kwargs.get('conf', 'base')
-    output['conf_style'] = kwargs.get('conf_style', output['conf'])
+    output['page_id'] = kwargs.get('page', 'home')
+    output['conf_id'] = kwargs.get('conf', 'sv2013')
+    output['conf_style_id'] = kwargs.get('conf_style', output['conf_id'])
+    output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
+    output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
 
-    output['page_path'] = '{0}/pages/{1}'.format(output['page'], output['conf'])
+    page_name = sub(r'(.*)-(.*)', r'\1 (\2)', output['page_id'].capitalize().replace('_', ' '))
+    file_name = output['page_id'] + '.html'
 
-    output['title'] = '{0}'
+    output['title'] = page_name
 
+    output['page_path'] = output['conf_id'] + '/pages/' + file_name
 
-    wrapper_path = '{0}{1}'.format(output['conf_style'], WRAPPER_TEMPLATE)
-
-    t = loader.get_template(wrapper_path)
-    outs = t.render(output)
-
-    #'kwargs = {3}<br/>page={0}, conf={1}, conf_style={2}'.format(page, conf, conf_style, kwargs)
-
-    return HttpResponse(outs)
+    return HttpResponse(loader.get_template(output['conf_style_id'] + WRAPPER_TEMPLATE).render(output))
