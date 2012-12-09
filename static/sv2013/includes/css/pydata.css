@@ -1,19 +1,38 @@
 body {
-  padding-top: 80px;
-  position: relative;
+	font-family: 'Helveltica Neue', Helvetica, Verdana, Sans-serif;
 }
-section {
-  padding-top: 60px;
+
+div {
+	border: 1px solid black;
 }
-.modal form {
-  margin-bottom: 0px;
+
+.fixed{
+	position: fixed;
+	border: 2px dashed violet;
+	width: 100%;
 }
-#footer {
-  margin-top: 80px;
+
+.account-bar {
+	background-color: red;
+	height: 40px;
 }
-#footer p {
-  margin-bottom: 0;
+
+.login-menu {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
-#footer p.right {
-  float: right;
+
+
+.menu-bar {
+	background-color: green;
+	height: 40px;
+}
+
+.nav-menu {
+	width: 960px;
+}
+.
+.masthead {
+	padding-top: 80px;
 }
