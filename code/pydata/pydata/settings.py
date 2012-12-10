@@ -1,4 +1,5 @@
 # Django settings for pydata project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -13,7 +14,9 @@ ROOTS = {
     'trent_windows': '/Users/Trent/Documents/GitHub/conference',
 }
 
-ROOT_PATH = ROOTS['trent_mac']
+# ROOT_PATH = ROOTS['trent_mac']
+ROOT_PATH = os.path.dirname(__file__) + '/../../../'
+ROOT_PATH = os.path.abspath(ROOT_PATH)
 
 MANAGERS = ADMINS
 
