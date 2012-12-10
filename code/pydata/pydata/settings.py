@@ -1,4 +1,5 @@
 # Django settings for pydata project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -13,7 +14,9 @@ ROOTS = {
     'trent_windows': '/Users/Trent/Documents/GitHub/conference',
 }
 
-ROOT_PATH = ROOTS['trent_mac']
+# ROOT_PATH = ROOTS['trent_mac']
+ROOT_PATH = os.path.dirname(__file__) + '/../../../'
+ROOT_PATH = os.path.abspath(ROOT_PATH)
 
 MANAGERS = ADMINS
 
@@ -162,3 +165,13 @@ LOGGING = {
         },
     }
 }
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages"
+    )
