@@ -1,0 +1,59 @@
+body {
+	font-family: 'Helveltica Neue', Helvetica, Verdana, Sans-serif;
+}
+
+div {
+	border: 1px solid black;
+}
+
+.fixed{
+	position: fixed;
+	border: 2px dashed violet;
+	width: 100%;
+}
+
+.account-bar {
+	background-color: orange;
+	height: 40px;
+}
+
+.login-menu {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.menu-bar {
+	background-color: green;
+	height: 40px;
+}
+
+.nav-menu {
+	width: 960px;
+}
+.
+.masthead {
+	padding-top: 80px;
+}
+
+h3.logo{
+	position:absolute;
+	top:5px;
+	left:0;
+	margin-top:0
+}
+h3.logo a{
+	display:block;
+	width:213px;
+	height:63px;
+	background:url(../images/pydatalogo.png) no-repeat 0 0;
+	text-indent:-9999px
+}
+h1 a.logo{
+	display:block;
+	width:534px;
+	height:145px;
+	background:url(../images/pydatalogo.png) no-repeat 0 0;
+	text-indent:-9999px
+}

@@ -31,6 +31,11 @@ def wrap_page(request, **kwargs):
     output['conf_style_id'] = kwargs.get('conf_style', output['conf_id'])
     output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
     output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
+    output['head'] = output['conf_style_id'] + '/templates/header.html'
+    output['header'] = output['conf_style_id'] + '/templates/head.html'
+    output['banner'] = output['conf_style_id'] + '/templates/banner.html'
+    output['scripts'] = output['conf_style_id'] + '/templates/scripts.html'
+	
 
     page_name = sub(r'(.*)-(.*)', r'\1 (\2)', output['page_id'].capitalize().replace('_', ' '))
     file_name = output['page_id'] + '.html'

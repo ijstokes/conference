@@ -1,38 +1,81 @@
-body {
-	font-family: 'Helveltica Neue', Helvetica, Verdana, Sans-serif;
+h3.logo{
+	position:absolute;
+	top:5px;
+	left:0;
+	margin-top:0
 }
-
-div {
-	border: 1px solid black;
+h3.logo a{
+	display:block;
+	width:213px;
+	height:63px;
+	background:url(../images/pydatalogo.png) no-repeat 0 0;
+	text-indent:-9999px
 }
-
-.fixed{
-	position: fixed;
-	border: 2px dashed violet;
-	width: 100%;
+h1 a.logo{
+	display:block;
+	width:534px;
+	height:190px;
+	background:url(../images/pydatalogo.png) no-repeat 0 0;
+	text-indent:-9999px
 }
-
-.account-bar {
-	background-color: orange;
-	height: 40px;
+body.home header.main{
+	background:url(../images/hd_home.png) repeat-x 0 0;
+	margin-bottom:0
 }
-
-.login-menu {
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+.banner{
+	background:url(../images/banner_bg.png) repeat 0 0;
+	padding:20px 0 0;
+	margin-bottom:25px
 }
-
-
-.menu-bar {
-	background-color: green;
-	height: 40px;
+.banner h2{
+	display:none
 }
-
-.nav-menu {
-	width: 960px;
+.banner h3{
+	text-align:center;
+	margin-bottom:0;
+	line-height:15px;
+	font-size:18px;
+	color:#014354;
+	text-transform:none;
+	font-weight:normal;
+	font-style:italic
 }
-.
-.masthead {
-	padding-top: 80px;
+.banner h4{
+	text-align:center;
+	margin-bottom:0;
+	line-height:15px;
+	color:#014354;
+	text-transform:none;
+	font-weight:normal;
+	font-style:italic
 }
+.banner p.intro{
+	font-size:19px;
+	text-align:center;
+	line-height:30px;
+	margin-top:20px
+}
+.banner ul.unstyled{
+	font-size:14px
+}
+.banner ul.unstyled li{
+	margin-bottom:6px
+}
+.banner ul.unstyled li a{
+	color:#333
+}
+.banner ul.unstyled li a span{
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#014354
+}
+.banner h6{
+	color:#014354;
+	font-size:14px
+}
+.banner .presented{
+	position:relative;
+	padding:0 0 0 30px
+}
+.banner .presented .bdr{
+	position:absolute;top:0;left:-20px;width:1px;height:85px;background:url(../images/dotted_ln_v.png) no-repeat 0 0}.banner .presented .bdr-r{left:auto;right:20px}.banner .presented h6{margin-bottom:5px}.banner .presented p{font-size:15px;margin:10px 30px 0 0;line-height:20px}.banner .presented .more{color:#0b819e}.banner .presented a img{margin-right:20px}.banner .presented .sponsorship-link{float:right;width:56%;margin-right:20px}.banner .presented .in-brackets em{display:block}.banner .tickets-info{position:relative}.banner .tickets-info .tickets{background:url(../images/tickets.png) no-repeat 0 0;position:absolute;width:82px;height:75px;top:-40px;right:30px}.banner .tickets-info p{font-size:15px;margin:8px 0 0;line-height:20px}.sponsor-crawl{position:relative}.sponsor-crawl .sponsorship-link{position:absolute;top:0;right:0}.sponsor-crawl .sponsorship-link .in-brackets{padding:6px 12px}.bracket{display:block;width:12px;height:34px}.bracket-left{display:block;width:12px;height:34px;float:left;background:url(../images/bracket_left.png) no-repeat 0 0}.bracket-right{display:block;width:12px;height:34px;float:left;background:url(../images/bracket_right.png) no-repeat 0 0}.in-brackets{padding:0 12px;display:block;float:left}.in-brackets em{font

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>PyData 2013 | Santa Clara, CA | March 18 &ndash; 20 {{ title }}</title>
+
+    {% include head %}
+
+</head>
+<body>
+	<header class="main">
+		<div class="fixed">
+			<div class="account-bar">
+				<div class="login-menu">
+					<a href="https://sv2013.eventbrite.com">Register</a>
+				</div>
+			</div>
+			<div class="menu-bar">
+				{% include navmenu %}
+			</div>
+		</div>
+		<div class="masthead">
+			<div class="logo">
+				<img src="/static/{{ conf_style_id }}/includes/images/pydatalogo.png">
+			</div>
+			<div class="featured" id="featured">
+			</div>
+		</div>
+	</header>
+	<div class="main_section">
+		<div class="content">
+			{% include page_path %}
+		</div>
+	</div>
+	<footer class="main">
+		Our Sponsors:
+		<div class="right">
+			{% include sponsors %}
+		</div>
+	</footer>
+</body>
+</html>
