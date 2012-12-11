@@ -8,15 +8,7 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
-ROOTS = {
-    'aws': '/home/pydata',
-    'trent_mac': '/Volumes/Development/continuum/pydata/conference.json/conference',
-    'trent_windows': '/Users/Trent/Documents/GitHub/conference',
-}
-
-# ROOT_PATH = ROOTS['trent_mac']
-ROOT_PATH = os.path.dirname(__file__) + '/../../../'
-ROOT_PATH = os.path.abspath(ROOT_PATH)
+ROOT_PATH = os.path.abspath(__file__[:-31])
 
 MANAGERS = ADMINS
 
