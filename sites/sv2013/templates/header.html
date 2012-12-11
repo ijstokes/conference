@@ -9,221 +9,42 @@
                 </div>
             </div>
         </div>
-            <div class="navbar navbar-inverse">
-                <div class="navbar-inner">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <div class="nav-collapse">
-                        <ul class="nav">
-                            <li class="dropdown">
-                                <a href="/{{ conf_style_id }}/about#" class="dropdown-toggle" data-toggle="dropdown" title="">                                About
-                                    <b class="caret"></b>
-                                </a>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="">
+                            <a href="/" title="Home">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="/{{ conf_style_id }}/about" title="About">About</a>
+                        </li>
+                        <li class="">
+                            <a href="/{{ conf_style_id }}/venue" title="Venue">Venue</a>
+                        </li>
+                        <li class="">
+                            <a href="/{{ conf_style_id }}/sponsor" title="Sponsor">Sponsor</a>
+                        </li>
+                        <li class="">
+                            <a href="/{{ conf_style_id }}/code_of_conduct" title="Code of Conduct">Code of Conduct</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href"/{{ conf_style_id }}/speakers#" class="dropdown-toggle" data-toggle="dropdown" title="Speakers">Speakers<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                            <li>
-                                <a href="/{{ conf_style_id }}/about" title="">What is PyData?</a>
-                            </li>
-                            <li>
-                            <a href="/{{ conf_style_id }}/code_of_conduct/" title="">Code of Conduct</a>
-                            </li>
-                            <li>
-                            <a href="{{ conf_style_id }}/about/diversity/" title="">Diversity</a>
-                            </li>
-                            <li>
-                            <a href="{{ conf_style_id }}/about/volunteers/" title="">Volunteers</a>
-                            </li>
-                            <li>
-                            <a href="{{ conf_style_id }}/about/press/" title="">Press</a>
-                            </li>
-                            <li>
-                            <a href="{{ conf_style_id }}/about/staff/" title="">Staff Information</a>
-                            </li>
-                            <li>
-                            <a href="{{ conf_style_id }}/sitemap/" title="">Sitemap</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="{{ conf_style_id }}/#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        Speaking
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li>
-                    <a href="{{ conf_style_id }}/speaking/speakatpycon/" title="">Speak at PyCon</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/speaking/cfp/" title="">Call For Proposals</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/posters/" title="">Poster Session</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/posters/faq/" title="">Poster Session FAQ</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/speakers/tutorials/proposals/" title="">Tutorials</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/speaking/proposal_advice/" title="">Proposal Advice</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/speaking/recording/" title="">Recording Release</a>
-                    </li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="{{ conf_style_id }}/#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        Events
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li>
-                    <a href="{{ conf_style_id }}/events/keynotes/" title="">Keynote Speakers</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/schedule/talks/list/" title="">Conference Talk List</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/schedule/tutorials/list/" title="">Tutorial List</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/schedule/tutorials/" title="">Tutorial Schedule</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/events/letslearnpython/" title="">The Young Coder: Let's Learn Python</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/events/langsummit/" title="">Python Language Summit</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/events/edusummit/" title="">Education Summit</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/community/sprints/" title="">Development Sprints</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/5k/" title="">PyCon 2013 5k Fun Run</a>
-                    </li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="{{ conf_style_id }}/#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        Sponsors
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/" title="">PyCon Sponsors</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/jobs/" title="">Jobs Fair</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/prospectus/" title="">Prospectus</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/whysponsor/" title="">Why sponsor PyCon?</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/apply/" title="">Apply to be a Sponsor</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/exhibitfloor/" title="">Exhibit Floor Information</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/sponsors/charityauction/" title="">Charity Auction</a>
-                    </li>
-                    </ul>
-                    </li>
-                    <li class="dropdown">
-                    <a href="{{ conf_style_id }}/venue#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        Venue
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li>
-                    <a href="{{ conf_style_id }}/venue" title="">Venue Details</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/directions/" title="">Directions to the Venue</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/traveling/" title="">Traveling to Santa Clara</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/hotels/" title="">Hotels</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/explore/" title="">Explore Santa Clara</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/getting-around/" title="">Getting Around</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/bars/" title="">Bars</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/restaurants/" title="">Restaurants</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/shopping/" title="">Shopping</a>
-                    </li>
-                    <li>
-                    <a href="{{ conf_style_id }}/venue/weather/" title="">Weather</a>
-                    </li>
-                    </ul>
-                    </li>
-                    <li class="">
-                    <a href="http://pydata.org/news/" title="">News</a>
-                    </li>                
-                    <li class="dropdown">
-                    <a href="{{ conf_style_id }}/#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        PSF
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li>
-                    <a href="http://www.python.org/psf/" title="">About</a>
-                    </li>
-                    <li>
-                    <a href="http://pyfound.blogspot.com/" title="">Blog</a>
-                    </li>
-                    
-                    </ul>
-                    
-                    
-                    </li>
-                    
-                    <li class="dropdown">
-                    
-                    <a href="{{ conf_style_id }}/#" class="dropdown-toggle" data-toggle="dropdown" title="">
-                        Registration
-                        <b class="caret"></b>
-                    </a>
-                    
-                    <ul class="dropdown-menu">
-                    
-                    <li>
-                    <a href="{{ conf_style_id }}/registration/" title="">Registration Information</a>
-                    </li>
-                    
-                    <li>
-                    <a href="{{ conf_style_id }}/registration/register/" title="">Register for PyCon 2013</a>
-                    </li>
-                    
-                    <li>
-                    <a href="{{ conf_style_id }}/community/roomsharing/" title="">Room Sharing</a>
-                    </li>
-                    
-                    <li>
-                    <a href="{{ conf_style_id }}/assistance/" title="">Financial Aid</a>
-                    </li>
-                    </ul>
-                    </li>
+                                <li>
+                                    <a href="/{{ conf_style_id }}/speakers" title="Speakers">Speakers</a>
+                                </li>
+                                <li>
+                                    <a href="/{{ conf_style_id }}/abstracts" title="Abstracts">Talk Abstracts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="/{{ conf_style_id }}/schedule" title="Chedule">Schedule</a>
+                        </li>
                     </ul>
                 </div>
             </div>

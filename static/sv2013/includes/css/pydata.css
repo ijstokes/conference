@@ -18,10 +18,37 @@ h1 a.logo{
 	background:url(../images/pydatalogo.png) no-repeat 0 0;
 	text-indent:-9999px
 }
+header.main {
+	background: url(../images/hd_sub.png) repeat-x 0 0;
+	margin-bottom: 0px;
+}
+header.main .container {
+	position: relative;
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: 940px;
+}
+
 body.home header.main{
 	background:url(../images/hd_home.png) repeat-x 0 0;
 	margin-bottom:0
 }
+.span12 {
+	width: 940px;
+}
+.span8 {
+	width: 620px;
+}
+.span4 {
+width: 300px;
+}
+
+/* Banner CSS */
 .banner{
 	background:url(../images/banner_bg.png) repeat 0 0;
 	padding:20px 0 0;
@@ -78,4 +105,110 @@ body.home header.main{
 	padding:0 0 0 30px
 }
 .banner .presented .bdr{
-	position:absolute;top:0;left:-20px;width:1px;height:85px;background:url(../images/dotted_ln_v.png) no-repeat 0 0}.banner .presented .bdr-r{left:auto;right:20px}.banner .presented h6{margin-bottom:5px}.banner .presented p{font-size:15px;margin:10px 30px 0 0;line-height:20px}.banner .presented .more{color:#0b819e}.banner .presented a img{margin-right:20px}.banner .presented .sponsorship-link{float:right;width:56%;margin-right:20px}.banner .presented .in-brackets em{display:block}.banner .tickets-info{position:relative}.banner .tickets-info .tickets{background:url(../images/tickets.png) no-repeat 0 0;position:absolute;width:82px;height:75px;top:-40px;right:30px}.banner .tickets-info p{font-size:15px;margin:8px 0 0;line-height:20px}.sponsor-crawl{position:relative}.sponsor-crawl .sponsorship-link{position:absolute;top:0;right:0}.sponsor-crawl .sponsorship-link .in-brackets{padding:6px 12px}.bracket{display:block;width:12px;height:34px}.bracket-left{display:block;width:12px;height:34px;float:left;background:url(../images/bracket_left.png) no-repeat 0 0}.bracket-right{display:block;width:12px;height:34px;float:left;background:url(../images/bracket_right.png) no-repeat 0 0}.in-brackets{padding:0 12px;display:block;float:left}.in-brackets em{font
+	position:absolute;
+	top:0;
+	left:-20px;
+	width:1px;
+	height:85px;
+	background:url(../images/dotted_ln_v.png) no-repeat 0 0
+}
+.banner .presented .bdr-r{
+	left:auto;right:20px
+}
+.banner .presented h6{
+	margin-bottom:5px
+}
+.banner .presented p{
+	font-size:15px;
+	margin:10px 30px 0 0;
+	line-height:20px
+}
+.banner .presented .more{
+	color:#0b819e
+	}
+.banner .presented a img{
+	margin-right:20px
+}
+.banner .presented .sponsorship-link{
+	float:right;
+	width:56%;
+	margin-right:20px
+}
+.banner .presented .in-brackets em{
+	display:block
+}
+.banner .tickets-info{
+	position:relative
+}
+.banner .tickets-info .tickets{
+	background:url(../images/tickets.png) no-repeat 0 0;
+	position:absolute;
+	width:82px;
+	height:75px;
+	top:-40px;
+	right:30px
+}
+.banner .tickets-info p{
+	font-size:15px;
+	margin:8px 0 0;
+	line-height:20px
+}
+.sponsor-crawl{
+	position:relative
+}
+.sponsor-crawl .sponsorship-link{
+	position:absolute;top:0;right:0
+}
+.sponsor-crawl .sponsorship-link .in-brackets{
+	padding:6px 12px
+}
+.bracket{
+	display:block;
+	width:12px;
+	height:34px
+}
+.bracket-left{
+	display:block;
+	width:12px;
+	height:34px;
+	float:left;
+	background:url(../images/bracket_left.png) no-repeat 0 0
+}
+.bracket-right{
+	display:block;
+	width:12px;
+	height:34px;
+	float:left;
+	background:url(../images/bracket_right.png) no-repeat 0 0
+}
+.in-brackets{
+	padding:0 12px;
+	display:block;
+	float:left
+}
+
+/* Carousel CSS */
+.carousel {
+	position: relative;
+	margin-bottom: 18px;
+	line-height: 1;
+}
+
+.carousel-inner {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+nav#slider-nav {
+	float: left;
+	height: 19px;
+	margin: 13px 0 20px;
+}
+.sponsor-scroll-item {
+	cursor: pointer;
+	float: left;
+	width: 133px;
+	height: 95px;
+	background: none center center no-repeat;
+	background-size: 95px auto;
+}
