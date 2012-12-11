@@ -8,22 +8,22 @@
 
 </head>
 <body>
-			{% include header %}
-    <div class="banner">
+		{% include header %}
+
     	{% include banner %}
-	</div>
 	<div class="container">
 		<div class="row">
-			{% include page_path %}
-		</div>
-
-	<footer class="main">
-		Our Sponsors:
-		<div class="right">
 			{% include sponsors %}
-		</div>
-        {% include scripts %}
-	</footer>
-    	</div>
+            <div class="span8">
+                {% include page_path %}
+            </div>
+            <div class="span4">
+            </div>
+        </div>
+        <hr>
+		{% include footer %}
+	</div>
+    {% include scripts %}
+    
 </body>
 </html>
