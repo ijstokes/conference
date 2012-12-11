@@ -5,6 +5,7 @@ from django.template import Context, loader
 
 NOT_FOUND = r'/templates/not_found.html'
 WRAPPER_TEMPLATE = '/templates/wrapper.html'
+ALT_WRAPPER = '/templates/alt_wrapper.html'
 
 # def wrap_page(request, page, conf=None, conf_style=None):
 
@@ -37,6 +38,7 @@ def wrap_page(request, **kwargs):
     output['scripts'] = output['conf_style_id'] + '/templates/scripts.html'
     output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
     output['footer'] = output['conf_style_id'] + '/templates/footer.html'
+    output['sidebar'] = output['conf_style_id'] + '/templates/sidebar.html'
 	
 
     page_name = sub(r'(.*)-(.*)', r'\1 (\2)', output['page_id'].capitalize().replace('_', ' '))
