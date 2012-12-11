@@ -14,8 +14,6 @@ Subject: {2}
 """
     send_string = template.format(recipient, sender, subject, message)
 
-    print send_string
-
     p = popen(MAIL + ' -t', 'w')
     p.write(send_string)
     exitcode = p.close()
@@ -23,7 +21,7 @@ Subject: {2}
     return exitcode
 
 
-def get_out_vars(request, **kwargs):
+def get_base_out_vars(request, **kwargs):
 
     output = Context({})
     output['conf_id'] = kwargs.get('conf', 'sv2013')
@@ -34,5 +32,8 @@ def get_out_vars(request, **kwargs):
     output['header'] = output['conf_style_id'] + '/templates/head.html'
     output['banner'] = output['conf_style_id'] + '/templates/banner.html'
     output['scripts'] = output['conf_style_id'] + '/templates/scripts.html'
+    output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
+    output['footer'] = output['conf_style_id'] + '/templates/footer.html'
+    output['sidebar'] = output['conf_style_id'] + '/templates/sidebar.html'
 
     return output

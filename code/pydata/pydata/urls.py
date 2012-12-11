@@ -16,10 +16,10 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^speakers/propose/$', 'speakers.views.submit_talk'),
-    url(r'^(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
-    url(r'^(?P<conf>[^/]+)/(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
-    url(r'^(?P<conf>[^/]+)/(?P<conf_style>[^/]+)/(?P<page>[^/]+)/$', 'pages.views.wrap_page'),
-    url(r'^$', 'pages.views.wrap_page', {'conf': 'sv2013', 'page': 'home'}),
+    url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
+    url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<conf_style>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
+    url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
+    url(r'^(?P<page>.+)/$', 'pages.views.wrap_page')
 )
 
 urlpatterns += staticfiles_urlpatterns()

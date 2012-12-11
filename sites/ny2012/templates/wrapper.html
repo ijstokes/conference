@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}PyData 2012 | NYC, NY {{ title }}{% endblock %}</title>
+    {% block head_info %}
+        {% include head %}
+    {% endblock head_info%}
+</head>
+<body>
+    {% block header %}
+	{% include header %}
+    {% endblock header %}
+    {% block banner %}
+    <div class="banner">
+    	{% include banner %}
+	</div>
+    {% endblock banner %}
+	<div class="container">
+		<div class="row">
+            {% block main_content %}
+			{% include page_path %}
+            {% endblock main_content %}
+		</div>
+
+	<footer class="main">
+		Our Sponsors:
+		<div class="right">
+			{% include sponsors %}
+		</div>
+        {% include scripts %}
+	</footer>
+	</div>
+</body>
+</html>
