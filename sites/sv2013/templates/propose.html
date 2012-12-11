@@ -1,5 +1,12 @@
+{% extends 'sv2013/templates/wrapper.html' %}
 
+{%block banner %}
+Provide us with the following information
+{% endblock %}
+
+{% block main_content %}
 <form action="/speakers/propose/" method="post">{% csrf_token %}
 {{ form.as_p }}
 <input type="submit" value="Submit" />
 </form>
+{% endblock %}

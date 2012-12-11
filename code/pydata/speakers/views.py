@@ -1,11 +1,12 @@
 from speakers.models import ProposalForm
 from django.http import HttpResponse
 from django.shortcuts import render
-from utilities.utilities import send_plain_email
+from utilities.utilities import send_plain_email, get_out_vars
 # Create your views here.
 
 
 def submit_talk(request):
+    output = get_out_vars(request)
     if request.method == 'POST':
         form = ProposalForm(request.POST)
         if form.is_valid():
@@ -18,7 +19,7 @@ def submit_talk(request):
             email = form.cleaned_data['email']
 
             template = """
-            Proposal from {0}({3}):
+            Proposal from {0} ({3}):
             ===================================================
             Title:
             {1}
@@ -40,5 +41,7 @@ def submit_talk(request):
     else:
         form = ProposalForm()
 
-    return render(request, 'sv2013/templates/propose.html', {'form': form, })
+    output['form'] = form
+
+    return render(request, 'sv2013/templates/propose.html', output)
 
