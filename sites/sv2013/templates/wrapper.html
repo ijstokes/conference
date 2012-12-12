@@ -8,6 +8,9 @@
     {% endblock head_info%}
 </head>
 <body>
+    {% block header %}
+    	{% include header %}
+    {% endblock header %}
 	<div class="container">
 		<div class="row">
 			{% include sponsors %}
