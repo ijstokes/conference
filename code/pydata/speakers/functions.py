@@ -2,7 +2,7 @@ from utilities.utilities import send_plain_email
 
 
 def process_speaker_proposal(proposal):
-    recipient = 'trentoliphant@gmail.com'
+    recipient = 'pydataconf@continuum.io'
 
     email_template = """
     Proposal from {0} ({3}):
