@@ -28,8 +28,8 @@ def get_base_out_vars(request, **kwargs):
     output['conf_style_id'] = kwargs.get('conf_style', output['conf_id'])
     output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
     output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
-    output['head'] = output['conf_style_id'] + '/templates/header.html'
-    output['header'] = output['conf_style_id'] + '/templates/head.html'
+    output['head'] = output['conf_style_id'] + '/templates/head.html'
+    output['header'] = output['conf_style_id'] + '/templates/header.html'
     output['banner'] = output['conf_style_id'] + '/templates/banner.html'
     output['scripts'] = output['conf_style_id'] + '/templates/scripts.html'
     output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
