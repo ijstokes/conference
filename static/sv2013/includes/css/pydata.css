@@ -330,7 +330,8 @@ ul#slider a .level {
 	font-size: 11px
 }
 .scroll-title {
-	margin-bottom: 5px
+	margin-bottom: 5px;
+	color: #459DB9;
 }
 .carousel-inner div.item {
 	width: 100%;

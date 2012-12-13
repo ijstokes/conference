@@ -14,16 +14,10 @@
 	<div class="container">
 		<div class="row">            
             {% block main_content %}
-            <div class="span8">
+            <div class="span12">
                 {% include page_path %}
             </div>
             {% endblock main_content %}
-            
-            {% block sidebar %}
-            <div class="span4">
-            	{% include sidebar %}
-            </div>
-            {% endblock sidebar %}
             
         </div>
         <hr>
