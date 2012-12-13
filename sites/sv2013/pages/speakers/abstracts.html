@@ -1,22 +1,164 @@
 <h2>Talk Abstracts</h2>
     
-<p>PyData is a community-oriented conference that offers great talks from luminaries in the community, and attracts very talented hackers from diverse backgrounds
-	Whether you are hiring, selling, or just promoting your brand, it's a great opportunity to showcase your company in a more intimate setting than larger conferences with thousands of attendees and hundreds of sponsors.</p>
-<p>Sponsors are vital to the success of PyData. Your support allows us to keep ticket prices low, provide first rate facilities, sponsor student attendees, and provide video recordings of all sessions.  Sponsorship includes a specified number of passes depending on your sponsorship level, your logo and description on the PyData website, physical banners at the conference, and any other approved promotional material you wish to display and distribute.</p>
-</p>
-<h3>Sponsorship Levels</h3>
-<table class="table">
-<tbody><tr>
-<td>Charter</td><td>$10,000</td><td>Includes 6 conference passes</td>
-</tr>
-<tr>
-<td>Gold</td><td>$5,000</td><td>Includes 4 conference passes</td>
-</tr>
-<tr><td>Silver</td><td>$3,000</td><td>Includes 2 conference passes</td>
-</tr>
-<tr><td>Student</td><td>$1,500</td><td>Includes 1 student sponsorship</td>
-</tr>
-</tbody></table>
+<!--<div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" href="#jlevy">
+        <h4>Josh Levy</h4>
+      </a>
+    </div>
+    <div id="jlevy" class="accordion-body collapse in">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>Thin Client Data Science</b><br />
+            The Data Science team at Vast builds data products informed by the behavior of consumers making big purchases. Our big data is billions of user interactions with millions of pieces of inventory. Recently we have adopted a data processing, analysis, and visualization environment based on remote access to IPython Notebook hosted by a powerful compute server.
+            <p>Our Data Science environment is inspired by a Development environment proposed by blogger Mark O'Connor. O'Connor advocates using an iPad as a thin client to connect to a more powerful server in the cloud. The combination of tablet plus server is better than a laptop for several reasons including:</p>
+            <ul>
+              <li dir="ltr">The tablet is more portable and offers longer battery life than a laptop;</li>
+              <li dir="ltr">The server offers better performance (more and faster cores, more RAM, more CACHE) than a laptop;</li>
+              <li dir="ltr">Laptops run loud and hot. The noise and heat of the server need not be close the tablet or the ears and lap of the user;</li>
+              <li dir="ltr">The server is always running and the tablet can wake up and reconnect instantly;</li>
+            </ul>
+            <p>IPython Notebook is the keystone of our environment. It enables us to use the tablet browser as a thin client to work with our favorite Python libraries including matplotlb for visualization, scikit-learn for predictive modeling, and pandas for processing and aggregation.</p>
+            In this talk, I'll discuss configuring the Notebook server and the tablet client. I'll also show examples and results of actual analyses performed in this environment.<br />
+            <h5>Speaker Bio</h5>
+            Josh Levy is a Data Scientist at Vast in Austin, Texas. He works on content recommendation and text mining systems. He earned his doctorate at the University of North Carolina where he researched statistical shape models for medical image segmentation.
+        </div>
+    </div>
+</div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#mamin">
+            <h4>Minesh Amin</h4>
+        </a>
+    </div>
+    <div id="mamin" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>Advanced Parallel Primitives in SPM.Python for Data and Graph Analytics</b><br />
+            Traditional solutions for data and graph analytics are highly fragmented, often taking the form of stand-alone frameworks. This talk presents our approach centered around a suite of advanced parallel primitives native to
+            SPM.Python. These primitives augment the serial Python language with key constructs - parallel generators, emitters and exceptions. In this talk, we shall introduce the notion of Hybrid Flows, which extend the traditional data flow
+            with a specialized form of parallel control flow. This general purpose solution harnesses compute resources in real-time to address problems across the parallel data and graph analytics landscape.
+            
+            <h5>Speaker Bio</h5> 
+            Minesh is the founder and CEO of MBA Sciences. MBA Sciences was showcased at the Emerging Companies Summit, GTC 2012, while their product, SPM.Python, was selected as a “Disruptive Technology” at Supercomputing 2010. MBA Sciences was also showcased at Startup Row, PyCon 2011.
+        </div>
+    </div>
+</div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#vpowell">
+            <h4>Vivek Powell</h4>
+        </a>
+    </div>
+    <div id="vpowell" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>1. Dataflow Programming Using Generators and Coroutines", or "Further
+            Topics in Generators"</b><br />
+            This talk discusses generators as a mechanism for modelling data-centric problems. The techniques suggested focus on simplifying the semantics of processing code, adding flexibility by inverting control structures, and allowing performance optimisations through caching, laziness, and targetted specialisations.<br />
+            <p>* This would be a continuation of the material I presented at PyData NYC 2012. I would incorporate feedback from that presentation to cover areas of particular interest. It would also use material developed since then, including some illustrative examples of how generators could be used to model certain problems in finance (the benchmark pricing problem, the refdata problem, &c.) </p>
+            <b>2. "A Reactive Approach in Python", or "Calculating on the Graph"</b><br />
+            This talk discusses modelling calculation-heavy problems in a "reactive" style wherein interdepdencies are explicitly modelled and powerful optimisations can be employed. It discusses the potential applications for this paradigm and includes simple (toy) examples of common problems modelled in Python using calculation-dependency mechanisms.
+            
+            <h5>Speaker Bio</h5> 
+            Vivek James is a professional Python programmer based in NYC. He has recently become very active in the NYC Python community, and has spoken on advanced python topics at PyGotham, PyTexas, and at the monthly NYC Python Meetup's lightning talks. His interests are in large-scale software development, wherein he considers Python one of the best-engineered languages for industrial application development.
+        </div>
+    </div>
+</div>   
+<div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" href="#ksankar">
+        <h4>Krishna Sankar</h4>
+      </a>
+    </div>
+    <div id="ksankar" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <h5>Abstract</h5>
+        <b>Bayesian Machine Learning & Python – An etude</b><br />
+        Bayesian Algorithms are employed in machine learning algorithms including classification, collaborative filtering & recommendation engines. This tutorial introduces the application of Bayesian Algorithms to interesting ML problems like movie recommendation, market research and of course spams filtering. We will use iPython, pandas, scipy and publicly available data. It will be a hands-on tutorial – we will have the appropriate install packages and data in GitHub before the tutorial. We will also cover the fundamental aspects of Bayesian Methods, Bayesian Belief Networks and other related topics relevant to solving the problems.
 
-<p>To help sponsor the conference please contact Doug Pennock at 512-222-5440 or email <a href="mailto:doug%40continuum.io?subject=PyData%20NYC%20'%2012%20Sponsorship">doug@continuum.io</a>  We thank you for your support!</p>
- 
+        <h5>Speaker Bio</h5> 
+        Krishna Sankar is currently Director Engineering & Data Science at Genophen developing bioinformatics scientific/consumer applications in AWS. Prior to this, he was a Lead Architect at Egnyte.com, developing cloud object store layer (handling billions of files/petabytes of storage) and security (federated Identity/SSO); and earlier he was at Cisco as a Distinguished Engineer, lastly working on various aspects of "Big Data and Cloud Computing. Krishna’s recent speaking engagements include OSCON 2012 Social Media Analysis with Twitter[<a href="http://goo.gl/mFflw">http://goo.gl/mFflw</a>], OSCON 2011 – Hitchhiker’s Guide to Kaggle[<a href="http://goo.gl/75X7w">http://goo.gl/75X7w</a>] & OSCON 2010 [<a href="http://goo.gl/8Ukiw">http://goo.gl/8Ukiw</a>] as well as guest lecturing at the Naval Postgraduate School on Big data [<a href="http://goo.gl/2pBYS">http://goo.gl/2pBYS</a>]. His interests include big data stacks – from infrastructure to visualization, highly scalable cloud architectures & intelligent inferences. In his spare time, he is pursuing the Mining Massive Data Sets Graduate Certificate at Stanford. He also writes books – including “Cisco Wireless LAN Security” and “Enterprise Web 2.0”. His other passion is Lego Robotics and is contributing as Technical Judge in local & Lego world competitions.
+        </div>
+    </div>
+</div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#tbrown">
+            <h4>Titus Brown</h4>
+        </a>
+    </div>
+    <div id="tbrown" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>Implementing Awesome Big Data Algorithms Effectively</b><br />
+            Random algorithms and probabilistic data structures are algorithmically efficient and can provide shockingly good practical results.  I will briefly cover a few commonly used probabilistic data structures, then describe their implementation in Cython and C++.  The bulk of the talk will be spent discussing performance considerations of implementations, including caching and approaches to threadsafety.  This will be a in-depth extension of my "Awesome Big Data Algorithms" presentation at PyCon.
+            
+            <h5>Speaker Bio</h5> 
+            Titus Brown received his BA in Math from Reed College in 1997, and his PhD in Developmental Biology at Caltech in 2006.  He has worked in digital evolution, climate measurements, molecular and evolutionary developmental biology, and both regulatory genomics and transcriptomics.  His current focus is on using novel computer science data structures and algorithms to explore big sequencing data sets from metagenomics and transcriptomics.
+        </div>
+    </div>
+</div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" href="#atavory">
+        <h4>Dr. Ami Tavory</h4>
+      </a>
+    </div>
+    <div id="atavory" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>Scientific Data Analysis Pipelines: Push, Pull, React, Or Schedule?</b><br />
+            Scientific data processing pipelines can be a useful complement to data analysis libraries, but which  mechanism should drive the processing stages? We will consider four approaches: push-style coroutines, pull-style generators, react-style classes, and schedule-style trampoline coroutines. For the DAG (Directed Acyclic Graph) topology these pipelines must support, the push style seems best.
+            
+            <h5>Speaker Bio</h5> 
+            Dr. Ami Tavory is a data scientist employed for the past five years at Final, a financial algorithms company. Before that, as part of Ph.D studies, Ami lectured at Tel-Aviv University. Between 2000 and 2005, Dr. Tavory worked at IBM's Haifa Research Labs as a researcher in the field of large distributed storage systems.
+            <p>In 2010 Dr. Ami Tavory received a Ph.D in Electrical Engineering from Tel Aviv University, in the field of financial information theory. Dr. Ami Tavory holds a bachelor's and master's from Tel Aviv University as well.</p>
+        </div>
+    </div>
+</div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#dboesch">
+            <h4>Chris Boesch PhD</h4>
+        </a>
+    </div>
+    <div id="dboesch" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            <b>Machine Learning in Python to Enhance Student Learning</b><br />
+            Over the past two years, we have been developing an online game called SingPath to make learning python a little more fun and efficient. SingPath is very similar to other feedback mechanisms that have been developed by Khan Academy, Code School, Code Academy, and others over the past few years. The game is written in python and deployed to Google App Engine.<br />
+            In this talk, we will cover how we moved through the process of starting out with quick statistical guesses to categorize new players' capabilities and later on to making more accurate and statistically valid predictions. At each step, we had to learn a few new python tricks and make a few more decisions on how and where to optimize.<br />
+            That goal for SingPath is to minimize the number of students making comments such as: "This is boring. I want to skip the simple problems." and those at the other end of the curve making statements such as: "Woah! You just lost me. I want a more gradual learning curve." By taking a closer look at our data, we were able to begin personalizing the practice experience for our students.<br />
+            Since we were running on Google App Engine, scaling was less of a concern, but minimizing I/O was paramount in order to constrain costs and continually maintain responsiveness. We hope that others can learn from our experience and be more excited about taking the first steps in leveraging their data to provide more personalized experiences for their users.
+            We will demonstrate the python highlights of our journey towards leveraging our data such as:<br />
+            <ul>
+                <li>Initially assume that everyone is average. That way you will always be wrong.</li>
+                <li>Finding ways to categorize users into quartiles. This can help you to be less wrong rather quickly.</li>
+                <li>Extend your categorization towards deciles (10th's) or to the point of granularity where the consistency of your data starts to break down.</li>
+                <li>Keeping track of predictions and measurable error rates</li>
+                <li>Using indexes and multiple sort orderings in App Engine to minimize I/O. You can quickly find the total number of entities of a model in App Engine and then find where your desired entity lies in a given sort order. This ends up being quite fast requiring only two individual fetches.</li>
+                <li>Deciding what to memcache, what to persist forever, and what to overwrite</li>
+                <li>Applying machine learning to find unexpected associations between data that can lead to even better predictions.</li>
+                <li>Finding a balance between prediction cost, responsiveness, and accuracy improvements.</li>
+            </ul>
+            <h5>Speaker Bio</h5> 
+            Chris Boesch has more than 16 years experience working in the technology industry for companies such as Texas Instruments, Acer, and Dell. During his career, he has received numerous awards for business process innovation and has filed 16 patents for software and hardware innovations. Chris is currently an Associate Professor of Information Systems (Education) at Singapore Management University where he teaches courses on Cloud Computing, Big Data Analytics, and Software Engineering.  Chris has considerable experience in the areas of architecture, design, and building globally scalable applications. Chris is a hands on pioneer who is passionate about the evolution of cloud computing and its potential to enhance the field of education. He received his Bachelors in Electrical Engineering from Auburn University and a Ph.D. in Computer Science from Nova Southeastern University. Chris' research interests include expert systems, cloud computing, and applying game dynamics in the field of education.
+        </div>
+    </div>
+</div>
+<!--<div class="accordion-group">
+    <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" href="#name">
+            <h4>name</h4>
+        </a>
+    </div>
+    <div id="name" class="accordion-body collapse">
+        <div class="accordion-inner">
+            <h5>Abstract</h5>
+            
+            <h5>Speaker Bio</h5> 
+        
+        </div>
+    </div>
+</div><-->
