@@ -9,8 +9,9 @@
 </head>
 <body>
     {% block header %}
-    	{% include header %}
+    	{% include smlheader %}
     {% endblock header %}
+    
 	<div class="container">
 		<div class="row">            
             {% block main_content %}
@@ -19,14 +20,16 @@
             </div>
             {% endblock main_content %}
             
+            
         </div>
         <hr>
-        
+        <div style="text-align: center">
         {% block footer %}
 			{% include footer %}
         {% endblock footer %}
+        </div>
         
 	</div>
-    {% include scripts %}
+   
 </body>
 </html>

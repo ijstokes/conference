@@ -3,11 +3,6 @@ body{
 	background-color: #e5e5e5;
 }
 
-.container .smlogo{
-	float: left;
-	height: 90px;
-}
-
 .btn-primary{
 	color: white;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -47,6 +42,11 @@ body{
 
 h3{
 	color: #EE9041;
+}
+
+li { 
+	cursor: hand; 
+	cursor: pointer; 
 }
 
 /* Banner CSS */
