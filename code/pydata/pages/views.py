@@ -10,7 +10,7 @@ DEFAULT_WRAPPER = '/templates/wrapper.html'
 HOME_WRAPPER = '/templates/home_wrapper.html'
 NOSIDE_WRAPPER = '/templates/noside_wrapper.html'
 
-NO_SIDE = ['venue', 'sponsors', ]
+NO_SIDE = ['venue', 'sponsor/sponsors' ]
 
 
 def wrap_page(request, **kwargs):
