@@ -18,7 +18,11 @@
     
 	<div class="container">
 		<div class="row">
-			{% include sponsors %}
+        <div class="span12" style="text-align: center">
+            <h4>Presented by</h4>
+            <h2><a href="http://continuum.io"><img src="/static/sv2013/includes/images/ca190w.png" /></a></h2>
+        <hr>
+        </div>
             
             {% block main_content %}
             <div class="span12">
@@ -29,9 +33,9 @@
         </div>
         <hr>
         <div style="text-align: center">
-        {% block footer %}
-			{% include footer %}
-        {% endblock footer %}
+            {% block footer %}
+                {% include footer %}
+            {% endblock footer %}
         </div>
 	</div>
     {% include scripts %}
