@@ -33,7 +33,9 @@ body{
   color: #ffffff;
   background-color: #EE7045;
   *background-color: #003bb3;
+  
 }
+
 
 .btn-primary:active,
 .btn-primary.active {
@@ -67,6 +69,7 @@ li {
 	padding: 15px;
 	overflow: hidden;
 }
+
 
 /* Banner CSS */
 .banner{
