@@ -188,7 +188,7 @@ logo background{
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a{
-	padding: 15px 39px 0px;
+	padding: 15px 35px 0px;
 }
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
