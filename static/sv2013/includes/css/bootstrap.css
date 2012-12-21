@@ -2840,6 +2840,7 @@ table th[class*="span"],
 .dropup,
 .dropdown {
   position: relative;
+  text-align: left;
 }
 
 .dropdown-toggle {
