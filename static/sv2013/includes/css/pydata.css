@@ -485,3 +485,7 @@ nav#slider-nav a.activeSlide {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+
+.bio img {
+	width: 220px;
+}
