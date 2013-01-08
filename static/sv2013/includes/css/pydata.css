@@ -486,6 +486,14 @@ nav#slider-nav a.activeSlide {
 	border-radius: 4px;
 }
 
+.bio {
+	height: 220px;
+}
+
 .bioimg {
 	width: 220px;
+	float: left;
+	padding-right: 20px;
+	margin-top: -5px;
+	margin-left: 5px;
 }
