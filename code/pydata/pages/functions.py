@@ -9,6 +9,6 @@ def get_file_contents(page_path):
 	return contents
 
 def set_file_contents(page_path, contents):
-	full_path = settings.ROOT_PATH + "/sites/" + page_path + "a"
+	full_path = settings.ROOT_PATH + "/sites/" + page_path
 	with open(full_path, 'w') as f:
-		f.write(contents)
+		f.write(contents.encode('utf-8'))

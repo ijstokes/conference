@@ -1,0 +1,37 @@
+Add and edit static pages and templates (CSS, JS, etc.)
+	(Integrating with a syntax highlighting editor)
+
+	Do we store the data in the database or file system?
+		In a file system - individual pages are gitable. (integrate with git?)
+
+	Full content management system.
+
+
+
+Schedule Creator
+	Manage the schedule - (Database Model)
+
+	Generate view
+	
+	Admin side:
+
+
+	User side:
+		Provide input to help develop the schedule.
+			5 level priorty - 
+				"I must attend this class at all costs"
+				"I definitely want to make it"
+				"This sounds interesting"
+				"If I don't have to wash my hair"
+				"I wouldn't attend this class if you paid me"
+
+
+	Speaker side:
+		Allow speakers to specify unavailable times.
+		Consider them as Users too.
+
+
+
+
+
+
