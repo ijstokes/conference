@@ -10,7 +10,7 @@
     {% for level in levels %}
     <h4>{{ level.name|upper }}</h4>
     {% for sponsor in level.sponsors.all %}
-    <h4><a href="{{sponsor.url}}"><img style="max-width: 50%;" src="{{ sponsor.logo.url }}" height="{{ level.small_logo_height }}"/></a></h4>
+    <h4><a href="{{sponsor.url}}"><img style="width: 50%;" src="{{ sponsor.logo.url }}" height="{{ level.small_logo_height }}"/></a></h4>
     {% endfor %}
     {% endfor %}
 </div>
