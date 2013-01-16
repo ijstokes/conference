@@ -1,3 +1,5 @@
+{% extends 'sv2013/templates/noside_wrapper.html' %}
+{% block main_content %}
 <h2>Our Sponsors</h2>
 <hr />
 <div class="span12">
@@ -26,179 +28,33 @@
             </div>
         </div>
     </div>
-
-    <h4 style="text-align: center"> {{ sponsor_level }} </h4>
+{% for level in levels %}
+    <h4 style="text-align: center"> {{ level.name|upper }} </h4>
     <div class="row">
-
+        {% for sponsor in level.sponsors.all %}
         <div class="span4">
             <div class="accordion-group">
                 <div class="sponsor">
                     <div class="sponsor-content">
                         <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#numfocus"><img src="/static/sv2013/includes/images/NF95pxw.png" />
+                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#{{ sponsor.id_tag }}"><img src="{{ sponsor.logo.url }}" height="{{ level.small_logo_height }}"/>
                             </a></h2>
                         </div>
-                        <div id="{{ sponsor_id }}" class="accordion-body collapse">
+                        <div id="{{ sponsor.id_tag }}" class="accordion-body collapse">
                             <div class="accordion-inner">
-                                <h5>{{ sponsor_name }}</h5>
-                                <p><a href="{{ sponsor_website }}">{{ sponsor_website }}</a></p>
-                                {{ sponsor_description }}
+                                <h5>{{ sponsor.name }}</h5>
+                                <p><a href="{{ sponsor.url }}">{{ sponsor.url }}</a></p>
+                                {{ sponsor.description }}
                         	</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-         <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
-    <h4 style="text-align: center"> GOLD </h4>
-    <div class="row">
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h4 style="text-align: center"> SILVER </h4>
-    <div class="row">
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h4 style="text-align: center"> COPPER </h4>
-    <div class="row">
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h4 style="text-align: center"> STUDENT </h4>
-    <div class="row">
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                        	</div>
-                        </div>
-                	</div>
-            	</div>
-        	</div>
-    	</div>
-    </div>
-    <h4 style="text-align: center"> MEDIA </h4>
-    <div class="row">
-        <div class="span4">
-            <div class="accordion-group">
-                <div class="sponsor">
-                    <div class="sponsor-content">
-                        <div class="accordion-heading">
-                            <h2><a class="accordion-toggle" data-toggle="collapse" href="#name"><img src="" />
-                            </a></h2>
-                        </div>
-                        <div id="" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <h5>Company Name</h5>
-                                <p><a href="http://company.com">http://company.com</a></p>
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+{% endfor %}
 </div>
-
+{% endblock %}
 
 

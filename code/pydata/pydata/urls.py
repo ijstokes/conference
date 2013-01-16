@@ -22,6 +22,8 @@ urlpatterns = patterns('',
     url(r'^speakers/propose/$', 'speakers.views.submit_proposal'),
 
 
+    url(r'^sponsors/$', 'sponsors.views.show_all_sponsors'),
+
     url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
     url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<conf_style>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
     url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),

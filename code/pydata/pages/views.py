@@ -10,7 +10,7 @@ DEFAULT_WRAPPER = '/templates/wrapper.html'
 HOME_WRAPPER = '/templates/home_wrapper.html'
 NOSIDE_WRAPPER = '/templates/noside_wrapper.html'
 
-NO_SIDE = ['venue', 'sponsor/sponsors' ]
+NO_SIDE = ['venue', 'sponsor/sponsors', ]
 
 
 def wrap_page(request, **kwargs):
@@ -30,12 +30,19 @@ def wrap_page(request, **kwargs):
 
     output['page_path'] = output['conf_id'] + '/pages/' + file_name
 
+    has_side = True
     ## Decide which wrapper to use
     wrapper_template = DEFAULT_WRAPPER
     if output['page_id'] == 'home':
         wrapper_template = HOME_WRAPPER
+        has_side = False
     if output['page_id'] in NO_SIDE:
         wrapper_template = NOSIDE_WRAPPER
+        has_side = False
+
+    if has_side:
+        from sponsors.models import SponsorLevel
+        output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
     try:
         template = loader.get_template(output['conf_style_id'] + wrapper_template).render(output)

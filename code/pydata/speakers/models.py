@@ -17,6 +17,7 @@ class Proposal(models.Model):
     additional_info = models.TextField(blank=True)
     date_submitted = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+    active = models.BooleanField(default=True)
 
 
 class ProposalForm(forms.ModelForm):
