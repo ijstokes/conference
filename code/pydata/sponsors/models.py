@@ -19,7 +19,6 @@ class Sponsor(models.Model):
     url = models.URLField()
     level = models.ForeignKey(SponsorLevel, related_name='sponsors')
     logo = models.FileField(upload_to='sponsor_logos')
-    logo_small = models.FileField(upload_to='sponsor_logos/small')
     description = models.TextField()
     priority = models.IntegerField()
 

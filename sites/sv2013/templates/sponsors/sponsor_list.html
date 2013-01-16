@@ -30,6 +30,7 @@
         </div>
     </div>
 {% for level in levels %}
+{% if level.sponsors.all %}
     <h4 style="text-align: center"> {{ level.name|upper }} </h4>
     <div class="row">
         {% for sponsor in level.sponsors.all %}
@@ -45,7 +46,7 @@
                             <div class="accordion-inner">
                                 <h5>{{ sponsor.name }}</h5>
                                 <p><a href="{{ sponsor.url }}">{{ sponsor.url }}</a></p>
-                                {{ sponsor.description }}
+                                {{ sponsor.description|safe }}
                         	</div>
                         </div>
                     </div>
@@ -54,6 +55,7 @@
         </div>
         {% endfor %}
     </div>
+{% endif %}
 {% endfor %}
 </div>
 {% endblock %}
