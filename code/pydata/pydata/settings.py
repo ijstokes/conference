@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'pages',
     'speakers',
     'sponsors',
+    'schedule',
 )
 
 # A sample logging configuration. The only tangible logging
