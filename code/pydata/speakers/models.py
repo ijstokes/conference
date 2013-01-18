@@ -1,34 +1,28 @@
 from django.db import models
-from django import forms
-from django.contrib.auth.models import User
 
 
 class Speaker(models.Model):
-    user = models.OneToOneField(User)
-    bio = models.TextField()
+    name = models.CharField(max_length=100)
+    bio = models.TextField(blank=True, null=True)
+    organization = models.CharField(max_length=100, blank=True, null=True)
+    image = models.FileField(upload_to='speakers', blank=True, null=True)
+
+    def __unicode__(self):
+        return self.name
 
 
-class Proposal(models.Model):
-    speaker_name = models.CharField(max_length=150)
-    speaker_email = models.EmailField()
+class Presentation(models.Model):
     title = models.CharField(max_length=255)
     abstract = models.TextField()
-    bio = models.TextField()
-    additional_info = models.TextField(blank=True)
-    date_submitted = models.DateTimeField(auto_now_add=True)
-    last_modified = models.DateTimeField(auto_now=True)
+    speaker = models.ManyToManyField(Speaker)
     active = models.BooleanField(default=True)
+    additional_info = models.TextField(blank=True)
 
+    def __unicode__(self):
+        return self.title
 
-class ProposalForm(forms.ModelForm):
-    class Meta:
-        model = Proposal
-
-
-class oldProposalForm(forms.Form):
-    full_name = forms.CharField(max_length=50, label='Your Name')
-    email = forms.EmailField(label='Email Address')
-    title = forms.CharField(max_length=255, label='Title of Presentation')
-    abstract = forms.CharField(widget=forms.Textarea, label='Abstract of Presentation')
-    bio = forms.CharField(widget=forms.Textarea, label='Your Bio')
-    additional = forms.CharField(widget=forms.Textarea, label='Any additional information', required=False)
+    def get_speakers(self):
+        to_output = []
+        for item in self.speaker.values('name'):
+            to_output.append(item['name'])
+        return to_output

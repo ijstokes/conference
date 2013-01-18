@@ -16,14 +16,16 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^speakers/propose/view$', 'speakers.views.view_proposal'),
-    url(r'^speakers/propose/view/(?P<id>.+)$', 'speakers.views.view_proposal'),
-    url(r'^speakers/propose/edit/(?P<id>.+)$', 'speakers.views.submit_proposal'),
-    url(r'^speakers/propose/$', 'speakers.views.submit_proposal'),
+    # url(r'^speakers/propose/view$', 'speakers.views.view_proposal'),
+    # url(r'^speakers/propose/view/(?P<id>.+)$', 'speakers.views.view_proposal'),
+    # url(r'^speakers/propose/edit/(?P<id>.+)$', 'speakers.views.submit_proposal'),
+    # url(r'^speakers/propose/$', 'speakers.views.submit_proposal'),
 
 
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*sponsor/sponsors$', 'sponsors.views.show_all_sponsors'),
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*sponsor/info$', 'sponsors.views.sponsor_info'),
+
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*schedule/(?P<sectionday>\d\d?)$', 'schedule.views.show_schedule'),
 
     url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
     url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<conf_style>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
