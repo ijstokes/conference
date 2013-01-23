@@ -500,7 +500,7 @@ nav#slider-nav a.activeSlide {
 
 /* Schedule */
 .sch_head {
-	background-color: #0CF;
+	background-color: #29D0FF;
 }
 
 table.sch_head td {
@@ -512,11 +512,6 @@ table.sch_head td {
 	width: 80px;
 }
 
-.sch_keynote {
-	background-color: #FEFFB6;
-	
-}
-
 .sch_registration {
 	background-color: #E0E0E0;
 	text-align: center;
@@ -526,16 +521,30 @@ table.sch_head td {
 	text-align: center;
 }
 
-.sch_talk {
-	width: 100px;
+.sch_talk, .sch_advanced-tutorial {
+	background-color: #FED5AD;
 }
 
 .sch_speaker {
-	text-align: ;
+	text-align: center;
 }
 
 .sch_title {
-	text-align: ;
+	text-align: center;
+}
+
+.sch_lunch, .sch_break-snacks{
+	background-color: #E0E0E0;
 }
 
 
+.sch_lightning-talks, .sch_closing-remarks, .sch_keynote{
+	background-color: #FEFFB6;
+}
+
+
+	
+
+table, th, td {
+	border: 2px solid #CCC;
+}
