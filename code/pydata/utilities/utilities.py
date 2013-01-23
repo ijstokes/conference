@@ -1,5 +1,5 @@
 from os import popen
-from django.template import Context
+from django.template import RequestContext
 
 MAIL = '/usr/sbin/sendmail'
 
@@ -23,7 +23,7 @@ Subject: {2}
 
 def get_base_out_vars(request, **kwargs):
 
-    output = Context({})
+    output = RequestContext(request, {})
     output['conf_id'] = kwargs.get('conf', 'sv2013')
     output['conf_style_id'] = kwargs.get('conf_style', output['conf_id'])
     output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
