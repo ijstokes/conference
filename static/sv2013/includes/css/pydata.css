@@ -509,6 +509,7 @@ table.sch_head td {
 
 .time_slot {
 	background-color: #CCC;
+	width: 80px;
 }
 
 .sch_keynote {
@@ -526,7 +527,7 @@ table.sch_head td {
 }
 
 .sch_talk {
-	width: 50px;
+	width: 100px;
 }
 
 .sch_speaker {
