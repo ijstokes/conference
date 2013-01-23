@@ -497,3 +497,13 @@ nav#slider-nav a.activeSlide {
 	margin-top: -5px;
 	margin-left: 5px;
 }
+
+/* Schedule */
+.sch_head {
+	background-color: #0CF;
+}
+
+.time_slot {
+	background-color: #CCC;
+}
+

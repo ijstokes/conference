@@ -1,3 +1,4 @@
+<link href="../../../../static/sv2013/includes/css/pydata.css" rel="stylesheet" type="text/css" />
 {% extends 'sv2013/templates/noside_wrapper.html'%}
 {% block main_content %}
 <h2>Schedule for {{ sectionDay.get_name }} ({{ sectionDay.get_date }})</h2>
@@ -15,7 +16,7 @@
             <tbody>
                 {% for slot in slots %}
                     <tr>
-                        <td class="time_slot">{{ slot.start_time|date:'g:i' }} - {{ slot.end_time|date:'g:i a' }}</td>
+                        <td class="time_slot">{{ slot.start_time|date:'g:i a' }}</td>
                         {% for item in slot.scheduleditem_set.all %}
                             {% if not item.track %} 
                         <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ tracks|length }}">
