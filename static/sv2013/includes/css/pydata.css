@@ -503,7 +503,38 @@ nav#slider-nav a.activeSlide {
 	background-color: #0CF;
 }
 
+table.sch_head td {
+	text-align: center;
+}
+
 .time_slot {
 	background-color: #CCC;
 }
+
+.sch_keynote {
+	background-color: #FEFFB6;
+	
+}
+
+.sch_registration {
+	background-color: #E0E0E0;
+	text-align: center;
+}
+
+.sch_content {
+	text-align: center;
+}
+
+.sch_talk {
+	width: 50px;
+}
+
+.sch_speaker {
+	text-align: ;
+}
+
+.sch_title {
+	text-align: ;
+}
+
 
