@@ -29,6 +29,7 @@ urlpatterns = patterns('',
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*schedule/$', 'schedule.views.show_schedule_all'),
 
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*speakers/$', 'speakers.views.view_speakers'),
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*abstracts/$', 'speakers.views.view_abstracts'),
 
 
     url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),

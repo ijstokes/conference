@@ -6,13 +6,15 @@ from utilities.utilities import get_base_out_vars
 
 def view_speakers(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
-    output['speakers'] = Speaker.objects.all()
+    speakers = Speaker.objects.exclude(presentation__scheduleditem__itemType__name='Keynote')
+    output['speakers'] = speakers.exclude(name="TBD")
 
     return render_to_response('sv2013/templates/speaking/bios.html', output)
 
 
 def view_abstracts(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
-    output['abstracts'] = Presentation.objects.all()
+    abstracts = Presentation.objects.exclude(scheduleditem__itemType__name='Keynote')
+    output['abstracts'] = abstracts.exclude(title="Waiting for confirmation.")
 
-    return render_to_response('sv2013/templates/speaking/abstracts', output)
+    return render_to_response('sv2013/templates/speaking/abstracts.html', output)
