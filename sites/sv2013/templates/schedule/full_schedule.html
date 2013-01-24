@@ -1,25 +1,30 @@
 {% extends 'sv2013/templates/noside_wrapper.html'%}
 {% block main_content %}
-<h2>Schedule for {{ sectionDay.get_name }} ({{ sectionDay.get_date }})</h2>
-{% if user.is_authenticated %}Hello {{ user.get_full_name }}{% endif %}
-<hr />
+<h2>Schedule</h2>
+    <hr />
+{% for section in sections %}
+
+<h3>{{ section.name }}</h3>
+{% if section.name = "Tutorials" %}<h4>Coming soon</h4>{% else %}
+{% for sectionDay in section.sectionday_set.all %}
+<h4>Schedule for {{ sectionDay.get_date }}</h4>
 <div class="span12">
     <div class="box">
         <div class="box-content">  
             <table class="table">
             <thead class="sch_head">   <tr>
                 <td><b>Time</b></td>
-                {% for track in tracks %}
+                {% for track in sectionDay.get_tracks %}
                     <td style=" text-align: center; width: inherit; "><b>{{ track.name }}</b></td>
                 {% endfor %}
             </tr></thead>
             <tbody>
-                {% for slot in slots %}
+                {% for slot in sectionDay.timeslot_set.all %}
                     <tr>
                         <td class="time_slot"><b>{{ slot.start_time|date:'g:i a' }}</b></td>
                         {% for item in slot.scheduleditem_set.all %}
                             {% if not item.track %} 
-                        <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ tracks|length }}">
+                        <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ sectionDay.get_tracks|length }}">
                             {% elif item.num_slots > 1 %}
                         <td class="sch_{{ item.itemType.name|slugify }}" rowspan="{{ item.num_slots }}">
                             {% else %}
@@ -28,17 +33,20 @@
                             {% if item.presentation %}
                             <div class="sch_speaker">
                             {% for speaker in item.presentation.speaker.all %}
-                            {% if forloop.last and not forloop.first %}and {% endif %}{{ speaker.name }}{% if not forloop.last %}, {% endif %}
+                            {% if item.itemType.name = "Keynote" %}<a href="/speakers/bios">{{ speaker.name }}</a>{% else %}<a href="/speakers/#{{speaker.id}}">{{ speaker.name }}</a>{% endif %}{% if not forloop.last %},{% endif %}
                             {% endfor %}
                             </div>
-                                <div class="sch_title">{{ item.presentation.title }}</div>
+                                <div class="sch_title">
+                                {% if item.itemType.name = "Keynote" %}
+                                    {{ item.presentation.title }}
+                                {% else %}
+                                    <a href="/abstracts/#{{ item.presentation.id }}">{{ item.presentation.title }}</a>
+                                {% endif %}
+                                </div>
                             {% elif item.content_override%}
                                 <div class="sch_content">{{ item.content_override }}</div>
                             {% else %}
                                 <div class="sch_content">{{ item.itemType.name }}</div>
-                            {% endif %}
-                            {% if user.is_staff %}
-                                <em>{{ item.track }}</em>
                             {% endif %}
                         </td>
                         {% endfor %}
@@ -48,4 +56,7 @@
         </div>
     </div>
 </div>
+{% endfor %}
+{% endif %}
+{% endfor %}
 {% endblock %}

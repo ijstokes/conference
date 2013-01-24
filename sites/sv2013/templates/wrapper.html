@@ -13,19 +13,18 @@
     {% endblock header %}
 	<div class="container">
 		<div class="row">
-            
-            {% block main_content %}
+
             <div class="span8">
+            {% block main_content %}
                 {% include page_path %}
-            </div>
             {% endblock main_content %}
-            
-            {% block sidebar %}
-            <div class="span4">
-            	{% include sidebar %}
             </div>
-            {% endblock sidebar %}
             
+            <div class="span4">
+            {% block sidebar %}
+            	{% include sidebar %}
+            {% endblock sidebar %}
+            </div>
         </div>
          <hr>
         {% block footer %}
@@ -36,5 +35,11 @@
     
     
     {% include scripts %}
+    <script type="text/javascript">
+		$(document).ready(function () {
+			console.log(location.hash)
+		  location.hash && $(location.hash + '_.collapse').collapse('show');
+		});
+	</script>
 </body>
 </html>

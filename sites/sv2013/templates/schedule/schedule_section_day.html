@@ -1,6 +1,6 @@
 {% extends 'sv2013/templates/noside_wrapper.html'%}
 {% block main_content %}
-<h2>Schedule for {{ sectionDay.get_name }} ({{ sectionDay.get_date }})</h2>
+<h2>Schedule for {{ sectionDay.get_date }}</h2>
 {% if user.is_authenticated %}Hello {{ user.get_full_name }}{% endif %}
 <hr />
 <div class="span12">
@@ -8,18 +8,18 @@
         <div class="box-content">  
             <table class="table">
             <thead class="sch_head">   <tr>
-                <td><b>Time</b></td>
-                {% for track in tracks %}
-                    <td style=" text-align: center; width: inherit; "><b>{{ track.name }}</b></td>
+                <td>Time</td>
+                {% for track in sectionDay.get_tracks %}
+                    <td>{{ track.name }}</td>
                 {% endfor %}
             </tr></thead>
             <tbody>
-                {% for slot in slots %}
+                {% for slot in slots|dictsort:'start_time' %}
                     <tr>
-                        <td class="time_slot"><b>{{ slot.start_time|date:'g:i a' }}</b></td>
-                        {% for item in slot.scheduleditem_set.all %}
+                        <td class="time_slot">{{ slot.start_time|date:'g:i a' }}</td>
+                        {% for item in slot.scheduleditem_set.all %} 
                             {% if not item.track %} 
-                        <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ tracks|length }}">
+                        <td class="sch_span sch_{{ item.itemType.name|slugify }}" colspan="{{ sectionDay.get_tracks|length }}">
                             {% elif item.num_slots > 1 %}
                         <td class="sch_{{ item.itemType.name|slugify }}" rowspan="{{ item.num_slots }}">
                             {% else %}

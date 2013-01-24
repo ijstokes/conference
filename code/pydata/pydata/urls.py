@@ -25,7 +25,12 @@ urlpatterns = patterns('',
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*sponsor/sponsors$', 'sponsors.views.show_all_sponsors'),
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*sponsor/info$', 'sponsors.views.sponsor_info'),
 
-    url(r'^(?:[a-zA-Z]{2}\d{4}/)*schedule/(?P<sectionday>\d\d?)$', 'schedule.views.show_schedule'),
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*schedule/(?P<sectionday>\d\d?)$', 'schedule.views.show_schedule_sectionDay'),
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*schedule/$', 'schedule.views.show_schedule_all'),
+
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*speakers/$', 'speakers.views.view_speakers'),
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*abstracts/$', 'speakers.views.view_abstracts'),
+
 
     url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
     url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<conf_style>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),

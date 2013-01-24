@@ -5,19 +5,53 @@
             <span class="in-brackets"><em>Sponsorship available.</em> <a href="/sponsor/info" class="more">Learn more</a>.</span>
 	  	</div>
     </div>
+    
     <div id="sponsorslider" class="carousel slide">
-        <!-- Carousel items -->
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        {# sponsors without levels, 21 per each slide #}
+        {% for sponsor in all_sponsors %}
+            {% if forloop.first or forloop.counter0|divisibleby:"21" %}
+                <div class="item {% if forloop.first %}active{% endif %}" style="margin: auto;">
+            {% endif %}
+            <a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
+                <div class="sponsor-scroll-item" style="background-image: url('{{ sponsor.logo.url }}')" data-background-2x="{{ sponsor.logo.url }}"></div>
+            </a>
+            {% if forloop.counter|divisibleby:"21" or forloop.last %}</div>{% endif %}
+        {% endfor %}
+      </div>
+      <!-- Carousel nav -->
+      <nav id="slider-nav">
+        {% spaceless %}
+        {% for sponsor in all_sponsors %}
+            {% if forloop.first or forloop.counter0|divisibleby:"21" %}
+                <a href="#" class="{% if forloop.first %}activeSlide{% endif %}"></a>
+            {% endif %}
+        {% endfor %}
+        {% endspaceless %}
+      </nav>
+    </div>
+</div>
+
+
+
+<!--<div class="span12 sponsor-crawl">
+    <h3 class="scroll-title">Sponsors</h3>
+    <div class="sponsorship-link">
+        <div>
+            <span class="in-brackets"><em>Sponsorship available.</em> <a href="/sponsor/info" class="more">Learn more</a>.</span>
+	  	</div>
+    </div>
+    <div id="sponsorslider" class="carousel slide">
+        <!-- Carousel items -
         <div class="carousel-inner">
             <div class="item" style="margin: auto;">
-                <a href="http://continuum.io/" title="Continuum Analytics, Inc.">
-                	<div class="sponsor-scroll-item" style="background-image: url(' /static/sv2013/includes/images/continuum_analytics_colour2.png.95x95_q85.png');" data-background-2x=></div>
-                </a>
-                <a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
+				<a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
                 	<div class="sponsor-scroll-item" style="background-image: url({{ sponsor.logo.url }});" data-background-2x="{{ sponsor.logo.url }}"></div>
                 </a>
             </div>
         </div>
-        <!-- Carousel nav -->
+        <!-- Carousel nav --
      
         <nav id="slider-nav">
             <a href="#" class=""></a>
@@ -27,6 +61,6 @@
             <a href="#" class=""></a>
         </nav>
     </div>
-</div>
+</div>-->
 <hr>
 
