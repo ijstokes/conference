@@ -1,28 +1,30 @@
 {% extends 'sv2013/templates/wrapper.html'%}
 {% block main_content %}
-<h2>Speaker Bios</h2>
-<p><i>(click on the speaker name or photo to view speaker details)</i></p>
-<hr />
-{% for speaker in speakers %}
-<div class="box">
-	<div class="box-content">
-        <div class="accordion-group">
-            <div class="accordion-heading bio">
-              <a name="#{{ speaker.id }}" class="accordion-toggle" data-toggle="collapse" href="#{{ speaker.id }}">
-                {% if speaker.image %}<img class="bioimg" src="{{ speaker.image.url }}" />{% endif %}
-                <h4>{{ speaker.name }}</h4></a>
-                {% if speaker.organization %}{{ speaker.organization }}<br/>{% endif %}
-                {% for presentation in speaker.presentation_set.all %}
-                    {{ presentation.title }}{% if not forloop.last %}, {% endif %}
-                {% endfor %}
-            </div>
-            <div id="speaker.name|slugify" class="accordion-body collapse">
-                <div class="accordion-inner">
-                    {{ speaker.bio|safe }}
+<div class="span8">
+    <h2>Speaker Bios</h2>
+    <p><i>(click on the speaker name or photo to view speaker details)</i></p>
+    <hr />
+    {% for speaker in speakers %}
+    <div class="box">
+        <div class="box-content">
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a name="#{{ speaker.id }}" class="accordion-toggle" data-toggle="collapse" href="#{{ speaker.id }}">
+                    {% if speaker.image %}<img class="bioimg" src="{{ speaker.image.url }}" />{% endif %}
+                    <h4>{{ speaker.name }}</h4></a>
+                    {% if speaker.organization %}{{ speaker.organization }}<br/>{% endif %}
+                    {% for presentation in speaker.presentation_set.all %}
+                        {{ presentation.title }}{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </div>
+                <div id="{{ speaker.id }}" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        {{ speaker.bio|safe }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+	{% endfor %}
 </div>
-{% endfor %}
 {% endblock %}
