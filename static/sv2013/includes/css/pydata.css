@@ -509,7 +509,7 @@ table.sch_head td {
 
 .time_slot {
 	background-color: #CCC;
-	width: 80px;
+	width: 10%;
 }
 
 .sch_registration {
@@ -523,6 +523,7 @@ table.sch_head td {
 
 .sch_talk, .sch_advanced-tutorial {
 	background-color: #FED5AD;
+	width: 30%;
 }
 
 .sch_speaker {
@@ -544,4 +545,9 @@ table.sch_head td {
 
 table, th, td {
 	border: 2px solid #AFAFAF;
+}
+
+.sch_tutorial{
+	background-color:#D5FFD4;
+	width: 45%;
 }

@@ -1,10 +1,12 @@
 {% extends 'sv2013/templates/noside_wrapper.html'%}
 {% block main_content %}
+<h2>Schedule</h2>
+    <hr />
 {% for section in sections %}
-<h2>{{ section.name }}</h2>
-<hr />
+
+<h3>{{ section.name }}</h3>
 {% for sectionDay in section.sectionday_set.all %}
-<h3>Schedule for {{ sectionDay.get_date }}</h3>
+<h4>Schedule for {{ sectionDay.get_date }}</h4>
 <div class="span12">
     <div class="box">
         <div class="box-content">  
