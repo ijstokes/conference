@@ -35,6 +35,8 @@ def wrap_page(request, **kwargs):
     wrapper_template = DEFAULT_WRAPPER
     if output['page_id'] == 'home':
         wrapper_template = HOME_WRAPPER
+        from sponsors.models import Sponsor
+        output['all_sponsors'] = Sponsor.objects.filter(level__conference=1)
         has_side = False
     if output['page_id'] in NO_SIDE:
         wrapper_template = NOSIDE_WRAPPER

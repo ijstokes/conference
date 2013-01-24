@@ -10,11 +10,10 @@
       <!-- Carousel items -->
       <div class="carousel-inner">
         {# sponsors without levels, 21 per each slide #}
-        {% for sponsor in level.sponsors.all %}
+        {% for sponsor in all_sponsors %}
             {% if forloop.first or forloop.counter0|divisibleby:"21" %}
                 <div class="item {% if forloop.first %}active{% endif %}" style="margin: auto;">
             {% endif %}
-
             <a href="{{ sponsor.url }}" title="{{ sponsor.name }}">
                 <div class="sponsor-scroll-item" style="background-image: url('{{ sponsor.logo.url }}')" data-background-2x="{{ sponsor.logo.url }}"></div>
             </a>
@@ -23,11 +22,13 @@
       </div>
       <!-- Carousel nav -->
       <nav id="slider-nav">
+        {% spaceless %}
         {% for sponsor in all_sponsors %}
             {% if forloop.first or forloop.counter0|divisibleby:"21" %}
                 <a href="#" class="{% if forloop.first %}activeSlide{% endif %}"></a>
             {% endif %}
         {% endfor %}
+        {% endspaceless %}
       </nav>
     </div>
 </div>
