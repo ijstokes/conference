@@ -19,7 +19,7 @@
                         {% for item in slot.scheduleditem_set.all %}
                             {% if not item.track %} 
                         <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ tracks|length }}">
-                            {% elif item.numslots > 1 %}
+                            {% elif item.num_slots > 1 %}
                         <td class="sch_{{ item.itemType.name|slugify }}" rowspan="{{ item.num_slots }}">
                             {% else %}
                         <td class="sch_{{ item.itemType.name|slugify }}">
