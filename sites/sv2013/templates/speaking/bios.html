@@ -13,7 +13,8 @@
                     <h4>{{ speaker.name }}</h4></a>
                     {% if speaker.organization %}{{ speaker.organization }}<br/>{% endif %}
                     {% for presentation in speaker.presentation_set.all %}
-                        {{ presentation.title }}{% if not forloop.last %}, {% endif %}
+                    <a href="/abstracts/#{{presentation.id}}">{{ presentation.title }}</a>
+                        {% if not forloop.last %}, {% endif %}
                     {% endfor %}
                 </div>
                 <div id="{{ speaker.id }}" class="accordion-body collapse">
