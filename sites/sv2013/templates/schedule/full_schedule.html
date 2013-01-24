@@ -32,10 +32,16 @@
                             {% if item.presentation %}
                             <div class="sch_speaker">
                             {% for speaker in item.presentation.speaker.all %}
-                                {{ speaker.name }}{% if not forloop.last %},{% endif %}
+                            {% if item.itemType.name = "Keynote" %}<a href="/speakers/bios">{{ speaker.name }}</a>{% else %}<a href="/speakers/#{{speaker.id}}">{{ speaker.name }}</a>{% endif %}{% if not forloop.last %},{% endif %}
                             {% endfor %}
                             </div>
-                                <div class="sch_title">{{ item.presentation.title }}</div>
+                                <div class="sch_title">
+                                {% if item.itemType.name = "Keynote" %}
+                                    {{ item.presentation.title }}
+                                {% else %}
+                                    <a href="/abstracts/#{{ item.presentation.id }}">{{ item.presentation.title }}</a>
+                                {% endif %}
+                                </div>
                             {% elif item.content_override%}
                                 <div class="sch_content">{{ item.content_override }}</div>
                             {% else %}

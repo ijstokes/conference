@@ -12,10 +12,10 @@
                     {% if speaker.image %}<img class="bioimg" src="{{ speaker.image.url }}" />{% endif %}
                     <h4>{{ speaker.name }}</h4></a>
                     {% if speaker.organization %}{{ speaker.organization }}<br/>{% endif %}
-                    {% for presentation in speaker.presentation_set.all %}
+                    <h5>{% for presentation in speaker.presentation_set.all %}
                     <a href="/abstracts/#{{presentation.id}}">{{ presentation.title }}</a>
                         {% if not forloop.last %}, {% endif %}
-                    {% endfor %}
+                    {% endfor %}</h5>
                 </div>
                 <div id="{{ speaker.id }}" class="accordion-body collapse">
                     <div class="accordion-inner">
