@@ -12,9 +12,39 @@ class Section(models.Model):
         return self.name
 
 
+class Track(models.Model):
+    name = models.CharField(max_length=30)
+    description = models.TextField()
+
+    def __unicode__(self):
+        return self.name
+
+
+class TimeSlot(models.Model):
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    sectionDay = models.ForeignKey('SectionDay')
+
+    class Meta():
+        ordering = ['start_time']
+
+    def __unicode__(self):
+        return self.name()
+
+    def name(self):
+        time_format = '%I:%M'
+        day = self.sectionDay.get_name()
+        start_time = self.start_time.strftime(time_format)
+        end_time = self.end_time.strftime(time_format)
+        return '{0} {1} - {2}'.format(day, start_time, end_time)
+
+
 class SectionDay(models.Model):
     section = models.ForeignKey(Section)
     day = models.IntegerField()
+
+    class Meta:
+        ordering = ['day']
 
     def __unicode__(self):
         return self.get_name()
@@ -27,21 +57,13 @@ class SectionDay(models.Model):
         date = self.section.start_day + timedelta(days=day_diff)
         return date
 
+    def get_tracks(self):
+        tracks = Track.objects.filter(scheduleditem__timeSlot__sectionDay__exact=self.id).distinct()
+        return tracks
 
-class TimeSlot(models.Model):
-    start_time = models.TimeField()
-    end_time = models.TimeField()
-    sectionDay = models.ForeignKey(SectionDay)
-
-    def __unicode__(self):
-        return self.name()
-
-    def name(self):
-        time_format = '%I:%M'
-        day = self.sectionDay.get_name()
-        start_time = self.start_time.strftime(time_format)
-        end_time = self.end_time.strftime(time_format)
-        return '{0} {1} - {2}'.format(day, start_time, end_time)
+    # def get_times(self):
+    #     times = TimeSlot.objects.filter(scheduleditem__timeSlot__sectionDay__exact=self.id).order_by('start_time')
+    #     return times
 
 
 class RoomUseType(models.Model):
@@ -63,14 +85,6 @@ class Room(models.Model):
         return self.name
 
 
-class Track(models.Model):
-    name = models.CharField(max_length=30)
-    description = models.TextField()
-
-    def __unicode__(self):
-        return self.name
-
-
 class ScheduledItemType(models.Model):
     name = models.CharField(max_length=25)
 
@@ -85,6 +99,9 @@ class ScheduledItem(models.Model):
     track = models.ForeignKey(Track, blank=True, null=True)
     room = models.ForeignKey(Room, blank=True, null=True)
     presentation = models.ForeignKey(Presentation, blank=True, null=True)
+
+    class Meta:
+        ordering = ['timeSlot', 'track']
 
     def __unicode__(self):
         if not self.presentation:

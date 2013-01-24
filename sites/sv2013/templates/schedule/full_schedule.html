@@ -1,0 +1,52 @@
+{% extends 'sv2013/templates/noside_wrapper.html'%}
+{% block main_content %}
+{% for section in sections %}
+<h2>{{ section.name }}</h2>
+<hr />
+{% for sectionDay in section.sectionday_set.all %}
+<h3>Schedule for {{ sectionDay.get_date }}</h3>
+<div class="span12">
+    <div class="box">
+        <div class="box-content">  
+            <table class="table">
+            <thead class="sch_head">   <tr>
+                <td><b>Time</b></td>
+                {% for track in sectionDay.get_tracks %}
+                    <td style=" text-align: center; width: inherit; "><b>{{ track.name }}</b></td>
+                {% endfor %}
+            </tr></thead>
+            <tbody>
+                {% for slot in sectionDay.timeslot_set.all %}
+                    <tr>
+                        <td class="time_slot"><b>{{ slot.start_time|date:'g:i a' }}</b></td>
+                        {% for item in slot.scheduleditem_set.all %}
+                            {% if not item.track %} 
+                        <td class="sch_{{ item.itemType.name|slugify }}" colspan="{{ sectionDay.get_tracks|length }}">
+                            {% elif item.num_slots > 1 %}
+                        <td class="sch_{{ item.itemType.name|slugify }}" rowspan="{{ item.num_slots }}">
+                            {% else %}
+                        <td class="sch_{{ item.itemType.name|slugify }}">
+                            {% endif %} 
+                            {% if item.presentation %}
+                            <div class="sch_speaker">
+                            {% for speaker in item.presentation.speaker.all %}
+                                {{ speaker.name }}{% if not forloop.last %},{% endif %}
+                            {% endfor %}
+                            </div>
+                                <div class="sch_title">{{ item.presentation.title }}</div>
+                            {% elif item.content_override%}
+                                <div class="sch_content">{{ item.content_override }}</div>
+                            {% else %}
+                                <div class="sch_content">{{ item.itemType.name }}</div>
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody></table>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endfor %}
+{% endblock %}

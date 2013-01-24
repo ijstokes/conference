@@ -7,6 +7,9 @@ class Speaker(models.Model):
     organization = models.CharField(max_length=100, blank=True, null=True)
     image = models.FileField(upload_to='speakers', blank=True, null=True)
 
+    class Meta:
+        ordering = ['name']
+
     def __unicode__(self):
         return self.name
 
@@ -17,6 +20,9 @@ class Presentation(models.Model):
     speaker = models.ManyToManyField(Speaker)
     active = models.BooleanField(default=True)
     additional_info = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ['title']
 
     def __unicode__(self):
         return self.title
