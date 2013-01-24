@@ -534,6 +534,10 @@ table.sch_head td {
 	text-align: center;
 }
 
+.sch_title > a {
+	color: black;
+}
+
 .sch_lunch, .sch_break-snacks{
 	background-color: #E0E0E0;
 }
