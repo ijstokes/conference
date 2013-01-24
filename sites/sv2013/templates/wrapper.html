@@ -13,21 +13,18 @@
     {% endblock header %}
 	<div class="container">
 		<div class="row">
-            
-            {% block main_content %}
+			
             <div class="span8">
+            {% block main_content %}
                 {% include page_path %}
-            </div>
             {% endblock main_content %}
+            </div>
             
-            {% block sidebar %}
             <div class="span4">
             	{% include sidebar %}
             </div>
-            {% endblock sidebar %}
-            
         </div>
-         <hr>
+        <hr>
         {% block footer %}
         {% include footer %}
     	{% endblock footer %}
