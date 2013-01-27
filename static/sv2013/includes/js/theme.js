@@ -2,11 +2,11 @@ $(function() {
     // Topbar active tab support
     $(".topbar li").removeClass("active");
     
-    var class_list = $("body").attr("class").split(/\s+/);
-    $.each(class_list, function(index, item) {
-        var selector = "ul.nav li#tab_" + item;
-        $(selector).addClass("active");
-    });
+//    var class_list = $("body").attr("class").split(/\s+/);
+//    $.each(class_list, function(index, item) {
+//        var selector = "ul.nav li#tab_" + item;
+//        $(selector).addClass("active");
+//    });
 });
 
 $(document).ajaxSend(function(event, xhr, settings) {

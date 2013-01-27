@@ -1,6 +1,6 @@
-from speakers.models import Speaker, Proposal
+from speakers.models import Speaker, Presentation
 from django.contrib import admin
 
 
 admin.site.register(Speaker)
-admin.site.register(Proposal)	
+admin.site.register(Presentation)

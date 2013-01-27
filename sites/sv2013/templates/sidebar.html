@@ -1,20 +1,17 @@
-<div style="text-align: center; margin-top: 100px">
+<!--<div style="text-align: center; margin-top: 100px">
     <h4>Presented By</h4>
     <h2><a href="http://continuum.io"><img src="/static/sv2013/includes/images/ca190w.png" /></a></h2>
-</div>
-
-
-
-<!--<div style="margin-left: 20px;">
-    <h2>Sponsors    </h2>
-    <h4>PLATINUM</h4>
-    
-    <h4>GOLD</h4>
-    
-    <h4>SILVER</h4>
-    
-    <h4>STUDENT</h4>
-    
-    <h4>MEDIA</h4>
 </div>-->
+
+<div style="margin-left: 20px; text-align: center; margin-top: 100px;">
+    <h3>Sponsors</h3>
+    {% for level in levels %}
+    {% if level.sponsors.all %}
+    <h4>{{ level.name|upper }}</h4>
+    {% for sponsor in level.sponsors.all %}
+    <h4><a href="{{sponsor.url}}"><img style="width: 50%;" src="{{ sponsor.logo.url }}" height="{{ level.small_logo_height }}"/></a></h4>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+</div>
     

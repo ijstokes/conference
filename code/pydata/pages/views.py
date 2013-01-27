@@ -13,7 +13,7 @@ HOME_WRAPPER = '/templates/home_wrapper.html'
 NOSIDE_WRAPPER = '/templates/noside_wrapper.html'
 EDIT_WRAPPER = '/templates/edit_page.html'
 
-NO_SIDE = ['venue', 'sponsor/sponsors']
+NO_SIDE = ['venue', 'sponsor/sponsors', ]
 
 
 @csrf_exempt
@@ -34,12 +34,21 @@ def wrap_page(request, **kwargs):
 
     output['page_path'] = output['conf_id'] + '/pages/' + file_name
 
+    has_side = True
     ## Decide which wrapper to use
     wrapper_template = DEFAULT_WRAPPER
     if output['page_id'] == 'home':
         wrapper_template = HOME_WRAPPER
+        from sponsors.models import Sponsor
+        output['all_sponsors'] = Sponsor.objects.filter(level__conference=1)
+        has_side = False
     if output['page_id'] in NO_SIDE:
         wrapper_template = NOSIDE_WRAPPER
+        has_side = False
+
+    if has_side:
+        from sponsors.models import SponsorLevel
+        output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
     editable = request.GET.get('edit', 0)
 
