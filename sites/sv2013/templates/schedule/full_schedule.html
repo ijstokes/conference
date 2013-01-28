@@ -5,7 +5,6 @@
 {% for section in sections %}
 
 <h3>{{ section.name }}</h3>
-{% if section.name = "Tutorials" %}<h4>Introductory and Advanced Tutorial Tracks Coming Soon</h4>{% else %}
 {% for sectionDay in section.sectionday_set.all %}
 <h4>Schedule for {{ sectionDay.get_date }}</h4>
 <div class="span12">
@@ -57,6 +56,5 @@
     </div>
 </div>
 {% endfor %}
-{% endif %}
 {% endfor %}
 {% endblock %}
