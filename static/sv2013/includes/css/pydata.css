@@ -188,7 +188,7 @@ logo background{
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a{
-	padding: 15px 20px 0px;
+	margin-top: 5px;
 }
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
@@ -376,10 +376,10 @@ ul#slider a .level {
 .sponsor-scroll-item {
 	cursor: pointer;
 	float: left;
-	width: 25%;
+	width: 18%;
 	height: 96px;
 	background: none center center no-repeat;
-	background-size: 150px auto
+	background-size: 100px auto
 }
 .carousel .item {
 	-webkit-transition: .7s ease-in-out opacity;
@@ -462,7 +462,7 @@ nav#slider-nav a.activeSlide {
 
 .sponsor .sponsor-content {
 	border: 3px solid #F7F7F3;
-	padding: 15px;
+	padding: 10px;
 	overflow: auto;
 }
 
@@ -497,6 +497,16 @@ nav#slider-nav a.activeSlide {
 	margin-top: -5px;
 	margin-left: 5px;
 }
+
+
+
+.accordion-heading > h3 {
+	text-align: center;
+	height: 75px;
+}
+
+
+
 
 /* Schedule */
 .sch_head {
