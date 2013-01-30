@@ -40,7 +40,13 @@ def wrap_page(request, **kwargs):
     if output['page_id'] == 'home':
         wrapper_template = HOME_WRAPPER
         from sponsors.models import Sponsor
+        from news.models import NewsItem
+        from datetime import datetime
         output['all_sponsors'] = Sponsor.objects.filter(level__conference=1)
+        news = NewsItem.objects.all()
+        if not request.user.is_staff:
+            news = news.filter(publish=True)
+        output['news'] = news.filter(date__lte=datetime.now())[:5]
         has_side = False
     if output['page_id'] in NO_SIDE:
         wrapper_template = NOSIDE_WRAPPER
@@ -57,7 +63,7 @@ def wrap_page(request, **kwargs):
         page_contents = request.POST['page_contents']
         set_file_contents(output['page_path'], page_contents)
 
-    if editable == '1':
+    if editable == '1' and request.user.is_staff:
         output['page_contents'] = get_file_contents(output['page_path'])
         output['repost_link'] = request.path_info
         template = loader.get_template(output['conf_style_id'] + EDIT_WRAPPER).render(output)

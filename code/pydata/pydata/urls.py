@@ -31,6 +31,9 @@ urlpatterns = patterns('',
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*speakers/$', 'speakers.views.view_speakers'),
     url(r'^(?:[a-zA-Z]{2}\d{4}/)*abstracts/$', 'speakers.views.view_abstracts'),
 
+    url(r'^(?:[a-zA-Z]{2}\d{4}/)*news/$', 'news.views.view_news'),
+
+
 
     url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
     url(r'^(?P<conf>[a-zA-Z]{2}\d{4})/(?P<conf_style>[a-zA-Z]{2}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
