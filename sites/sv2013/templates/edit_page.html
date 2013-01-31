@@ -1,0 +1,11 @@
+{% extends 'sv2013/templates/wrapper.html' %}
+
+{% block main_content %}
+<div class="span8">
+<h2>Editing the page "{{ page_path }}"</h2>
+<form action="{{ repost_link }}" method="POST">
+    <textarea rows=4 cols=50 name="page_contents">{{ page_contents }}</textarea>
+    <button type="submit" name="submit_edit">Make Changes</button>
+</form>
+</div>
+{% endblock %}
