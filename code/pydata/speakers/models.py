@@ -13,6 +13,12 @@ class Speaker(models.Model):
     def __unicode__(self):
         return self.name
 
+    def name_org(self):
+        if self.organization:
+            return "{0} ({1})".format(self.name, self.organization)
+        else:
+            return self.name
+
 
 class Presentation(models.Model):
     title = models.CharField(max_length=255)
