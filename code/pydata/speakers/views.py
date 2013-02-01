@@ -21,3 +21,12 @@ def view_abstracts(request, **kwargs):
     output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
     return render_to_response('sv2013/templates/speaking/abstracts.html', output)
+
+
+def view_keynotes(request, **kwargs):
+    output = get_base_out_vars(request, **kwargs)
+    keynotes = Speaker.objects.filter(presentation__scheduleditem__itemType__name='Keynote')
+    output['keynotes'] = keynotes.order_by('-name')
+    output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
+
+    return render_to_response('sv2013/templates/speaking/keynotes.html', output)

@@ -17,8 +17,7 @@
                 {% endfor %}</h5>
                 <h5>{% for speaker in abstract.speaker.all %}
                     {% if speaker.name = 'TBD' %}{% else %}
-                    <a href="/speakers/#{{speaker.id}}">{{speaker.name}}</a>{% endif %}
-                    {% if not forloop.last %},{% endif %}
+                    <a href="/speakers/#{{speaker.id}}">{{speaker.name}}</a>{% endif %}{% if not forloop.last %},{% endif %}
                 {% endfor %}</h5>
             </div>
             <div id="{{ abstract.id }}_" class="accordion-body collapse">
