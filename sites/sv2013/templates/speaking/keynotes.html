@@ -18,11 +18,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-{% with abstract=speaker.presentation_set.all|first %}
-<div class="box">
-	<div class="box-content">
+        {% with abstract=speaker.presentation_set.all|first %}
         <div class="accordion-group">
             <div class="accordion-heading abstract">
               <a class="accordion-toggle" data-toggle="collapse" href="#abstract_{{ abstract.id }}">
@@ -36,6 +32,8 @@
         </div>
     </div>
 </div>
+
+
 {% endwith %}
 {% endfor %}
 {% endblock %}
