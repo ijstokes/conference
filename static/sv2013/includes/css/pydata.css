@@ -216,7 +216,7 @@ logo background{
 }
 
 /* Sponsors */
-.carousel {
+/*.carousel {
 	position: relative;
 	margin-bottom: 18px;
 	line-height: 1
@@ -313,6 +313,7 @@ logo background{
 .carousel-caption p {
 	margin-bottom: 0
 }
+*/
 .sponsor-crawl {
 	position: relative
 }
@@ -376,7 +377,7 @@ ul#slider a .level {
 .sponsor-scroll-item {
 	cursor: pointer;
 	float: left;
-	width: 18%;
+	width: 14%;
 	height: 96px;
 	background: none center center no-repeat;
 	background-size: 100px auto
