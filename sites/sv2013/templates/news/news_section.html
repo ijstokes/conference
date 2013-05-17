@@ -1,8 +1,0 @@
-{% for item in news %}
-<div class="news_item">
-<h4>{{ item.title }}</h4>
-{% if not item.publish %}<div class="unpublished">Unpublished</div>{% endif %}
-<div class="pub_date">{{ item.date|date:'M d, Y' }}</div>
-{{ item.content|safe }}
-</div>
-{% endfor %}
