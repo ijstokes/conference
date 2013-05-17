@@ -18,12 +18,18 @@
     
 	<div class="container">
 		<div class="row">
+        <!--<div class="span12" style="text-align: center">
+            <h4>Presented by</h4>
+            <h2><a href="http://continuum.io"><img src="/static/base/includes/images/ca190w.png" /></a></h2>-->
+		{% include sponsors %}
+        <hr>
+        </div>
+            
             {% block main_content %}
             <div class="span12">
                 {% include page_path %}
             </div>
             {% endblock main_content %}
-            
         </div>
         <hr>
         <div style="text-align: center">

@@ -24,17 +24,17 @@ Subject: {2}
 def get_base_out_vars(request, **kwargs):
 
     output = RequestContext(request, {})
-    output['conf_id'] = kwargs.get('conf', 'sv2013')
-    output['conf_style_id'] = kwargs.get('conf_style', output['conf_id'])
+    output['conf_id'] = kwargs.get('conference','sv2013')
+    output['conf_style_id'] = kwargs.get('conference', 'sv2013')    
     output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
-    output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
-    output['head'] = output['conf_style_id'] + '/templates/head.html'
-    output['header'] = output['conf_style_id'] + '/templates/header.html'
-    output['smlheader'] = output['conf_style_id'] + '/templates/smlheader.html'
-    output['banner'] = output['conf_style_id'] + '/templates/banner.html'
-    output['scripts'] = output['conf_style_id'] + '/templates/scripts.html'
-    output['sponsors'] = output['conf_style_id'] + '/templates/sponsors.html'
-    output['footer'] = output['conf_style_id'] + '/templates/footer.html'
-    output['sidebar'] = output['conf_style_id'] + '/templates/sidebar.html'
+    output['sponsors'] = 'base/templates/sponsors.html'
+    output['head'] = 'base/templates/head.html'
+    output['header'] = 'base/templates/header.html'
+    output['smlheader'] = 'base/templates/smlheader.html'
+    output['banner'] = 'base/templates/banner.html'
+    output['scripts'] = 'base/templates/scripts.html'
+    output['sponsors'] = 'base/templates/sponsors.html'
+    output['footer'] = 'base/templates/footer.html'
+    output['sidebar'] = 'base/templates/sidebar.html'
 
     return output

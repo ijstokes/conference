@@ -1,5 +1,5 @@
 from django.db import models
-
+from events.models import Conference
 
 class Speaker(models.Model):
     name = models.CharField(max_length=100)
@@ -26,6 +26,7 @@ class Presentation(models.Model):
     speaker = models.ManyToManyField(Speaker)
     active = models.BooleanField(default=True)
     additional_info = models.TextField(blank=True)
+    conference = models.ForeignKey(Conference)
 
     class Meta:
         ordering = ['title']

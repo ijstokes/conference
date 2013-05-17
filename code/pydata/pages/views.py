@@ -32,7 +32,16 @@ def wrap_page(request, **kwargs):
 
     output['title'] = page_name
 
-    output['page_path'] = output['conf_id'] + '/pages/' + file_name
+
+    conference = output['conf_id']
+
+    template_base = 'base'
+
+    if (kwargs.get('about',None)):
+        output['page_path'] =  'pages/about/' + file_name
+    else:
+        output['page_path'] = 'pages/' + file_name
+    
 
     has_side = True
     ## Decide which wrapper to use
@@ -42,7 +51,7 @@ def wrap_page(request, **kwargs):
         from sponsors.models import Sponsor
         from news.models import NewsItem
         from datetime import datetime
-        output['all_sponsors'] = Sponsor.objects.filter(level__conference=1)
+        output['all_sponsors'] = Sponsor.objects.filter(level__conference=1,level__conference__name=conference)
         news = NewsItem.objects.all()
         if not request.user.is_staff:
             news = news.filter(publish=True)
@@ -54,7 +63,7 @@ def wrap_page(request, **kwargs):
 
     if has_side:
         from sponsors.models import SponsorLevel
-        output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
+        output['levels'] = SponsorLevel.objects.filter(conference__exact=1,conference__name=conference)
 
     editable = request.GET.get('edit', 0)
 
@@ -66,13 +75,12 @@ def wrap_page(request, **kwargs):
     if editable == '1' and request.user.is_staff:
         output['page_contents'] = get_file_contents(output['page_path'])
         output['repost_link'] = request.path_info
-        template = loader.get_template(output['conf_style_id'] + EDIT_WRAPPER).render(output)
+        template = loader.get_template(template_base + EDIT_WRAPPER).render(output)
     else:
         try:
-            template = loader.get_template(output['conf_style_id'] + wrapper_template).render(output)
+            template = loader.get_template(template_base + wrapper_template).render(output)
         except TemplateDoesNotExist:
-            output['page_path'] = output['conf_id'] + NOT_FOUND
-            template = loader.get_template(output['conf_style_id'] + NOT_FOUND).render(output)
+            template = loader.get_template('base' + NOT_FOUND).render(output)
 
     response = HttpResponse(template)
 

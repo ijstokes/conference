@@ -7,26 +7,31 @@ from sponsors.models import SponsorLevel
 
 def view_speakers(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
+    conference = kwargs['conference']
     speakers = Speaker.objects.exclude(presentation__scheduleditem__itemType__name='Keynote')
+    speakers = speakers.filter(presentation__conference__name=conference)
     output['speakers'] = speakers.exclude(name="TBD")
     output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
-    return render_to_response('sv2013/templates/speaking/bios.html', output)
+    return render_to_response('base/templates/speaking/bios.html', output)
 
 
 def view_abstracts(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
+    conference = kwargs['conference']
     abstracts = Presentation.objects.exclude(scheduleditem__itemType__name='Keynote')
+    abstracts = abstracts.filter(conference__name=conference)
     output['abstracts'] = abstracts.exclude(title="Waiting for confirmation.")
     output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
-    return render_to_response('sv2013/templates/speaking/abstracts.html', output)
+    return render_to_response('base/templates/speaking/abstracts.html', output)
 
 
 def view_keynotes(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
-    keynotes = Speaker.objects.filter(presentation__scheduleditem__itemType__name='Keynote')
+    conference = kwargs['conference']
+    keynotes = Speaker.objects.filter(presentation__scheduleditem__itemType__name='Keynote',presentation__conference__name=conference)
     output['keynotes'] = keynotes.order_by('-name')
     output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
-    return render_to_response('sv2013/templates/speaking/keynotes.html', output)
+    return render_to_response('base/templates/speaking/keynotes.html', output)

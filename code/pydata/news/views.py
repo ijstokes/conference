@@ -12,4 +12,4 @@ def view_news(request, **kwargs):
     output['news'] = news
     output['levels'] = SponsorLevel.objects.filter(conference__exact=1)
 
-    return render_to_response('sv2013/templates/news/news.html', output)
+    return render_to_response('base/templates/news/news.html', output)
