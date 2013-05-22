@@ -1,5 +1,6 @@
 from django.db import models
 
+from pydata.settings    import CURRENT_CONF_ID
 from events.models import Conference
 
 class Sponsor(models.Model):
@@ -19,7 +20,7 @@ class SponsorLevel(models.Model):
     name                = models.CharField(max_length=50)
     min_amount          = models.IntegerField()
     description         = models.TextField()
-    conference          = models.ForeignKey(Conference)
+    conference          = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
     sponsors             = models.ManyToManyField(Sponsor)
     small_logo_height   = models.IntegerField()
 

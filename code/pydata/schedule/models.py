@@ -2,6 +2,7 @@ from datetime           import timedelta
 
 from django.db          import models
 
+from pydata.settings    import CURRENT_CONF_ID
 from speakers.models    import Presentation
 from events.models      import Conference
 
@@ -9,7 +10,7 @@ class Section(models.Model):
     name        = models.CharField(max_length=30)
     start_day   = models.DateField()
     end_day     = models.DateField()
-    conference  = models.ForeignKey(Conference)
+    conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     def __unicode__(self):
         return self.name
@@ -18,7 +19,7 @@ class Section(models.Model):
 class Track(models.Model):
     name        = models.CharField(max_length=30)
     description = models.TextField()
-    conference  = models.ForeignKey(Conference)
+    conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     def __unicode__(self):
         return self.name
@@ -28,7 +29,7 @@ class TimeSlot(models.Model):
     start_time  = models.TimeField()
     end_time    = models.TimeField()
     sectionDay  = models.ForeignKey('SectionDay')
-    conference  = models.ForeignKey(Conference)
+    conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     class Meta():
         ordering = ['start_time']
@@ -47,7 +48,7 @@ class TimeSlot(models.Model):
 class SectionDay(models.Model):
     section     = models.ForeignKey(Section)
     day         = models.IntegerField()
-    conference  = models.ForeignKey(Conference)
+    conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     class Meta:
         ordering = ['day']
@@ -86,7 +87,7 @@ class Room(models.Model):
     capacity    = models.IntegerField(blank=True, null=True)
     map_image   = models.FileField(upload_to='rooms', blank=True, null=True)
     notes       = models.TextField(blank=True, null=True)
-    conference  = models.ForeignKey(Conference)
+    conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
 
     def __unicode__(self):
@@ -107,7 +108,7 @@ class ScheduledItem(models.Model):
     track           = models.ForeignKey(Track, blank=True, null=True)
     room            = models.ForeignKey(Room, blank=True, null=True)
     presentation    = models.ForeignKey(Presentation, blank=True, null=True)
-    conference      = models.ForeignKey(Conference)
+    conference      = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     class Meta:
         ordering = ['timeSlot', 'track']
