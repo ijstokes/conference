@@ -1,6 +1,8 @@
 # Django settings for pydata project.
 import os
 
+CURRENT_CONF_ID = 1
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -131,6 +133,7 @@ INSTALLED_APPS = (
     'sponsors',
     'schedule',
     'news',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

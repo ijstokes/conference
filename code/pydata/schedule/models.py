@@ -1,29 +1,34 @@
-from django.db import models
-from speakers.models import Presentation
-from datetime import timedelta
+from datetime           import timedelta
 
+from django.db          import models
+
+from speakers.models    import Presentation
+from events.models      import Conference
 
 class Section(models.Model):
-    name = models.CharField(max_length=30)
-    start_day = models.DateField()
-    end_day = models.DateField()
+    name        = models.CharField(max_length=30)
+    start_day   = models.DateField()
+    end_day     = models.DateField()
+    conference  = models.ForeignKey(Conference)
 
     def __unicode__(self):
         return self.name
 
 
 class Track(models.Model):
-    name = models.CharField(max_length=30)
+    name        = models.CharField(max_length=30)
     description = models.TextField()
+    conference  = models.ForeignKey(Conference)
 
     def __unicode__(self):
         return self.name
 
 
 class TimeSlot(models.Model):
-    start_time = models.TimeField()
-    end_time = models.TimeField()
-    sectionDay = models.ForeignKey('SectionDay')
+    start_time  = models.TimeField()
+    end_time    = models.TimeField()
+    sectionDay  = models.ForeignKey('SectionDay')
+    conference  = models.ForeignKey(Conference)
 
     class Meta():
         ordering = ['start_time']
@@ -40,8 +45,9 @@ class TimeSlot(models.Model):
 
 
 class SectionDay(models.Model):
-    section = models.ForeignKey(Section)
-    day = models.IntegerField()
+    section     = models.ForeignKey(Section)
+    day         = models.IntegerField()
+    conference  = models.ForeignKey(Conference)
 
     class Meta:
         ordering = ['day']
@@ -67,7 +73,7 @@ class SectionDay(models.Model):
 
 
 class RoomUseType(models.Model):
-    name = models.CharField(max_length=50)
+    name        = models.CharField(max_length=50)
     description = models.CharField(max_length=255)
 
     def __unicode__(self):
@@ -75,11 +81,13 @@ class RoomUseType(models.Model):
 
 
 class Room(models.Model):
-    name = models.CharField(max_length=50)
-    useType = models.ForeignKey(RoomUseType)
-    capacity = models.IntegerField(blank=True, null=True)
-    map_image = models.FileField(upload_to='rooms', blank=True, null=True)
-    notes = models.TextField(blank=True, null=True)
+    name        = models.CharField(max_length=50)
+    useType     = models.ForeignKey(RoomUseType)
+    capacity    = models.IntegerField(blank=True, null=True)
+    map_image   = models.FileField(upload_to='rooms', blank=True, null=True)
+    notes       = models.TextField(blank=True, null=True)
+    conference  = models.ForeignKey(Conference)
+
 
     def __unicode__(self):
         return self.name
@@ -93,12 +101,13 @@ class ScheduledItemType(models.Model):
 
 
 class ScheduledItem(models.Model):
-    itemType = models.ForeignKey(ScheduledItemType)
-    timeSlot = models.ForeignKey(TimeSlot)
-    num_slots = models.IntegerField(default=1)
-    track = models.ForeignKey(Track, blank=True, null=True)
-    room = models.ForeignKey(Room, blank=True, null=True)
-    presentation = models.ForeignKey(Presentation, blank=True, null=True)
+    itemType        = models.ForeignKey(ScheduledItemType)
+    timeSlot        = models.ForeignKey(TimeSlot)
+    num_slots       = models.IntegerField(default=1)
+    track           = models.ForeignKey(Track, blank=True, null=True)
+    room            = models.ForeignKey(Room, blank=True, null=True)
+    presentation    = models.ForeignKey(Presentation, blank=True, null=True)
+    conference      = models.ForeignKey(Conference)
 
     class Meta:
         ordering = ['timeSlot', 'track']

@@ -1,11 +1,12 @@
 from django.db import models
+
 from events.models import Conference
 
 class Speaker(models.Model):
-    name = models.CharField(max_length=100)
-    bio = models.TextField(blank=True, null=True)
-    organization = models.CharField(max_length=100, blank=True, null=True)
-    image = models.FileField(upload_to='speakers', blank=True, null=True)
+    name            = models.CharField(max_length=100)
+    bio             = models.TextField(blank=True, null=True)
+    organization    = models.CharField(max_length=100, blank=True, null=True)
+    image           = models.FileField(upload_to='speakers', blank=True, null=True)
 
     class Meta:
         ordering = ['name']
@@ -21,12 +22,12 @@ class Speaker(models.Model):
 
 
 class Presentation(models.Model):
-    title = models.CharField(max_length=255)
-    abstract = models.TextField()
-    speaker = models.ManyToManyField(Speaker)
-    active = models.BooleanField(default=True)
+    title           = models.CharField(max_length=255)
+    abstract        = models.TextField()
+    speaker         = models.ManyToManyField(Speaker)
+    active          = models.BooleanField(default=True)
     additional_info = models.TextField(blank=True)
-    conference = models.ForeignKey(Conference)
+    conference      = models.ForeignKey(Conference)
 
     class Meta:
         ordering = ['title']

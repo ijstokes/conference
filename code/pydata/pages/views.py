@@ -1,10 +1,14 @@
-# Create your views here.
-from pages.functions import get_file_contents, set_file_contents
-from re import sub
-from django.http import HttpResponse
-from django.template import loader, TemplateDoesNotExist
-from django.views.decorators.csrf import csrf_exempt
-from utilities.utilities import get_base_out_vars
+from re                             import sub
+
+from django.http                    import HttpResponse
+from django.template                import loader, TemplateDoesNotExist
+from django.views.decorators.csrf   import csrf_exempt
+
+from pages.functions                import get_file_contents, set_file_contents
+from utilities.utilities            import get_base_out_vars
+
+from pydata.settings                import CURRENT_CONF_ID
+from sponsors.models                import SponsorLevel
 
 NOT_FOUND = r'/templates/not_found.html'
 
@@ -14,7 +18,6 @@ NOSIDE_WRAPPER = '/templates/noside_wrapper.html'
 EDIT_WRAPPER = '/templates/edit_page.html'
 
 NO_SIDE = ['venue', 'sponsor/sponsors', ]
-
 
 @csrf_exempt
 def wrap_page(request, **kwargs):
@@ -51,7 +54,7 @@ def wrap_page(request, **kwargs):
         from sponsors.models import Sponsor
         from news.models import NewsItem
         from datetime import datetime
-        output['all_sponsors'] = Sponsor.objects.filter(level__conference=1,level__conference__name=conference)
+        output['all_sponsors'] = SponsorLevel.objects.filter(conference__name=conference)
         news = NewsItem.objects.all()
         if not request.user.is_staff:
             news = news.filter(publish=True)
@@ -62,8 +65,7 @@ def wrap_page(request, **kwargs):
         has_side = False
 
     if has_side:
-        from sponsors.models import SponsorLevel
-        output['levels'] = SponsorLevel.objects.filter(conference__exact=1,conference__name=conference)
+        output['levels'] = SponsorLevel.objects.filter(conference__name=conference)
 
     editable = request.GET.get('edit', 0)
 
