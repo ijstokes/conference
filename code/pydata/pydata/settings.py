@@ -113,6 +113,8 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     ROOT_PATH + '/sites',
+    ROOT_PATH + '/sites/bos2013',
+    ROOT_PATH + '/sites/sv2013',
     ROOT_PATH + '/sites/base',
 )
 

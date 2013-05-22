@@ -9,6 +9,7 @@ from utilities.utilities            import get_base_out_vars
 
 from pydata.settings                import CURRENT_CONF_ID
 from sponsors.models                import SponsorLevel
+from events.models                  import Conference
 
 NOT_FOUND = r'/templates/not_found.html'
 
@@ -37,6 +38,10 @@ def wrap_page(request, **kwargs):
 
 
     conference = output['conf_id']
+    conference = conference.strip()
+
+    if not conference:
+        conference = Conference.objects.get(pk=CURRENT_CONF_ID).name
 
     template_base = 'base'
 
@@ -54,7 +59,10 @@ def wrap_page(request, **kwargs):
         from sponsors.models import Sponsor
         from news.models import NewsItem
         from datetime import datetime
-        output['all_sponsors'] = SponsorLevel.objects.filter(conference__name=conference)
+        output['all_sponsors'] = []
+        levels = SponsorLevel.objects.filter(conference__name=conference)
+        for level in levels:
+            output['all_sponsors'].extend(level.sponsors.all())
         news = NewsItem.objects.all()
         if not request.user.is_staff:
             news = news.filter(publish=True)

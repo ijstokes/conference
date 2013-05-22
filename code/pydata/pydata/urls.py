@@ -21,26 +21,27 @@ urlpatterns = patterns('',
     # url(r'^speakers/propose/edit/(?P<id>.+)$', 'speakers.views.submit_proposal'),
     # url(r'^speakers/propose/$', 'speakers.views.submit_proposal'),
 
+    url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
 
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*sponsor/sponsors$', 'sponsors.views.show_all_sponsors'),
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*sponsor/info$', 'sponsors.views.sponsor_info'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/?$',                  'pages.views.wrap_page'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*sponsor/sponsors$',  'sponsors.views.show_all_sponsors'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*sponsor/info$',      'sponsors.views.sponsor_info'),
 
 
     url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*schedule/(?P<sectionday>\d\d?)$', 'schedule.views.show_schedule_sectionDay'),
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*schedule/$', 'schedule.views.show_schedule_all'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*schedule/$',         'schedule.views.show_schedule_all'),
 
 
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*speakers/$', 'speakers.views.view_speakers'),
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*abstracts/$', 'speakers.views.view_abstracts'),
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*keynotes/$', 'speakers.views.view_keynotes'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*speakers/$',         'speakers.views.view_speakers'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*abstracts/$',        'speakers.views.view_abstracts'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*keynotes/$',         'speakers.views.view_keynotes'),
 
 
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*news/$', 'news.views.view_news'),
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/*news/$',             'news.views.view_news'),
 
-    url(r'^$', 'pages.views.wrap_page', {'page': 'home'}),
     url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/about/(?P<page>.+)/$', 'pages.views.wrap_page',{'about':'about'}),
-    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/(?P<page>.+)/$', 'pages.views.wrap_page'),
-    url(r'^(?P<page>.+)/$', 'pages.views.wrap_page')
+    url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/(?P<page>.+)/$',      'pages.views.wrap_page'),
+    url(r'^(?P<page>.+)/$',                                         'pages.views.wrap_page')
 )
 
 urlpatterns += staticfiles_urlpatterns()

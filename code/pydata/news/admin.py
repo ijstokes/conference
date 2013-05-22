@@ -9,6 +9,8 @@ class NewsItemAdmin(admin.ModelAdmin):
     list_filter     = ('author', 'date', 'publish', 'conference')
     ordering        = ('date',)
     search_fields   = ('title', 'content')
+    save_as         = True
+
 
 admin.site.register(NewsItem, NewsItemAdmin)
 

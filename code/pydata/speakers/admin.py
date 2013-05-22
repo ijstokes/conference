@@ -19,6 +19,7 @@ class PresentationAdmin(admin.ModelAdmin):
     list_filter     = ('conference', 'active')
     ordering        = ('speaker__name', 'title')
     search_fields   = ('title', 'abstract', 'additional_info', 'speaker__name', 'speaker__organization')
+    save_as         = True
 
 admin.site.register(Presentation, PresentationAdmin)
 

@@ -12,6 +12,8 @@ class SectionAdmin(admin.ModelAdmin):
     list_filter     = ('start_day', 'end_day', 'conference')
     ordering        = ('start_day', 'end_day', 'conference', 'id')
     search_fields   = ('name',)
+    save_as         = True
+
 
 admin.site.register(Section, SectionAdmin)
 
@@ -22,6 +24,7 @@ class TrackAdmin(admin.ModelAdmin):
     list_filter     = ('name', 'conference')
     ordering        = ('conference', 'name', 'id')
     search_fields   = ('name',)
+    save_as         = True
 
 admin.site.register(Track, TrackAdmin)
 
@@ -31,6 +34,7 @@ class TimeSlotAdmin(admin.ModelAdmin):
     list_editable   = ('start_time', 'end_time', 'sectionDay', 'conference')
     list_filter     = ('sectionDay', 'conference')
     ordering        = ('conference', 'sectionDay', 'start_time', 'end_time', 'id')
+    save_as         = True
 
 admin.site.register(TimeSlot, TimeSlotAdmin)
 
@@ -40,6 +44,7 @@ class SectionDayAdmin(admin.ModelAdmin):
     list_editable   = ('section', 'day', 'conference')
     list_filter     = ('section', 'day', 'conference')
     ordering        = ('conference', 'day', 'section', 'id')
+    save_as         = True
 
 admin.site.register(SectionDay, SectionDayAdmin)
 
@@ -60,6 +65,7 @@ class RoomAdmin(admin.ModelAdmin):
     list_filter     = ('name', 'useType', 'conference')
     ordering        = ('conference', 'name', 'useType', 'capacity', 'id',)
     search_fields   = ('name', 'notes')
+    save_as         = True
 
 admin.site.register(Room, RoomAdmin)
 
@@ -79,5 +85,6 @@ class ScheduledItemAdmin(admin.ModelAdmin):
     list_filter     = ('itemType', 'track', 'room', 'conference')
     ordering        = ('conference', 'track', 'timeSlot__sectionDay__day', 'timeSlot__start_time', 'id')
     search_fields   = ('presentation__title', 'presentation__abstract', 'presentation__additional_info', 'presentation__speaker__name', 'presentation__speaker__organization', 'room__name', 'room__notes')
+    save_as         = True
 
 admin.site.register(ScheduledItem, ScheduledItemAdmin)
