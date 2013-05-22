@@ -40,3 +40,6 @@ class Presentation(models.Model):
         for item in self.speaker.values('name'):
             to_output.append(item['name'])
         return to_output
+
+    def get_speakers_str(self):
+        return ", ".join(self.get_speakers())

@@ -32,7 +32,7 @@ class TimeSlot(models.Model):
     conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     class Meta():
-        ordering = ['start_time']
+        ordering = ['conference', 'sectionDay__day', 'start_time']
 
     def __unicode__(self):
         return self.name()
@@ -51,7 +51,7 @@ class SectionDay(models.Model):
     conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     class Meta:
-        ordering = ['day']
+        ordering = ['section__start_day', 'day']
 
     def __unicode__(self):
         return self.get_name()
