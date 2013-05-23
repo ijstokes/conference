@@ -1,4 +1,4 @@
-{% extends 'templates/noside_wrapper.html'%}
+{% extends conf_id|add:'/templates/noside_wrapper.html'%}
 {% block main_content %}
 <h2>Schedule for {{ sectionDay.get_date }}</h2>
 {% if user.is_authenticated %}Hello {{ user.get_full_name }}{% endif %}

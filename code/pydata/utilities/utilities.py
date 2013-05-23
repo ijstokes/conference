@@ -34,6 +34,7 @@ def get_base_out_vars(request, **kwargs):
         conference = CURRENT_CONF_NAME
 
     output['conference']    = conference
+    output['conf_id'] = conference
     output['conf_style_id'] = conference
     output['navmenu']       = '%s/templates/navmenu.html' % conference
     output['sponsors']      = '%s/templates/sponsors.html' % conference
