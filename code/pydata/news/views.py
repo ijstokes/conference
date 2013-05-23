@@ -10,7 +10,9 @@ def view_news(request, **kwargs):
     news = NewsItem.objects.all()
     if not request.user.is_staff:
         news = news.filter(publish=True)
-    output['news'] = news
-    output['levels'] = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID)
 
-    return render_to_response('base/templates/news/news.html', output)
+    conference = kwargs.get('conference')
+    output['news'] = news
+    output['levels'] = SponsorLevel.objects.filter(conference__name=conference)
+
+    return render_to_response('%s/templates/news/news.html' % conference, output)

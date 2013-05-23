@@ -1,0 +1,39 @@
+{% extends 'templates/noside_wrapper.html' %}
+{% block main_content %}
+<h2>Our Sponsors</h2>
+<p ><i>(click on sponsor logo to view sponsor details)</i></p>
+<hr />
+<div class="span12">
+    
+{% for level in levels %}
+{% if level.sponsors.all %}
+    <h4 style="text-align: center"> {{ level.name|upper }} </h4>
+    <div class="row">
+        {% for sponsor in level.sponsors.all %}
+        <div class="span4">
+            <div class="accordion-group">
+                <div class="sponsor">
+                    <div class="sponsor-content">
+                        <div class="accordion-heading">
+                            <h3 style=" line-height: 70px;"><a class="accordion-toggle" data-toggle="collapse" href="#{{ sponsor.id_tag }}"><img style="max-width: 80%; max-height: 80px;" src="{{ sponsor.logo.url }}" height="{{ level.small_logo_height }}"/>
+                            </a></h3>
+                        </div>
+                        <div id="{{ sponsor.id_tag }}" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <h5>{{ sponsor.name }}</h5>
+                                <p><a href="{{ sponsor.url }}">{{ sponsor.url }}</a></p>
+                                {{ sponsor.description|safe }}
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}
+
+

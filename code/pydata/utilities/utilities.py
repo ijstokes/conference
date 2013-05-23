@@ -1,5 +1,8 @@
 from os import popen
+
 from django.template import RequestContext
+
+from pydata.settings                import CURRENT_CONF_ID, CURRENT_CONF_NAME
 
 MAIL = '/usr/sbin/sendmail'
 
@@ -24,17 +27,23 @@ Subject: {2}
 def get_base_out_vars(request, **kwargs):
 
     output = RequestContext(request, {})
-    output['conf_id'] = kwargs.get('conference','sv2013')
-    output['conf_style_id'] = kwargs.get('conference', 'sv2013')    
-    output['navmenu'] = output['conf_style_id'] + '/templates/navmenu.html'
-    output['sponsors'] = 'base/templates/sponsors.html'
-    output['head'] = 'base/templates/head.html'
-    output['header'] = 'base/templates/header.html'
-    output['smlheader'] = 'base/templates/smlheader.html'
-    output['banner'] = 'base/templates/banner.html'
-    output['scripts'] = 'base/templates/scripts.html'
-    output['sponsors'] = 'base/templates/sponsors.html'
-    output['footer'] = 'base/templates/footer.html'
-    output['sidebar'] = 'base/templates/sidebar.html'
+    conference              = kwargs.get('conference')
+    if conference:
+        conference = conference.strip()
+    else:
+        conference = CURRENT_CONF_NAME
+
+    output['conference']    = conference
+    output['conf_style_id'] = conference
+    output['navmenu']       = '%s/templates/navmenu.html' % conference
+    output['sponsors']      = '%s/templates/sponsors.html' % conference
+    output['head']          = '%s/templates/head.html' % conference
+    output['header']        = '%s/templates/header.html' % conference
+    output['smlheader']     = '%s/templates/smlheader.html' % conference
+    output['banner']        = '%s/templates/banner.html' % conference
+    output['scripts']       = '%s/templates/scripts.html' % conference
+    output['sponsors']      = '%s/templates/sponsors.html' % conference
+    output['footer']        = '%s/templates/footer.html' % conference
+    output['sidebar']       = '%s/templates/sidebar.html' % conference
 
     return output

@@ -1,0 +1,21 @@
+{% extends 'templates/wrapper.html' %}
+{% block main_content %}
+<h2>PyData News</h2>
+<hr />
+<div class="box">
+	<div class="box-content">
+        {% for item in news %}
+        <div class="news_item">
+            <h4>{{ item.title }}</h4>
+            {% if not item.publish %}
+            	<div class="unpublished">Unpublished</div>
+            {% endif %}
+            <div class="pub_date">
+            	{{ item.date|date:'M d, Y' }}
+            </div>
+            {{ item.content|safe }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

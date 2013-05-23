@@ -1,7 +1,8 @@
 # Django settings for pydata project.
 import os
 
-CURRENT_CONF_ID = 1
+CURRENT_CONF_ID     = 1
+CURRENT_CONF_NAME   = "sv2013"
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -99,9 +100,12 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+INTERNAL_IPS = ('127.0.0.1',)
 
 ROOT_URLCONF = 'pydata.urls'
 
@@ -113,9 +117,6 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     ROOT_PATH + '/sites',
-    ROOT_PATH + '/sites/bos2013',
-    ROOT_PATH + '/sites/sv2013',
-    ROOT_PATH + '/sites/base',
 )
 
 INSTALLED_APPS = (
@@ -135,6 +136,7 @@ INSTALLED_APPS = (
     'sponsors',
     'schedule',
     'news',
+    'debug_toolbar',
     'south',
 )
 

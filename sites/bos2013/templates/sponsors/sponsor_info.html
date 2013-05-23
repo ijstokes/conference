@@ -1,0 +1,33 @@
+{% extends 'templates/wrapper.html'%}
+{% block main_content %}
+<h2>Become a Sponsor</h2>
+<hr />
+<div class="span8">
+    <div class="box">
+        <div class="box-content">  
+            <p>PyData is a community-oriented conference that offers great talks from luminaries in the community, and attracts very talented hackers from diverse backgrounds
+                Whether you are hiring, selling, or just promoting your brand, it's a great opportunity to showcase your company in a more intimate setting than larger conferences with thousands of attendees and hundreds of sponsors.</p>
+            <p>Sponsors are vital to the success of PyData. Your support allows us to keep ticket prices low, provide first rate facilities, sponsor student attendees, and provide video recordings of all sessions.  Sponsorship includes a specified number of passes depending on your sponsorship level, your logo and description on the PyData website, physical banners at the conference, and any other approved promotional material you wish to display and distribute.</p>
+            </p>
+            <h3>Sponsorship Levels</h3>
+            <table class="table">
+            <tbody>
+                {% for level in levels %}
+                    <tr>
+                        <td>{{ level.name }}</td>
+                        <td>{% if level.min_amount > 0 %}${{ level.min_amount }}{% endif %}</td>
+                        <td>{{ level.description|safe }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody></table>
+            <div class="box">
+                <div class="box-content">
+                    <p>To apply for sponsorship, please let us know your company’s name and contact, and the level in which you would like to sponsor.  Also, include a short description of your company or organization and a logo to be used on the website and on our banner and conference signage.</p><br />
+                    Send the above information to:  <a href="mailto:pydataconf@continuum.io">pydataconf@continuum.io</a>. <br />
+                    If you need additional sponsorship information you may contact us by email or phone at: 512-222-5440. 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ {% endblock %}

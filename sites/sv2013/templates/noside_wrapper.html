@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}PyData 2013 | Santa Clara, CA | March 18 &ndash; 20 {{ title }}{% endblock %}</title>
+    {% block head_info %}
+        {% include head %}
+    {% endblock head_info%}
+    <style type="text/css">
+		.navbar-inner{
+			text-align: left; margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+    {% block header %}
+    	{% include smlheader %}
+    {% endblock header %}
+    
+	<div class="container">
+		<div class="row">            
+            {% block main_content %}
+            <div class="span12">
+                {% include page_path %}
+            </div>
+            {% endblock main_content %}
+            
+            
+        </div>
+        <hr>
+        <div style="text-align: center">
+        {% block footer %}
+			{% include footer %}
+        {% endblock footer %}
+        </div>
+        
+	</div>
+   {% include scripts %}
+</body>
+</html>

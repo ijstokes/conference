@@ -1,0 +1,41 @@
+{% extends 'templates/wrapper.html' %}
+{% block main_content %}
+<h2>Keynote Speakers</h2>
+<p><i>(click on the speaker name or photo to view speaker details)</i></p>
+<hr />
+{% for speaker in keynotes %}
+<a name="bio_{{ speaker.id }}"></a>
+<a name="abstract_{{ abstract.id }}"></a>
+<div class="box">
+	<div class="box-content">
+        <div class="accordion-group">
+            <div class="accordion-heading bio">
+              <a class="accordion-toggle" data-toggle="collapse" href="#bio_{{ speaker.id }}_">
+                <img class="bioimg" src="{{ speaker.image.url }}" /><h4>{{ speaker.name }}</h4></a>
+                {{ speaker.organization }}
+            </div>
+            <div id="bio_{{ speaker.id }}_" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    {{ speaker.bio|safe }}
+                </div>
+            </div>
+        </div>
+        {% with abstract=speaker.presentation_set.all|first %}
+        <div class="accordion-group">
+            <div class="accordion-heading abstract">
+              <a class="accordion-toggle" data-toggle="collapse" href="#abstract_{{ abstract.id }}_">
+                <h4>{{ abstract.title }}</h4></a>
+            </div>
+            <div id="abstract_{{ abstract.id }}_" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    {{ abstract.abstract|safe }}
+                </div>
+            </div>
+        </div>
+        {% endwith %}
+    </div>
+</div>
+
+
+{% endfor %}
+{% endblock %}

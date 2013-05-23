@@ -7,18 +7,9 @@ from django.views.decorators.csrf   import csrf_exempt
 from pages.functions                import get_file_contents, set_file_contents
 from utilities.utilities            import get_base_out_vars
 
-from pydata.settings                import CURRENT_CONF_ID
 from sponsors.models                import SponsorLevel
 from events.models                  import Conference
 
-NOT_FOUND = r'/templates/not_found.html'
-
-DEFAULT_WRAPPER = '/templates/wrapper.html'
-HOME_WRAPPER = '/templates/home_wrapper.html'
-NOSIDE_WRAPPER = '/templates/noside_wrapper.html'
-EDIT_WRAPPER = '/templates/edit_page.html'
-
-NO_SIDE = ['venue', 'sponsor/sponsors', ]
 
 @csrf_exempt
 def wrap_page(request, **kwargs):
@@ -37,18 +28,19 @@ def wrap_page(request, **kwargs):
     output['title'] = page_name
 
 
-    conference = output['conf_id']
-    conference = conference.strip()
+    conference = output['conference']
+    NOT_FOUND       = '%s/templates/not_found.html' % conference
+    DEFAULT_WRAPPER = '%s/templates/wrapper.html' % conference
+    HOME_WRAPPER    = '%s/templates/home_wrapper.html' % conference
+    NOSIDE_WRAPPER  = '%s/templates/noside_wrapper.html' % conference
+    EDIT_WRAPPER    = '%s/templates/edit_page.html' % conference
 
-    if not conference:
-        conference = Conference.objects.get(pk=CURRENT_CONF_ID).name
-
-    template_base = 'base'
+    NO_SIDE = ['venue', 'sponsor/sponsors', ]
 
     if (kwargs.get('about',None)):
-        output['page_path'] =  'pages/about/' + file_name
+        output['page_path'] =  '%s/pages/about/' % conference + file_name
     else:
-        output['page_path'] = 'pages/' + file_name
+        output['page_path'] = '%s/pages/' % conference + file_name
     
 
     has_side = True
@@ -85,12 +77,12 @@ def wrap_page(request, **kwargs):
     if editable == '1' and request.user.is_staff:
         output['page_contents'] = get_file_contents(output['page_path'])
         output['repost_link'] = request.path_info
-        template = loader.get_template(template_base + EDIT_WRAPPER).render(output)
+        template = loader.get_template(EDIT_WRAPPER).render(output)
     else:
-        try:
-            template = loader.get_template(template_base + wrapper_template).render(output)
-        except TemplateDoesNotExist:
-            template = loader.get_template('base' + NOT_FOUND).render(output)
+        #try:
+        template = loader.get_template(wrapper_template).render(output)
+        #except TemplateDoesNotExist:
+        #    template = loader.get_template(NOT_FOUND).render(output)
 
     response = HttpResponse(template)
 
