@@ -1,8 +1,8 @@
 # Django settings for pydata project.
 import os
 
-CURRENT_CONF_ID     = 1
-CURRENT_CONF_NAME   = "sv2013"
+CURRENT_CONF_ID     = 3
+CURRENT_CONF_NAME   = "bos2013"
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
