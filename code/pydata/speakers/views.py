@@ -16,7 +16,7 @@ def view_speakers(request, **kwargs):
     output['speakers'] = speakers.exclude(name="TBD")
     output['levels'] = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID)
 
-    return render_to_response('base/templates/speaking/bios.html', output)
+    return render_to_response('%s/templates/speaking/bios.html' % conference, output)
 
 
 def view_abstracts(request, **kwargs):
@@ -27,7 +27,7 @@ def view_abstracts(request, **kwargs):
     output['abstracts'] = abstracts.exclude(title="Waiting for confirmation.")
     output['levels'] = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID)
 
-    return render_to_response('base/templates/speaking/abstracts.html', output)
+    return render_to_response('%s/templates/speaking/abstracts.html' % conference, output)
 
 
 def view_keynotes(request, **kwargs):
@@ -37,4 +37,4 @@ def view_keynotes(request, **kwargs):
     output['keynotes'] = keynotes.order_by('-name')
     output['levels'] = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID)
 
-    return render_to_response('base/templates/speaking/keynotes.html', output)
+    return render_to_response('%s/templates/speaking/keynotes.html' % conference, output)

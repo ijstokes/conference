@@ -1,0 +1,787 @@
+2013-05-23 15:42:24 [20152] [INFO] Starting gunicorn 0.16.1
+2013-05-23 15:42:24 [20152] [DEBUG] Arbiter booted
+2013-05-23 15:42:24 [20152] [INFO] Listening at: http://127.0.0.1:8013 (20152)
+2013-05-23 15:42:24 [20152] [INFO] Using worker: sync
+2013-05-23 15:42:24 [20155] [INFO] Booting worker with pid: 20155
+2013-05-23 15:42:24 [20156] [INFO] Booting worker with pid: 20156
+2013-05-23 15:42:24 [20157] [INFO] Booting worker with pid: 20157
+2013-05-23 10:42:28 [20155] [INFO] Worker exiting (pid: 20155)
+2013-05-23 10:42:28 [20156] [INFO] Worker exiting (pid: 20156)
+2013-05-23 10:42:28 [20157] [INFO] Worker exiting (pid: 20157)
+2013-05-23 15:42:28 [20152] [INFO] Handling signal: int
+2013-05-23 15:42:28 [20152] [INFO] Shutting down: Master
+2013-05-23 15:42:39 [20207] [INFO] Starting gunicorn 0.16.1
+2013-05-23 15:42:39 [20207] [DEBUG] Arbiter booted
+2013-05-23 15:42:39 [20207] [INFO] Listening at: http://127.0.0.1:8013 (20207)
+2013-05-23 15:42:39 [20207] [INFO] Using worker: sync
+2013-05-23 15:42:39 [20210] [INFO] Booting worker with pid: 20210
+2013-05-23 15:42:39 [20211] [INFO] Booting worker with pid: 20211
+2013-05-23 15:42:39 [20212] [INFO] Booting worker with pid: 20212
+2013-05-23 10:42:42 [20212] [DEBUG] GET /admin/news/newsitem/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:42:43 [20212] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:42:48 [20212] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:42:49.014348) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:42:50 [20210] [DEBUG] GET /admin/news/newsitem/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:42:51 [20211] [DEBUG] GET /admin/jsi18n/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:42:59 [20212] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:42:59 [20212] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:43:06 [20210] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:43:07 [20210] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:43:22 [20210] [INFO] Worker exiting (pid: 20210)
+2013-05-23 10:43:22 [20211] [INFO] Worker exiting (pid: 20211)
+2013-05-23 15:43:22 [20207] [INFO] Handling signal: int
+2013-05-23 10:43:22 [20212] [INFO] Worker exiting (pid: 20212)
+2013-05-23 15:43:22 [20207] [INFO] Shutting down: Master
+2013-05-23 15:43:41 [20290] [INFO] Starting gunicorn 0.16.1
+2013-05-23 15:43:41 [20290] [DEBUG] Arbiter booted
+2013-05-23 15:43:41 [20290] [INFO] Listening at: http://127.0.0.1:8013 (20290)
+2013-05-23 15:43:41 [20290] [INFO] Using worker: sync
+2013-05-23 15:43:41 [20293] [INFO] Booting worker with pid: 20293
+2013-05-23 15:43:41 [20294] [INFO] Booting worker with pid: 20294
+2013-05-23 15:43:41 [20295] [INFO] Booting worker with pid: 20295
+2013-05-23 10:43:48 [20293] [DEBUG] GET /admin/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:44:02 [20295] [DEBUG] GET /admin/auth/group/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:44:03 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:44:07 [20294] [DEBUG] GET /admin/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-23 10:44:11 [20294] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:44:11.224872) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:44:11 [20293] [DEBUG] GET /admin/
+2013-05-23 10:44:15 [20293] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:44:16 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:44:37 [20295] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:44:38 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:44:53 [20294] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:44:53.910167) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:45:43 [20293] [DEBUG] GET /admin/speakers/presentation/37/
+2013-05-23 10:45:43 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:46:19 [20293] [DEBUG] GET /admin
+2013-05-23 10:46:19 [20293] [DEBUG] GET /admin/
+2013-05-23 10:46:24 [20295] [DEBUG] GET /admin/auth/user/
+2013-05-23 10:46:24 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:46:28 [20294] [DEBUG] GET /admin/auth/user/4/
+2013-05-23 10:46:28 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:46:32 [20293] [DEBUG] GET /admin/auth/user/4/password/
+2013-05-23 10:46:32 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:46:40 [20294] [DEBUG] POST /admin/auth/user/4/password/
+2013-05-23 10:46:44 [20295] [DEBUG] GET /admin/auth/user/4/
+2013-05-23 10:46:45 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:46:48 [20293] [DEBUG] GET /admin/auth/user/
+2013-05-23 10:46:48 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:47:55 [20294] [DEBUG] GET /admin/speakers/
+2013-05-23 10:47:58 [20295] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:48:00 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:48:03 [20294] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:48:04 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:48:06 [20294] [DEBUG] GET /admin/speakers/presentation/36/
+2013-05-23 10:48:07 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:48:55 [20294] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:48:55.466677) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:49:02 [20294] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:49:02.441442) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:49:55 [20295] [DEBUG] GET /admin/auth/
+2013-05-23 10:49:58 [20294] [DEBUG] GET /admin/
+2013-05-23 10:50:02 [20293] [DEBUG] GET /admin/sites/site/
+2013-05-23 10:50:03 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:50:05 [20294] [DEBUG] GET /admin/
+2013-05-23 10:50:09 [20294] [DEBUG] GET /admin/events/conference/
+2013-05-23 10:50:10 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:50:14 [20295] [DEBUG] GET /admin/events/conference/3/
+2013-05-23 10:50:15 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:50:28 [20295] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-23 10:50:29 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:50:57 [20294] [DEBUG] GET /bos2013/admin/sponsors/sponsor/
+Internal Server Error: /bos2013/admin/sponsors/sponsor/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin/sponsors/sponsor.html
+2013-05-23 10:51:01 [20294] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-23 10:51:07 [20293] [DEBUG] GET /admin
+2013-05-23 10:51:07 [20293] [DEBUG] GET /admin/
+2013-05-23 10:51:14 [20294] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-23 10:51:14 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:51:40 [20295] [DEBUG] GET /admin/sponsors/
+2013-05-23 10:51:44 [20293] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-23 10:51:44 [20294] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:51:50 [20293] [DEBUG] GET /admin/
+2013-05-23 10:52:03 [20295] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:52:04 [20293] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:52:30 [20295] [DEBUG] GET /bos2013/sponsor/sponsors
+Internal Server Error: /bos2013/sponsor/sponsors
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/share/nginx/preview/code/pydata/sponsors/views.py", line 12, in show_all_sponsors
+    return render_to_response('base/templates/sponsors/sponsor_list.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/sponsors/sponsor_list.html
+2013-05-23 10:52:30 [20294] [DEBUG] POST /admin/news/newsitem/
+2013-05-23 10:52:35 [20294] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:52:35.622670) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:52:38 [20293] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:52:39 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:52:43 [20293] [DEBUG] GET /bos2013/sponsors
+2013-05-23 10:52:43 [20294] [DEBUG] GET /bos2013/sponsors/
+Internal Server Error: /bos2013/sponsors/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/sponsors.html
+2013-05-23 10:52:49 [20293] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:52:49.850968) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:52:57 [20294] [DEBUG] GET /sv2013/venue
+2013-05-23 10:52:58 [20295] [DEBUG] GET /sv2013/venue/
+2013-05-23 10:53:02 [20294] [DEBUG] GET /sv2013/schedule
+2013-05-23 10:53:02 [20293] [DEBUG] GET /sv2013/schedule/
+2013-05-23 10:53:03 [20294] [DEBUG] GET /sv2013/schedule/
+2013-05-23 10:53:05 [20293] [DEBUG] Ignoring EPIPE
+2013-05-23 10:53:35 [20294] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:53:36 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:53:49 [20293] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:54:04 [20295] [DEBUG] GET /sv2013/speakers/
+Internal Server Error: /sv2013/speakers/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/share/nginx/preview/code/pydata/speakers/views.py", line 19, in view_speakers
+    return render_to_response('base/templates/speaking/bios.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/speaking/bios.html
+2013-05-23 10:54:56 [20294] [DEBUG] POST /admin/news/newsitem/
+2013-05-23 10:55:01 [20294] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 10:55:01.193312) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 10:55:20 [20295] [DEBUG] GET /admin/news/newsitem/
+2013-05-23 10:55:21 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:55:54 [20295] [DEBUG] GET /admin/speakers/presentation/
+2013-05-23 10:55:55 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:56:12 [20294] [DEBUG] GET /admin/
+2013-05-23 10:56:20 [20295] [DEBUG] GET /admin/events/conference/
+2013-05-23 10:56:20 [20293] [DEBUG] GET /admin/jsi18n/
+2013-05-23 10:56:27 [20295] [DEBUG] GET /admin/events/conference/3/
+2013-05-23 10:56:27 [20295] [DEBUG] GET /admin/jsi18n/
+2013-05-23 12:11:31 [20293] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 12:11:32.065971) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 12:12:36 [20293] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 12:12:36.520189) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 12:14:03 [20293] [DEBUG] GET /bos2013/schedule
+2013-05-23 12:14:03 [20293] [DEBUG] GET /bos2013/schedule/
+2013-05-23 12:14:11 [20293] [DEBUG] GET /bos2013/venue
+2013-05-23 12:14:11 [20293] [DEBUG] GET /bos2013/venue/
+2013-05-23 12:14:20 [20293] [DEBUG] GET /bos2013/sponsor/sponsors
+Internal Server Error: /bos2013/sponsor/sponsors
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/share/nginx/preview/code/pydata/sponsors/views.py", line 12, in show_all_sponsors
+    return render_to_response('base/templates/sponsors/sponsor_list.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: base/templates/sponsors/sponsor_list.html
+2013-05-23 12:14:23 [20295] [DEBUG] GET /bos2013/venue/
+2013-05-23 12:14:27 [20295] [DEBUG] GET /bos2013/keynotes
+2013-05-23 12:14:27 [20295] [DEBUG] GET /bos2013/keynotes/
+Internal Server Error: /bos2013/keynotes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/share/nginx/preview/code/pydata/speakers/views.py", line 40, in view_keynotes
+    return render_to_response('base/templates/speaking/keynotes.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: base/templates/speaking/keynotes.html
+2013-05-23 12:14:29 [20294] [DEBUG] GET /bos2013/venue/
+2013-05-23 12:14:31 [20294] [DEBUG] GET /bos2013/news
+2013-05-23 12:14:31 [20293] [DEBUG] GET /bos2013/news/
+2013-05-23 12:14:39 [20293] [DEBUG] GET /bos2013/about/about
+2013-05-23 12:14:39 [20293] [DEBUG] GET /bos2013/about/about/
+2013-05-23 12:14:44 [20294] [DEBUG] GET /bos2013/about/code_of_conduct
+2013-05-23 12:14:44 [20294] [DEBUG] GET /bos2013/about/code_of_conduct/
+2013-05-23 12:15:05 [20294] [DEBUG] GET /bos2013/about/numfocus
+2013-05-23 12:15:05 [20295] [DEBUG] GET /bos2013/about/numfocus/
+2013-05-23 12:15:07 [20294] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 12:15:07.860011) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 12:44:56 [20293] [DEBUG] GET /admin/news/newsitem/
+Internal Server Error: /admin/news/newsitem/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 140, in get_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 105, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 80, in rendered_content
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 58, in resolve_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: admin/login.html
+2013-05-23 12:45:09 [20295] [DEBUG] GET /admin/speakers/presentation/
+Internal Server Error: /admin/speakers/presentation/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 140, in get_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 105, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 80, in rendered_content
+  File "/usr/local/lib/python2.7/dist-packages/django/template/response.py", line 58, in resolve_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: admin/login.html
+2013-05-23 12:55:37 [20294] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 12:55:37.363494) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 12:55:48 [20295] [DEBUG] GET /bos2013/abstracts
+2013-05-23 12:55:48 [20295] [DEBUG] GET /bos2013/abstracts/
+Internal Server Error: /bos2013/abstracts/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/share/nginx/preview/code/pydata/speakers/views.py", line 30, in view_abstracts
+    return render_to_response('base/templates/speaking/abstracts.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: base/templates/speaking/abstracts.html
+2013-05-23 12:55:58 [20293] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-23 12:55:58.628013) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-23 12:59:17 [20293] [DEBUG] GET /bos2013/venue
+2013-05-23 12:59:17 [20293] [DEBUG] GET /bos2013/venue/
+2013-05-23 12:59:21 [20293] [DEBUG] GET /bos2013/schedule
+2013-05-23 12:59:21 [20293] [DEBUG] GET /bos2013/schedule/
+2013-05-23 12:59:26 [20293] [DEBUG] GET /bos2013/sponsor/info
+Internal Server Error: /bos2013/sponsor/info
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/share/nginx/preview/code/pydata/sponsors/views.py", line 20, in sponsor_info
+    return render_to_response('base/templates/sponsors/sponsor_info.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: base/templates/sponsors/sponsor_info.html
+2013-05-23 13:00:22 [20293] [DEBUG] GET /bos2013/schedule/
+2013-05-23 13:00:49 [20295] [DEBUG] GET /bos2013/admin
+2013-05-23 13:00:49 [20295] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-23 13:01:00 [20294] [DEBUG] GET /bos2013/schedule/
+2013-05-23 13:01:06 [20293] [DEBUG] GET /bos2013/venue/
+2013-05-24 10:49:13 [20293] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 10:49:15.498726) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 15:19:00 [20295] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 15:19:02.150647) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 15:19:17 [20293] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 15:19:17.403255) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 15:19:23 [20294] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 15:19:24.990996) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 15:19:49 [20295] [DEBUG] GET /bos2013/venue
+2013-05-24 15:19:49 [20295] [DEBUG] GET /bos2013/venue/
+2013-05-24 15:20:07 [20294] [DEBUG] GET /bos2013/sponsor/sponsors
+Internal Server Error: /bos2013/sponsor/sponsors
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+  File "/usr/share/nginx/preview/code/pydata/sponsors/views.py", line 12, in show_all_sponsors
+    return render_to_response('base/templates/sponsors/sponsor_list.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+TemplateDoesNotExist: base/templates/sponsors/sponsor_list.html
+2013-05-24 15:22:21 [20294] [INFO] Worker exiting (pid: 20294)
+2013-05-24 15:22:21 [20293] [INFO] Worker exiting (pid: 20293)
+2013-05-24 15:22:21 [20295] [INFO] Worker exiting (pid: 20295)
+2013-05-24 20:22:22 [20290] [INFO] Handling signal: term
+2013-05-24 20:22:23 [20290] [INFO] Shutting down: Master
+2013-05-24 20:22:23 [7020] [INFO] Starting gunicorn 0.16.1
+2013-05-24 20:22:23 [7020] [DEBUG] Arbiter booted
+2013-05-24 20:22:23 [7020] [INFO] Listening at: http://127.0.0.1:8013 (7020)
+2013-05-24 20:22:23 [7020] [INFO] Using worker: sync
+2013-05-24 20:22:23 [7023] [INFO] Booting worker with pid: 7023
+2013-05-24 20:22:23 [7024] [INFO] Booting worker with pid: 7024
+2013-05-24 20:22:23 [7025] [INFO] Booting worker with pid: 7025
+2013-05-24 20:22:23 [7023] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:22:23 [7024] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:22:23 [7025] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:22:23 [7023] [INFO] Worker exiting (pid: 7023)
+2013-05-24 20:22:23 [7024] [INFO] Worker exiting (pid: 7024)
+2013-05-24 20:22:23 [7025] [INFO] Worker exiting (pid: 7025)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn_django", line 9, in <module>
+    load_entry_point('gunicorn==0.16.1', 'console_scripts', 'gunicorn_django')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 142, in run
+    DjangoApplication("%prog [OPTIONS] [SETTINGS_PATH]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 127, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 193, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 288, in halt
+    self.stop()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 336, in stop
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 429, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+./start.sh: line 8: exec: gunicorn_django: not found
+2013-05-24 20:26:24 [7265] [INFO] Starting gunicorn 0.16.1
+2013-05-24 20:26:24 [7265] [DEBUG] Arbiter booted
+2013-05-24 20:26:24 [7265] [INFO] Listening at: http://127.0.0.1:8013 (7265)
+2013-05-24 20:26:24 [7265] [INFO] Using worker: sync
+2013-05-24 20:26:24 [7268] [INFO] Booting worker with pid: 7268
+2013-05-24 20:26:24 [7269] [INFO] Booting worker with pid: 7269
+2013-05-24 20:26:24 [7268] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:26:24 [7268] [INFO] Worker exiting (pid: 7268)
+2013-05-24 20:26:24 [7270] [INFO] Booting worker with pid: 7270
+2013-05-24 20:26:24 [7269] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:26:24 [7269] [INFO] Worker exiting (pid: 7269)
+2013-05-24 20:26:25 [7270] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 469, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 99, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 100, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/django_wsgi.py", line 19, in <module>
+    from django.conf import settings
+ImportError: No module named django.conf
+2013-05-24 20:26:25 [7270] [INFO] Worker exiting (pid: 7270)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn_django", line 9, in <module>
+    load_entry_point('gunicorn==0.16.1', 'console_scripts', 'gunicorn_django')()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/djangoapp.py", line 142, in run
+    DjangoApplication("%prog [OPTIONS] [SETTINGS_PATH]").run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/app/base.py", line 127, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 193, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 288, in halt
+    self.stop()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 336, in stop
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/dist-packages/gunicorn-0.16.1-py2.7.egg/gunicorn/arbiter.py", line 429, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+BANG
+2013-05-24 20:32:11 [7678] [INFO] Starting gunicorn 0.16.1
+2013-05-24 20:32:11 [7678] [DEBUG] Arbiter booted
+2013-05-24 20:32:11 [7678] [INFO] Listening at: http://127.0.0.1:8013 (7678)
+2013-05-24 20:32:11 [7678] [INFO] Using worker: sync
+2013-05-24 20:32:11 [7681] [INFO] Booting worker with pid: 7681
+2013-05-24 20:32:11 [7682] [INFO] Booting worker with pid: 7682
+2013-05-24 20:32:11 [7683] [INFO] Booting worker with pid: 7683
+2013-05-24 15:32:21 [7683] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 15:32:22.573601) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 15:32:30 [7681] [DEBUG] GET /bos2013/sponsor/sponsors
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 15:32:41 [7682] [DEBUG] GET /bos2013/sponsor/info
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 15:33:07 [7682] [DEBUG] GET /bos2013/keynotes
+2013-05-24 15:33:07 [7683] [DEBUG] GET /bos2013/keynotes/
+Internal Server Error: /bos2013/keynotes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/share/nginx/preview/code/pydata/speakers/views.py", line 40, in view_keynotes
+    return render_to_response('base/templates/speaking/keynotes.html', output)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/speaking/keynotes.html
+2013-05-24 15:48:16 [7682] [INFO] Worker exiting (pid: 7682)
+2013-05-24 15:48:16 [7683] [INFO] Worker exiting (pid: 7683)
+2013-05-24 20:48:16 [7678] [INFO] Handling signal: term
+2013-05-24 15:48:16 [7681] [INFO] Worker exiting (pid: 7681)
+2013-05-24 20:48:16 [7678] [INFO] Shutting down: Master
+2013-05-24 20:48:16 [8587] [INFO] Starting gunicorn 0.16.1
+2013-05-24 20:48:16 [8587] [DEBUG] Arbiter booted
+2013-05-24 20:48:16 [8587] [INFO] Listening at: http://127.0.0.1:8013 (8587)
+2013-05-24 20:48:16 [8587] [INFO] Using worker: sync
+2013-05-24 20:48:16 [8590] [INFO] Booting worker with pid: 8590
+2013-05-24 20:48:16 [8591] [INFO] Booting worker with pid: 8591
+2013-05-24 20:48:16 [8592] [INFO] Booting worker with pid: 8592
+2013-05-24 15:48:53 [8591] [DEBUG] GET /bos2013/keynotes/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 15:48:58 [8592] [DEBUG] GET /bos2013/speakers
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-24 15:48:58 [8592] [DEBUG] GET /bos2013/speakers/
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 15:49:03 [8592] [DEBUG] GET /bos2013/abstracts
+2013-05-24 15:49:03 [8592] [DEBUG] GET /bos2013/abstracts/
+2013-05-24 15:49:14 [8591] [DEBUG] GET /bos2013/sponsor/info
+2013-05-24 15:49:19 [8591] [DEBUG] GET /bos2013/sponsor/sponsors
+2013-05-24 15:49:22 [8591] [DEBUG] GET /bos2013/schedule
+2013-05-24 15:49:22 [8591] [DEBUG] GET /bos2013/schedule/
+2013-05-24 15:49:24 [8592] [DEBUG] GET /bos2013/venue
+2013-05-24 15:49:24 [8591] [DEBUG] GET /bos2013/venue/
+2013-05-24 15:49:28 [8590] [DEBUG] GET /bos2013/about/about
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-24 15:49:28 [8590] [DEBUG] GET /bos2013/about/about/
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 15:49:31 [8592] [DEBUG] GET /bos2013/about/code_of_conduct
+2013-05-24 15:49:31 [8591] [DEBUG] GET /bos2013/about/code_of_conduct/
+2013-05-24 15:49:40 [8592] [DEBUG] GET /bos2013/about/press
+2013-05-24 15:49:40 [8590] [DEBUG] GET /bos2013/about/press/

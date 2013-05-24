@@ -9,7 +9,7 @@ def show_all_sponsors(request, **kwargs):
     conference = kwargs['conference']
     levels = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID,conference__name=conference)
     output['levels'] = levels
-    return render_to_response('base/templates/sponsors/sponsor_list.html', output)
+    return render_to_response('%s/templates/sponsors/sponsor_list.html' % conference, output)
 
 
 def sponsor_info(request, **kwargs):
@@ -17,4 +17,4 @@ def sponsor_info(request, **kwargs):
     conference = kwargs['conference']
     levels = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID,conference__name=conference)
     output['levels'] = levels
-    return render_to_response('base/templates/sponsors/sponsor_info.html', output)
+    return render_to_response('%s/templates/sponsors/sponsor_info.html' % conference, output)
