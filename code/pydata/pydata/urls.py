@@ -6,6 +6,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
+    url(r'^.*\.js$', 'pages.views.java_script'),
+
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title>{% block title %}PyData.org | {{ title }}{% endblock %}</title>
+    <meta charset="utf-8">
+    <title>{% block title %}PyData.org | {{ title }}{% endblock %}</title>
     {% block head_info %}
         {% include head %}
     {% endblock head_info%}
 </head>
 <body>
     {% block header %}
-    	{% include header %}
+        {% include header %}
     {% endblock header %}
 
     {% block banner %}
-    	{% include banner %}
+        {% include banner %}
     {% endblock banner %}
-    
-	<div class="container">
-            
-            {% block main_content %}
+    <div class="container">
+        {% block main_content %}
             <div class="span12">
                 {% include page_path %}
             </div>
-            {% endblock main_content %}
-        </div>
-        <hr>
-        <div style="text-align: center">
-            {% block footer %}
-                {% include footer %}
-            {% endblock footer %}
-        </div>
-	</div>
-    {% include scripts %}
+        {% endblock main_content %}
+    </div>
+    <hr>
+    <div style="text-align: center">
+        {% block footer %}
+            {% include footer %}
+        {% endblock footer %}
+    </div>
+</div>
+{% include scripts %}
 </body>
 </html>
