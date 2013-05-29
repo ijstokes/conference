@@ -53,7 +53,8 @@ def wrap_page(request, **kwargs):
         levels = SponsorLevel.objects.filter(conference__name=conference)
         for level in levels:
             output['all_sponsors'].extend(level.sponsors.all())
-        news = NewsItem.objects.all()
+        conference = kwargs.get('conference')
+        news = NewsItem.objects.filter(conference__name=conference)
         if not request.user.is_staff:
             news = news.filter(publish=True)
         output['news'] = news.filter(date__lte=datetime.now())[:5]
