@@ -785,3 +785,1129 @@ TemplateDoesNotExist: base/templates/speaking/keynotes.html
 2013-05-24 15:49:31 [8591] [DEBUG] GET /bos2013/about/code_of_conduct/
 2013-05-24 15:49:40 [8592] [DEBUG] GET /bos2013/about/press
 2013-05-24 15:49:40 [8590] [DEBUG] GET /bos2013/about/press/
+2013-05-24 16:11:52 [8591] [INFO] Worker exiting (pid: 8591)
+2013-05-24 16:11:52 [8592] [INFO] Worker exiting (pid: 8592)
+2013-05-24 21:11:52 [8587] [INFO] Handling signal: term
+2013-05-24 16:11:52 [8590] [INFO] Worker exiting (pid: 8590)
+2013-05-24 21:11:52 [8587] [INFO] Shutting down: Master
+2013-05-24 21:11:53 [9982] [INFO] Starting gunicorn 0.16.1
+2013-05-24 21:11:53 [9982] [DEBUG] Arbiter booted
+2013-05-24 21:11:53 [9982] [INFO] Listening at: http://127.0.0.1:8013 (9982)
+2013-05-24 21:11:53 [9982] [INFO] Using worker: sync
+2013-05-24 21:11:53 [9985] [INFO] Booting worker with pid: 9985
+2013-05-24 21:11:53 [9986] [INFO] Booting worker with pid: 9986
+2013-05-24 21:11:53 [9987] [INFO] Booting worker with pid: 9987
+2013-05-24 16:12:07 [9987] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 16:12:07.539660) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 16:12:13 [9985] [DEBUG] GET /bos2013/about/about
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-24 16:12:14 [9985] [DEBUG] GET /bos2013/about/about/
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+2013-05-24 16:12:30 [9986] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 16:12:31.234305) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 16:14:20 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 16:14:20.126753) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 16:14:27 [9985] [DEBUG] GET /bos2013/about/about
+2013-05-24 16:14:28 [9985] [DEBUG] GET /bos2013/about/about/
+2013-05-24 16:14:34 [9987] [DEBUG] GET /bos2013/news
+2013-05-24 16:14:34 [9986] [DEBUG] GET /bos2013/news/
+2013-05-24 16:14:37 [9987] [DEBUG] GET /bos2013/speakers
+2013-05-24 16:14:37 [9987] [DEBUG] GET /bos2013/speakers/
+2013-05-24 16:14:39 [9987] [DEBUG] GET /bos2013/about/about
+2013-05-24 16:14:39 [9985] [DEBUG] GET /bos2013/about/about/
+2013-05-24 16:21:12 [9985] [DEBUG] GET /bos2013/venue
+2013-05-24 16:21:12 [9987] [DEBUG] GET /bos2013/venue/
+2013-05-24 16:21:48 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-24 16:23:39 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-24 16:25:33 [9987] [DEBUG] GET /bos2013/venue/
+2013-05-24 16:26:13 [9985] [DEBUG] GET /bos2013/venue/
+2013-05-24 16:56:28 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 16:56:28.708682) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 17:11:36 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 17:11:36.704806) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 17:11:38 [9987] [DEBUG] GET /admin/
+2013-05-24 23:04:04 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:04:04.992338) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:04:11 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:04:11.480302) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:04:12 [9986] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:04:12.829788) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:04:28 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:04:28.175770) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:07:11 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:07:11.405718) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:07:15 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:07:15.755064) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:07:31 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:07:31.628500) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:07:32 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:07:32.315173) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:07:57 [9986] [DEBUG] GET /bos2013/about/about
+2013-05-24 23:07:57 [9985] [DEBUG] GET /bos2013/about/about/
+2013-05-24 23:08:40 [9987] [DEBUG] GET /bos2013/schedule
+2013-05-24 23:08:40 [9986] [DEBUG] GET /bos2013/schedule/
+2013-05-24 23:08:44 [9987] [DEBUG] GET /bos2013/sponsor/info
+2013-05-24 23:08:53 [9985] [DEBUG] GET /bos2013/keynotes
+2013-05-24 23:08:53 [9985] [DEBUG] GET /bos2013/keynotes/
+2013-05-24 23:08:58 [9987] [DEBUG] GET /bos2013/about/about/
+2013-05-24 23:09:04 [9986] [DEBUG] GET /bos2013/about/code_of_conduct
+2013-05-24 23:09:05 [9986] [DEBUG] GET /bos2013/about/code_of_conduct/
+2013-05-24 23:09:05 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:09:05.416190) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:09:34 [9985] [DEBUG] GET /bos2013/news
+2013-05-24 23:09:34 [9987] [DEBUG] GET /bos2013/news/
+2013-05-24 23:09:47 [9985] [DEBUG] GET /bos2013/venue
+2013-05-24 23:09:47 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-24 23:10:19 [9987] [DEBUG] GET /bos2013/about/about/
+2013-05-24 23:11:01 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-24 23:11:01.871447) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-24 23:11:05 [9987] [DEBUG] GET /bos2013/venue
+2013-05-24 23:11:05 [9985] [DEBUG] GET /bos2013/venue/
+2013-05-24 23:11:07 [9987] [DEBUG] GET /bos2013/schedule
+2013-05-24 23:11:07 [9987] [DEBUG] GET /bos2013/schedule/
+2013-05-24 23:11:09 [9985] [DEBUG] GET /bos2013/venue
+2013-05-24 23:11:09 [9987] [DEBUG] GET /bos2013/venue/
+2013-05-24 23:11:14 [9986] [DEBUG] GET /bos2013/news
+2013-05-24 23:11:14 [9985] [DEBUG] GET /bos2013/news/
+2013-05-28 11:30:16 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 11:30:17.624251) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 11:32:36 [9985] [DEBUG] GET /boston
+2013-05-28 11:32:36 [9986] [DEBUG] GET /boston/
+Internal Server Error: /boston/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/boston.html
+2013-05-28 11:32:56 [9987] [DEBUG] GET /bos2013/venue
+2013-05-28 11:32:56 [9985] [DEBUG] GET /bos2013/venue/
+2013-05-28 11:33:03 [9987] [DEBUG] GET /bos2013/schedule
+2013-05-28 11:33:03 [9987] [DEBUG] GET /bos2013/schedule/
+2013-05-28 11:33:14 [9986] [DEBUG] GET /bos2013/keynotes
+2013-05-28 11:33:14 [9986] [DEBUG] GET /bos2013/keynotes/
+2013-05-28 11:33:19 [9985] [DEBUG] GET /bos2013/news
+2013-05-28 11:33:20 [9987] [DEBUG] GET /bos2013/news/
+2013-05-28 11:33:23 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 11:33:23.930706) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 11:33:30 [9986] [DEBUG] GET /bos2013/about/code_of_conduct
+2013-05-28 11:33:30 [9986] [DEBUG] GET /bos2013/about/code_of_conduct/
+2013-05-28 12:21:23 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 12:21:23.906708) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 12:22:18 [9985] [DEBUG] GET /bos2013/sponsor/sponsors
+2013-05-28 14:33:16 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 14:33:16.653178) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 14:34:31 [9985] [DEBUG] GET /bos2013/venue
+2013-05-28 14:34:31 [9985] [DEBUG] GET /bos2013/venue/
+2013-05-28 14:34:35 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 14:34:35.254552) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 14:34:40 [9986] [DEBUG] GET /bos2013/keynotes
+2013-05-28 14:34:40 [9985] [DEBUG] GET /bos2013/keynotes/
+2013-05-28 14:34:44 [9986] [DEBUG] GET /bos2013/speakers
+2013-05-28 14:34:44 [9986] [DEBUG] GET /bos2013/speakers/
+2013-05-28 14:34:46 [9986] [DEBUG] GET /bos2013/news
+2013-05-28 14:34:46 [9986] [DEBUG] GET /bos2013/news/
+2013-05-28 17:17:55 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:17:55.528684) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:18:24 [9985] [DEBUG] GET /bos2013/schedule
+2013-05-28 17:18:24 [9985] [DEBUG] GET /bos2013/schedule/
+2013-05-28 17:18:30 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:18:30.619333) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:21:02 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:21:02.285765) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:21:06 [9985] [DEBUG] GET /bos2013/schedule
+2013-05-28 17:21:07 [9985] [DEBUG] GET /bos2013/schedule/
+2013-05-28 17:21:09 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:21:09.117873) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:25:02 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:25:02.401641) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:25:36 [9985] [DEBUG] GET /bos2013/admin
+2013-05-28 17:25:36 [9987] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-28 17:25:41 [9985] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:25:41.134670) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:30:21 [9985] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-28 17:30:44 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 17:30:44.753479) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 17:30:59 [9985] [DEBUG] GET /bos2013admin
+2013-05-28 17:30:59 [9985] [DEBUG] GET /bos2013admin/
+Internal Server Error: /bos2013admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/bos2013admin.html
+2013-05-28 17:31:16 [9987] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-28 18:55:23 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 18:55:23.632424) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 18:55:27 [9986] [DEBUG] GET /admin
+2013-05-28 18:55:27 [9987] [DEBUG] GET /admin/
+2013-05-28 18:55:40 [9987] [DEBUG] GET /admin
+2013-05-28 18:55:40 [9987] [DEBUG] GET /admin/
+2013-05-28 18:55:45 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 18:55:45.652922) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 18:56:14 [9985] [DEBUG] POST /admin/
+2013-05-28 18:56:23 [9986] [DEBUG] POST /admin/
+2013-05-28 18:56:44 [9987] [DEBUG] POST /admin/
+2013-05-28 18:57:03 [9985] [DEBUG] POST /admin/
+2013-05-28 19:00:04 [9986] [DEBUG] POST /admin/
+2013-05-28 19:00:11 [9985] [DEBUG] POST /admin/
+2013-05-28 19:00:20 [9987] [DEBUG] POST /admin/
+2013-05-28 19:39:57 [9986] [DEBUG] POST /admin/
+2013-05-28 19:48:05 [9987] [DEBUG] POST /admin/
+2013-05-28 19:48:15 [9985] [DEBUG] POST /admin/
+2013-05-28 20:15:08 [9986] [DEBUG] GET /admin/
+2013-05-28 21:11:47 [9987] [DEBUG] GET /admin/
+2013-05-28 21:12:03 [9986] [DEBUG] POST /admin/
+2013-05-28 21:12:27 [9987] [DEBUG] GET /admin/
+2013-05-28 21:37:06 [9986] [DEBUG] GET /admin/sites/site/add/
+2013-05-28 21:37:07 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:37:19 [9987] [DEBUG] GET /admin/
+2013-05-28 21:37:34 [9987] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 21:37:34 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:37:54 [9987] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 21:37:55 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:38:59 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:38:59 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:39:58 [9987] [DEBUG] GET /admin/
+2013-05-28 21:40:06 [9986] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:40:06 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:40:41 [9987] [DEBUG] POST /admin/events/conference/
+2013-05-28 21:40:54 [9987] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:40:55 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:42:04 [9987] [DEBUG] GET /admin/
+2013-05-28 21:43:01 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:43:01.908428) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:43:08 [9986] [DEBUG] GET /admin
+2013-05-28 21:43:08 [9986] [DEBUG] GET /admin/
+2013-05-28 21:43:10 [9985] [DEBUG] GET /admin/
+2013-05-28 21:43:23 [9985] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:43:23 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:43:31 [9986] [DEBUG] GET /admin/events/conference/add/
+2013-05-28 21:43:31 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:43:31 [9986] [DEBUG] POST /admin/events/conference/
+2013-05-28 21:43:34 [9985] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:43:34 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:43:37 [9986] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:43:37 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:43:43 [9986] [DEBUG] GET /admin/events/
+2013-05-28 21:43:44 [9985] [DEBUG] POST /admin/events/conference/
+2013-05-28 21:43:44 [9986] [DEBUG] GET /admin/
+2013-05-28 21:43:46 [9987] [DEBUG] GET /admin/events/conference/
+2013-05-28 21:43:47 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:43:58 [9987] [DEBUG] GET /admin/sites/site/
+2013-05-28 21:43:58 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:44:02 [9987] [DEBUG] GET /admin/
+2013-05-28 21:44:05 [9987] [DEBUG] GET /admin/sites/site/add/
+2013-05-28 21:44:06 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:44:19 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:44:20 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:44:25 [9987] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 21:44:26 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:44:28 [9987] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:44:29 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:44:52 [9985] [DEBUG] POST /admin/sponsors/sponsor/
+2013-05-28 21:44:55 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:44:56 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:45:06 [9986] [DEBUG] GET /admin/sponsors/
+2013-05-28 21:45:09 [9987] [DEBUG] GET /admin/
+2013-05-28 21:45:20 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:45:21.021735) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:45:23 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:45:23.421617) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:46:51 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:46:51.481832) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:47:42 [9987] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 21:47:42 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:50:03 [9987] [DEBUG] POST /admin/sponsors/sponsor/add/
+2013-05-28 21:50:03 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:50:30 [9986] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:50:30.095994) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:50:31 [9986] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:50:31.175854) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:50:45 [9986] [DEBUG] GET /bos2013/admin
+2013-05-28 21:50:45 [9986] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-28 21:51:00 [9985] [DEBUG] POST /admin/sponsors/sponsor/add/
+2013-05-28 21:51:00 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:51:21 [9985] [DEBUG] POST /admin/sponsors/sponsor/add/
+2013-05-28 21:51:25 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:51:26 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 21:52:09 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:52:09.777834) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:52:15 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:52:15.458039) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:52:16 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:52:16.728420) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:52:20 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:52:20.121051) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:52:47 [9985] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:52:47.706933) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:53:01 [9987] [DEBUG] POST /admin/sponsors/sponsor/
+2013-05-28 21:53:08 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:53:08.152508) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:54:12 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:54:12.069829) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:55:11 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:55:11.928537) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:55:23 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:55:23.057669) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:58:07 [9986] [DEBUG] GET /bos2013/venue
+2013-05-28 21:58:08 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-28 21:58:27 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 21:58:27.219816) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 21:59:19 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 21:59:19 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:00:15 [9986] [DEBUG] GET /__debug__/template_source/
+2013-05-28 22:00:26 [9985] [DEBUG] GET /bos2013/admin/
+Internal Server Error: /bos2013/admin/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 83, in wrap_page
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: bos2013/pages/admin.html
+2013-05-28 22:00:30 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:00:30.328303) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:08:21 [9986] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:08:25 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/add/
+2013-05-28 22:08:26 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:08:49 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:08:49.172669) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:08:54 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:08:55 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:08:58 [9985] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 22:08:59 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:09:03 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:09:04 [9986] [DEBUG] GET /admin/
+2013-05-28 22:09:06 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:09:07 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:09:31 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:09:31 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:10:05 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:10:07 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:10:08 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:10:31 [9985] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 22:10:31 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:10:35 [9987] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:10:35 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:10:45 [9985] [DEBUG] GET /admin/sponsors/sponsor/3/
+2013-05-28 22:10:45 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:11:13 [9985] [DEBUG] GET /admin/sponsors/sponsor/3/
+2013-05-28 22:11:14 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:11:25 [9987] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:11:28 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:11:28 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:11:56 [9986] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:11:56 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:11:57 [9986] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:11:58 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:01 [9986] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:12:01 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:03 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:12:04 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:09 [9986] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:12:11 [9987] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:12:12 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:12 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:12:16 [9987] [DEBUG] GET /admin/sponsors/sponsor/3/
+2013-05-28 22:12:16 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:23 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:12:24 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:12:24 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:28 [9985] [DEBUG] GET /admin/
+2013-05-28 22:12:32 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:12:33 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:38 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:12:39 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:12:40 [9986] [DEBUG] GET /admin/
+2013-05-28 22:12:46 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/add/
+2013-05-28 22:12:46 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:12:51 [9986] [DEBUG] GET /admin/events/conference/
+2013-05-28 22:12:52 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:13:09 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:13:09 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:13:13 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:13:13 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:13:55 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:13:56 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:13:59 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:14:00 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:14:50 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:14:51 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:15:02 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:15:02 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:15:08 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:15:08 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:15:42 [9986] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:15:43 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:15:45 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:15:56 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:15:57 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:16:02 [9987] [DEBUG] GET /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:16:02 [9985] [DEBUG] GET /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:16:03 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:16:03 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:16:34 [9987] [DEBUG] POST /admin/sponsors/sponsorlevel/6/
+2013-05-28 22:16:34 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:16:34.709247) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:16:40 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:16:40.416114) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:16:40 [9986] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-28 22:16:41 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:16:46 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:16:46.110712) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:16:52 [9985] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:16:52.880552) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:16:55 [9987] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:16:58 [9987] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:16:58 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:17:03 [9987] [DEBUG] GET /admin/sponsors/sponsor/9/
+2013-05-28 22:17:03 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:17:37 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:17:41 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:17:41 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:17:53 [9985] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:17:55 [9986] [DEBUG] GET /admin/sponsors/sponsor/add/
+2013-05-28 22:17:56 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:17:57 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:17:58 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:18:00 [9987] [DEBUG] GET /admin/sponsors/
+2013-05-28 22:18:07 [9986] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:18:07 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:18:09 [9985] [DEBUG] GET /admin/sponsors/sponsor/9/
+2013-05-28 22:18:10 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:18:10 [9986] [DEBUG] GET /admin/sponsors/sponsor/9/
+2013-05-28 22:18:11 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:18:44 [9985] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-28 22:18:45 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:18:47 [9986] [DEBUG] GET /admin/
+2013-05-28 22:18:50 [9986] [DEBUG] GET /admin/news/newsitem/
+2013-05-28 22:18:51 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:19:36 [9985] [DEBUG] GET /bos2013/venue
+2013-05-28 22:19:36 [9985] [DEBUG] GET /bos2013/venue/
+2013-05-28 22:19:39 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:19:39.294053) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:19:45 [9986] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:19:45.061976) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:19:46 [9987] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:19:46.258151) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:19:48 [9986] [DEBUG] GET /bos2013/venue
+2013-05-28 22:19:48 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-28 22:19:50 [9985] [DEBUG] GET /bos2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:19:50.624569) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:19:52 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:19:52.305011) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:20:11 [9985] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:20:11.588542) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:20:25 [9986] [DEBUG] GET /admin/
+2013-05-28 22:20:32 [9987] [DEBUG] GET /admin/news/newsitem/add/
+2013-05-28 22:20:32 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:20:34 [9985] [DEBUG] GET /admin/
+2013-05-28 22:20:38 [9986] [DEBUG] GET /admin/auth/user/
+2013-05-28 22:20:39 [9985] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:20:55 [9985] [DEBUG] GET /admin/auth/user/
+2013-05-28 22:20:55 [9987] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:20:58 [9986] [DEBUG] GET /admin/auth/user/
+2013-05-28 22:20:58 [9986] [DEBUG] GET /admin/jsi18n/
+2013-05-28 22:21:12 [9986] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:21:12.286236) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:22:29 [9987] [DEBUG] POST /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:22:29.661204) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:25:01 [9986] [DEBUG] GET /sv2013
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:25:02.042154) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:26:30 [9987] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:26:30.049920) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 22:27:07 [9987] [DEBUG] GET /bos2013/venue
+2013-05-28 22:27:07 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-28 22:28:34 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-28 22:31:02 [9986] [DEBUG] GET /bos2013/venue/
+2013-05-28 22:31:10 [9985] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 22:31:10.828700) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 04:08:08 [9982] [INFO] Handling signal: term
+2013-05-28 23:08:09 [9985] [INFO] Worker exiting (pid: 9985)
+2013-05-28 23:08:09 [9987] [INFO] Worker exiting (pid: 9987)
+2013-05-28 23:08:09 [9986] [INFO] Worker exiting (pid: 9986)
+2013-05-29 04:08:09 [9982] [INFO] Shutting down: Master
+2013-05-29 04:08:27 [13472] [INFO] Starting gunicorn 0.16.1
+2013-05-29 04:08:27 [13472] [DEBUG] Arbiter booted
+2013-05-29 04:08:27 [13472] [INFO] Listening at: http://127.0.0.1:8013 (13472)
+2013-05-29 04:08:27 [13472] [INFO] Using worker: sync
+2013-05-29 04:08:27 [13475] [INFO] Booting worker with pid: 13475
+2013-05-29 04:08:27 [13476] [INFO] Booting worker with pid: 13476
+2013-05-29 04:08:27 [13477] [INFO] Booting worker with pid: 13477
+2013-05-28 23:08:46 [13477] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/middleware.py", line 80, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/usr/share/nginx/preview/code/pydata/pydata/urls.py", line 33
+    url(r'^/?$',                                         			'pages.views.common')
+      ^
+SyntaxError: invalid syntax
+2013-05-28 23:08:58 [13475] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 92, in get_response
+    response = middleware_method(request)
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/middleware.py", line 80, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/usr/share/nginx/preview/code/pydata/pydata/urls.py", line 33
+    url(r'^/?$',                                         			'pages.views.common')
+      ^
+SyntaxError: invalid syntax
+2013-05-28 23:09:28 [13476] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:09:29.273880) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 149, in common
+    template = loader.get_template(NOT_FOUND).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/not_found.html
+2013-05-28 23:10:55 [13475] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:10:55.669339) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 149, in common
+    template = loader.get_template(NOT_FOUND).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 102, in render
+    compiled_parent = self.get_parent(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 99, in get_parent
+    return get_template(parent)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/wrapper.html
+2013-05-28 23:12:55 [13475] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:12:55.073315) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:15:35 [13476] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:15:35.283363) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 04:16:48 [13472] [INFO] Handling signal: term
+2013-05-28 23:16:48 [13477] [INFO] Worker exiting (pid: 13477)
+2013-05-28 23:16:48 [13475] [INFO] Worker exiting (pid: 13475)
+2013-05-28 23:16:48 [13476] [INFO] Worker exiting (pid: 13476)
+2013-05-29 04:16:48 [13472] [INFO] Shutting down: Master
+2013-05-29 04:16:51 [14019] [INFO] Starting gunicorn 0.16.1
+2013-05-29 04:16:51 [14019] [DEBUG] Arbiter booted
+2013-05-29 04:16:51 [14019] [INFO] Listening at: http://127.0.0.1:8013 (14019)
+2013-05-29 04:16:51 [14019] [INFO] Using worker: sync
+2013-05-29 04:16:51 [14022] [INFO] Booting worker with pid: 14022
+2013-05-29 04:16:51 [14023] [INFO] Booting worker with pid: 14023
+2013-05-29 04:16:51 [14024] [INFO] Booting worker with pid: 14024
+2013-05-28 23:16:55 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:16:55.883299) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 146, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/banner.html
+2013-05-28 23:17:34 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:17:34.651201) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 146, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 167, in render
+    return self.render_template(template, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 138, in render_template
+    output = template.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/templates/news/news_section.html
+2013-05-28 23:17:55 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:17:55.162132) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:24:24 [14024] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:24:25.150506) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:27:35 [14022] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/utils/hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+  DeprecationWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:27:35.453888) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:28:15 [14024] [DEBUG] GET /ny2012.pydata.org
+2013-05-28 23:28:15 [14023] [DEBUG] GET /ny2012.pydata.org/
+Internal Server Error: /ny2012.pydata.org/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 146, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/pages/ny2012.pydata.org.html
+2013-05-28 23:28:38 [14024] [DEBUG] GET /ny2012.pydata.org/
+Internal Server Error: /ny2012.pydata.org/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/share/nginx/preview/code/pydata/pages/views.py", line 146, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/test/utils.py", line 65, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/pages/ny2012.pydata.org.html
+2013-05-28 23:28:43 [14022] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:28:43.358873) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:29:43 [14024] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:29:43.373892) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:29:59 [14023] [DEBUG] GET /sv2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:30:00.007089) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:30:04 [14022] [DEBUG] GET /sv2013/schedule
+2013-05-28 23:30:04 [14022] [DEBUG] GET /sv2013/schedule/
+2013-05-28 23:30:18 [14024] [DEBUG] GET /sv2013/news
+2013-05-28 23:30:18 [14023] [DEBUG] GET /sv2013/news/
+2013-05-28 23:30:23 [14024] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:30:23.498674) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:32:30 [14022] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:32:30.555168) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:34:13 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:34:13.638499) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:38:32 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:38:32.036554) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:39:45 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:39:45.813902) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:43:19 [14024] [DEBUG] GET /sv2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:43:19.250720) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:43:31 [14023] [DEBUG] GET /sv2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:43:31.366613) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:43:45 [14022] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:43:45.449847) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:43:51 [14023] [DEBUG] GET /sv2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:43:51.750895) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:45:23 [14024] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:45:23.327526) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:45:27 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:45:27.381765) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:45:34 [14022] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:45:34.387632) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:45:39 [14023] [DEBUG] GET /sv2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:45:39.172458) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:46:02 [14022] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:46:02.434919) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-28 23:47:04 [14024] [DEBUG] GET /sponsor/info
+2013-05-28 23:47:04 [14023] [DEBUG] GET /sponsor/info/
+2013-05-28 23:48:42 [14023] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-28 23:48:42.143307) while time zone support is active.
+  RuntimeWarning)
+

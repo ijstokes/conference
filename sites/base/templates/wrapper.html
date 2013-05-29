@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}PyData.org | {{ title }}{% endblock %}</title>
+    {% block head_info %}
+        {% include head %}
+    {% endblock head_info%}
+    <style type="text/css">
+		.navbar-inner{
+			text-align: left; margin-left: 20px;
+		}
+	</style>
+    
+</head>
+<body>
+    {% block header %}
+    	{% include smlheader %}
+    {% endblock header %}
+	<div class="container">
+		<div class="row">
+
+            <div class="span8">
+            {% block main_content %}
+                {% include page_path %}
+            {% endblock main_content %}
+            </div>
+            
+            <div class="span4">
+            {% block sidebar %}
+            	{% include sidebar %}
+            {% endblock sidebar %}
+            </div>
+        </div>
+         <hr>
+        {% block footer %}
+        {% include footer %}
+    	{% endblock footer %}
+	</div>
+   
+    
+    
+    {% include scripts %}
+    <script type="text/javascript">
+		$(document).ready(function () {
+			console.log(location.hash)
+		  location.hash && $(location.hash + '_.collapse').collapse('show');
+		});
+	</script>
+</body>
+</html>

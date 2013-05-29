@@ -30,8 +30,10 @@ def get_base_out_vars(request, **kwargs):
     conference              = kwargs.get('conference')
     if conference:
         conference = conference.strip()
+    	output['conf_named']= True
     else:
         conference = CURRENT_CONF_NAME
+    	output['conf_named']= False
 
     output['conference']    = conference
     output['conf_id']       = conference
