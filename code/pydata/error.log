@@ -4762,3 +4762,7 @@ TemplateDoesNotExist: base/pages/speakers.html
 /usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:05:40.235361) while time zone support is active.
   RuntimeWarning)
 
+2013-05-29 20:06:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:06:34.936899) while time zone support is active.
+  RuntimeWarning)
+
