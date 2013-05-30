@@ -4116,3 +4116,649 @@ TemplateDoesNotExist: base/pages/__debug__/sql_select.html
 2013-05-29 19:15:04 [29532] [DEBUG] GET /admin/jsi18n/
 2013-05-29 19:15:17 [29530] [DEBUG] GET /admin/sponsors/sponsor/1/
 2013-05-29 19:15:17 [29532] [DEBUG] GET /admin/jsi18n/
+2013-05-30 00:24:44 [31366] [INFO] Starting gunicorn 0.16.1
+2013-05-30 00:24:44 [31366] [DEBUG] Arbiter booted
+2013-05-30 00:24:44 [31366] [INFO] Listening at: http://50.56.188.141:8000 (31366)
+2013-05-30 00:24:44 [31366] [INFO] Using worker: sync
+2013-05-30 00:24:44 [31369] [INFO] Booting worker with pid: 31369
+2013-05-30 00:24:44 [31370] [INFO] Booting worker with pid: 31370
+2013-05-30 00:24:44 [31371] [INFO] Booting worker with pid: 31371
+2013-05-29 19:24:52 [31371] [DEBUG] GET /bos2013/sponsor/sponsors
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-29 19:25:01 [31370] [DEBUG] GET /admin
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-29 19:25:02 [31370] [DEBUG] GET /admin/
+2013-05-29 19:25:04 [31369] [DEBUG] POST /admin/
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/defaults.py:3: DeprecationWarning: django.conf.urls.defaults is deprecated; use django.conf.urls instead
+  DeprecationWarning)
+
+2013-05-29 19:25:04 [31370] [DEBUG] GET /admin/
+2013-05-29 19:25:07 [31370] [DEBUG] GET /admin/sponsors/sponsor/
+2013-05-29 19:25:07 [31370] [DEBUG] GET /admin/jsi18n/
+2013-05-29 19:25:17 [31371] [DEBUG] GET /admin/sponsors/
+2013-05-29 19:25:19 [31371] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-29 19:25:20 [31371] [DEBUG] GET /admin/jsi18n/
+2013-05-29 19:25:23 [31371] [DEBUG] GET /admin/sponsors/sponsorlevel/7/
+2013-05-29 19:25:24 [31371] [DEBUG] GET /admin/jsi18n/
+2013-05-29 19:25:27 [31370] [DEBUG] POST /admin/sponsors/sponsorlevel/7/
+2013-05-29 19:25:27 [31370] [DEBUG] GET /admin/sponsors/sponsorlevel/
+2013-05-29 19:25:27 [31370] [DEBUG] GET /admin/jsi18n/
+2013-05-29 19:25:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:25:34.886568) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:25:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:25:34.966117) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:25:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:25:36.735060) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:25:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:25:40.173810) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:25:46 [31371] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:25:46.516719) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:13 [31370] [DEBUG] GET /bos2013/sponsor/sponsors
+2013-05-29 19:26:23 [31370] [DEBUG] GET /bos2013/sponsor/info
+2013-05-29 19:26:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:34.883657) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:36.737945) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:37 [31371] [DEBUG] HEAD /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:37.362170) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:37 [31371] [DEBUG] HEAD /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:37.865665) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:40.184032) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:41 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:41.351068) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:26:45 [31369] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:26:45.168127) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:27:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:27:34.881993) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:27:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:27:36.737582) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:27:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:27:40.185761) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:28:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:28:34.882893) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:28:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:28:36.738716) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:28:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:28:40.186026) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:29:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:29:34.890364) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:29:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:29:36.739047) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:29:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:29:40.177738) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:30:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:30:34.894910) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:30:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:30:36.742337) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:30:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:30:40.189363) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:31:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:31:34.886782) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:31:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:31:36.743998) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:31:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:31:40.181245) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:32:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:32:34.889537) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:32:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:32:36.743389) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:32:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:32:40.181824) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:33:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:33:34.897071) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:33:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:33:36.746565) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:33:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:33:40.178256) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:34:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:34:34.894562) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:34:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:34:36.746649) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:34:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:34:40.179503) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:35:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:35:34.892447) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:35:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:35:36.747874) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:35:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:35:40.186967) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:36:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:36:34.898238) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:36:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:36:36.750020) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:36:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:36:40.187791) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:37:23 [31369] [DEBUG] GET /img/spyder.png/
+Internal Server Error: /img/spyder.png/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/pydata/website/code/pydata/pages/views.py", line 148, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/pages/img/spyder.png.html
+2013-05-29 19:37:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:37:34.895129) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:37:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:37:36.750585) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:37:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:37:40.188737) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:38:08 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:38:08.645028) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:38:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:38:34.897681) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:38:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:38:36.752933) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:38:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:38:40.184036) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:39:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:39:34.902648) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:39:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:39:36.753630) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:39:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:39:40.191032) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:40:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:40:34.898783) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:40:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:40:36.755286) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:40:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:40:40.186326) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:41:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:41:34.903050) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:41:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:41:36.756512) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:41:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:41:40.188875) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:42:03 [31369] [DEBUG] HEAD /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:42:03.476062) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:42:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:42:34.906531) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:42:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:42:36.758525) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:42:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:42:40.189851) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:43:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:43:34.904889) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:43:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:43:36.757840) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:43:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:43:40.191141) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:44:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:44:34.904768) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:44:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:44:36.760290) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:44:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:44:40.207282) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:45:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:45:34.906659) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:45:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:45:36.762570) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:45:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:45:40.199005) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:46:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:46:34.907156) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:46:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:46:36.770831) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:46:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:46:40.200429) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:46:55 [31371] [DEBUG] GET /sv2013/news/
+2013-05-29 19:47:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:47:34.909735) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:47:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:47:36.774218) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:47:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:47:40.211988) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:48:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:48:34.909083) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:48:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:48:36.767386) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:48:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:48:40.204044) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:49:17 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:49:17.345422) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:49:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:49:34.911049) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:49:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:49:36.768048) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:49:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:49:40.198273) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:50:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:50:34.911621) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:50:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:50:36.769361) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:50:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:50:40.199765) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:51:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:51:34.919221) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:51:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:51:36.769430) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:51:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:51:40.217190) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:52:14 [31369] [DEBUG] GET /speakers/
+Internal Server Error: /speakers/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py", line 77, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/pydata/website/code/pydata/pages/views.py", line 148, in common
+    template = loader.get_template(wrapper_template).render(output)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 54, in render
+    result = self.nodelist.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 830, in render
+    bit = self.render_node(node, context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader_tags.py", line 166, in render
+    template = get_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: base/pages/speakers.html
+2013-05-29 19:52:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:52:34.917078) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:52:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:52:36.772029) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:52:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:52:40.209760) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:53:09 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:53:09.773033) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:53:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:53:34.921903) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:53:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:53:36.772262) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:53:40 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:53:40.203063) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:54:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:54:34.919564) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:54:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:54:36.772572) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:54:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:54:40.204228) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:55:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:55:34.921706) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:55:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:55:36.776518) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:55:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:55:40.212037) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:55:50 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:55:50.023762) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:56:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:56:34.919821) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:56:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:56:36.775968) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:56:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:56:40.214879) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:57:04 [31369] [DEBUG] HEAD /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:57:04.681147) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:57:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:57:34.922936) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:57:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:57:36.777204) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:57:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:57:40.215212) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:57:41 [31369] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:57:41.861087) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:58:04 [31369] [DEBUG] GET /bos2013/
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:58:04.357331) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:58:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:58:34.926394) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:58:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:58:36.777949) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:58:40 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:58:40.211212) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:59:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:59:34.923187) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:59:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:59:36.780299) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 19:59:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 19:59:40.214605) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:00:34 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:00:34.924453) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:00:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:00:36.779984) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:00:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:00:40.219063) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:01:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:01:34.928268) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:01:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:01:36.780970) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:01:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:01:40.219758) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:01:56 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:01:56.650978) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:02:34 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:02:34.931538) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:02:36 [31370] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:02:36.784663) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:02:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:02:40.230950) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:03:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:03:34.927375) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:03:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:03:36.784440) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:03:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:03:40.217375) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:04:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:04:34.930492) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:04:36 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:04:36.786606) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:04:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:04:40.234484) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:05:34 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:05:34.933481) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:05:36 [31371] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:05:36.788317) while time zone support is active.
+  RuntimeWarning)
+
+2013-05-29 20:05:40 [31369] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:827: RuntimeWarning: DateTimeField received a naive datetime (2013-05-29 20:05:40.235361) while time zone support is active.
+  RuntimeWarning)
+
