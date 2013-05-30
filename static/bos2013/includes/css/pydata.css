@@ -153,14 +153,14 @@ h3.logo a{
 	display:block;
 	width:213px;
 	height:63px;
-	background:url(../images/pydatalogo-generic.png) no-repeat 0 0;
+	background:url(/static/bos2013/includes/images/PyDataLogoBig-Boston.png) no-repeat 0 0;
 	text-indent:-9999px
 }
 h1 a.logo{
 	display:block;
 	width:450px;
 	height:190px;
-	background:url(../images/pydatalogo-generic.png) no-repeat 0 0;
+	background:url(/static/bos2013/includes/images/PyDataLogoBig-Boston.png) no-repeat 0 0;
 	text-indent:-9999px;
 	margin-left:auto;
 	margin-right:auto;
