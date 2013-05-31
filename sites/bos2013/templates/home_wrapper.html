@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title>{% block title %}PyData 2013 | Boston, MA | July 27 &ndash; 28 {{ title }}{% endblock %}</title>
+    <meta charset="utf-8">
+    <title>{% block title %}PyData 2013 | Boston, MA | July 27 &ndash; 28 {{ title }}{% endblock %}</title>
     {% block head_info %}
         {% include head %}
     {% endblock head_info%}
 </head>
 <body>
     {% block header %}
-    	{% include header %}
+        {% include header %}
     {% endblock header %}
 
     {% block banner %}
-    	{% include banner %}
+        {% include banner %}
     {% endblock banner %}
-    
-	<div class="container">
-		<div class="row">
+    <div class="container">
+        <div class="row">
         <!--<div class="span12" style="text-align: center">
             <h4>Presented by</h4>
             <h2><a href="http://continuum.io"><img src="/static/base/includes/images/ca190w.png" /></a></h2>-->
-		{% include sponsors %}
+        {% include sponsors %}
         <hr>
         </div>
-            
             {% block main_content %}
-            <div class="span12">
-                {% include page_path %}
-            </div>
+                <div class="span12">
+                    {% include page_path %}
+                </div>
             {% endblock main_content %}
         </div>
         <hr>
@@ -37,7 +35,7 @@
                 {% include footer %}
             {% endblock footer %}
         </div>
-	</div>
+    </div>
     {% include scripts %}
 </body>
 </html>

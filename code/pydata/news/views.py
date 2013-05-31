@@ -8,7 +8,7 @@ from pydata.settings        import CURRENT_CONF_ID
 def view_news(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
     conference = kwargs.get('conference')
-    news = NewsItem.objects.filter(conference__name=conference)
+    news = NewsItem.objects.filter(conference__name=conference).order_by('-date')
     if not request.user.is_staff:
         news = news.filter(publish=True)
 
