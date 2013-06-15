@@ -1,10 +1,19 @@
-from django.conf.urls import patterns, include, url
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls                   import patterns, include, url
+from django.contrib.staticfiles.urls    import staticfiles_urlpatterns
+from django.contrib                     import admin
 
-from django.contrib import admin
+from pydata.settings                    import STATIC_ROOT, DEBUG
+
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = staticfiles_urlpatterns()
+
+if DEBUG:
+    urlpatterns += patterns('',
+        (r'^favicon\.ico/?$', 'django.views.static.serve', {'path': 'favicon.ico', 'document_root': '%s/all/base/includes/images' % STATIC_ROOT}),
+    )
+
+urlpatterns += patterns('',
 
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
@@ -28,9 +37,9 @@ urlpatterns = patterns('',
 
     url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/about/(?P<page>.+)/$', 'pages.views.wrap_page',{'about':'about'}),
     url(r'^(?P<conference>[a-zA-Z]{2,3}\d{4})/(?P<page>.+)/$',      'pages.views.wrap_page'),
+)
 
+urlpatterns += patterns('',
     url(r'^(?P<page>.+)/$',                                         'pages.views.common'),
     url(r'^/?$',                                         			'pages.views.common'),
 )
-
-urlpatterns += staticfiles_urlpatterns()

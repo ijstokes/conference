@@ -33,7 +33,7 @@ class Presentation(models.Model):
         ordering = ['title']
 
     def __unicode__(self):
-        return self.title
+        return "%s %s" % (self.conference.name, self.title)
 
     def get_speakers(self):
         to_output = []

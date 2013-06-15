@@ -76,6 +76,7 @@ class ScheduledItemAdmin(admin.ModelAdmin):
     ordering        = ('name', 'id',)
     search_fields   = ('name',)
 
+
 admin.site.register(ScheduledItemType, ScheduledItemAdmin)
 
 class ScheduledItemAdmin(admin.ModelAdmin):

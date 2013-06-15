@@ -13,7 +13,7 @@ class Section(models.Model):
     conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     def __unicode__(self):
-        return self.name
+        return "%s %s" % (self.conference.name, self.name)
 
 
 class Track(models.Model):
@@ -22,7 +22,7 @@ class Track(models.Model):
     conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
     def __unicode__(self):
-        return self.name
+        return "%s %s" % (self.conference.name, self.name)
 
 
 class TimeSlot(models.Model):
@@ -35,7 +35,7 @@ class TimeSlot(models.Model):
         ordering = ['conference', 'sectionDay__day', 'start_time']
 
     def __unicode__(self):
-        return self.name()
+        return "%s %s" % (self.conference.name, self.name())
 
     def name(self):
         time_format = '%I:%M'
@@ -54,7 +54,7 @@ class SectionDay(models.Model):
         ordering = ['section__start_day', 'day']
 
     def __unicode__(self):
-        return self.get_name()
+        return "%s %s" % (self.conference.name, self.get_name())
 
     def get_name(self):
         return "{0} - Day {1}".format(self.section.name, self.day)
@@ -89,9 +89,8 @@ class Room(models.Model):
     notes       = models.TextField(blank=True, null=True)
     conference  = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
 
-
     def __unicode__(self):
-        return self.name
+        return "%s %s" % (self.conference.name, self.name)
 
 
 class ScheduledItemType(models.Model):
@@ -115,5 +114,5 @@ class ScheduledItem(models.Model):
 
     def __unicode__(self):
         if not self.presentation:
-            return self.itemType.name + " " + self.timeSlot.name()
-        return self.presentation.title
+            return "%s %s %s" % (self.conference.name, self.itemType.name, self.timeSlot.name())
+        return "%s %s" % (self.conference.name, self.presentation.title)

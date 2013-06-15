@@ -97,15 +97,15 @@ def common(request, **kwargs):
 
     output = get_base_out_vars(request, conference=site, **kwargs)
 
-    output['page_id']     = kwargs.get('page', 'home')
-    file_name             = output['page_id'] + '.html'
+    output['page_id']   = kwargs.get('page', 'home')
+    file_name           = output['page_id'] + '.html'
     output['title']     = sub(r'(.*)-(.*)', r'\1 (\2)', output['page_id'].capitalize().replace('_', ' '))
     output['page_path'] = '%s/pages/' % site + file_name
 
-    NOT_FOUND            = '%s/templates/not_found.html'         % site
-    DEFAULT_WRAPPER        = '%s/templates/wrapper.html'           % site
+    NOT_FOUND           = '%s/templates/not_found.html'         % site
+    DEFAULT_WRAPPER     = '%s/templates/wrapper.html'           % site
     HOME_WRAPPER        = '%s/templates/home_wrapper.html'      % site
-    NOSIDE_WRAPPER        = '%s/templates/noside_wrapper.html'    % site
+    NOSIDE_WRAPPER      = '%s/templates/noside_wrapper.html'    % site
     EDIT_WRAPPER        = '%s/templates/edit_page.html'         % site
 
     
