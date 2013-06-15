@@ -7,11 +7,11 @@ from pydata.settings        import CURRENT_CONF_ID
 
 def view_news(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
-    news = NewsItem.objects.all()
+    conference = kwargs.get('conference')
+    news = NewsItem.objects.filter(conference__name=conference).order_by('-date')
     if not request.user.is_staff:
         news = news.filter(publish=True)
 
-    conference = kwargs.get('conference')
     output['news'] = news
     output['levels'] = SponsorLevel.objects.filter(conference__name=conference)
 

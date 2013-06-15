@@ -53,7 +53,8 @@ def wrap_page(request, **kwargs):
         levels = SponsorLevel.objects.filter(conference__name=conference)
         for level in levels:
             output['all_sponsors'].extend(level.sponsors.all())
-        news = NewsItem.objects.all()
+        conference = kwargs.get('conference')
+        news = NewsItem.objects.filter(conference__name=conference).order_by('-date')
         if not request.user.is_staff:
             news = news.filter(publish=True)
         output['news'] = news.filter(date__lte=datetime.now())[:5]
@@ -118,7 +119,8 @@ def common(request, **kwargs):
         levels = SponsorLevel.objects.filter(conference__name=site)
         for level in levels:
             output['all_sponsors'].extend(level.sponsors.all())
-        news = NewsItem.objects.all()
+        conference = kwargs.get('conference')
+        news = NewsItem.objects.filter(conference__name=conference).order_by('-date')
         if not request.user.is_staff:
             news = news.filter(publish=True)
         output['news'] = news.filter(date__lte=datetime.now())[:5]
@@ -148,3 +150,9 @@ def common(request, **kwargs):
     response = HttpResponse(template)
 
     return response
+
+@csrf_exempt
+def java_script(request):
+    filename = request.path.strip("/")
+    data = open(filename, "rb").read()
+    return HttpResponse(data, mimetype="application/x-javascript")

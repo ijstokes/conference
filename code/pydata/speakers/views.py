@@ -11,7 +11,7 @@ from pydata.settings import CURRENT_CONF_ID
 def view_speakers(request, **kwargs):
     output = get_base_out_vars(request, **kwargs)
     conference = kwargs['conference']
-    speakers = Speaker.objects.exclude(presentation__scheduleditem__itemType__name='Keynote')
+    speakers = Speaker.objects.exclude(presentation__scheduleditem__itemType__name='Keynote').distinct()
     speakers = speakers.filter(presentation__conference__name=conference)
     output['speakers'] = speakers.exclude(name="TBD")
     output['levels'] = SponsorLevel.objects.filter(conference__exact=CURRENT_CONF_ID)

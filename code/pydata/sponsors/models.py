@@ -21,7 +21,7 @@ class SponsorLevel(models.Model):
     min_amount          = models.IntegerField()
     description         = models.TextField()
     conference          = models.ForeignKey(Conference, default=CURRENT_CONF_ID)
-    sponsors            = models.ManyToManyField(Sponsor)
+    sponsors            = models.ManyToManyField(Sponsor,blank=True)
     small_logo_height   = models.IntegerField()
 
     def __unicode__(self):

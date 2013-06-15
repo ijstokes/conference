@@ -2,7 +2,7 @@ from utilities.utilities import send_plain_email
 
 
 def process_speaker_proposal(proposal):
-    recipient = 'pydataconf@continuum.io'
+    recipient = 'admin@pydata.org'
 
     email_template = """
     Proposal from {0} ({3}):
@@ -24,7 +24,7 @@ def process_speaker_proposal(proposal):
     Thank you for your submission to speak at PyData Silicon Valley 2013.  We will review your
     proposal and inform you of our decision.
 
-    If you have any questions please contact pydataconf@continuum.io.
+    If you have any questions please contact admin@pydata.org.
 
 
     """
